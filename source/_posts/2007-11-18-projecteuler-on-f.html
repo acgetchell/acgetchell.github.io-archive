@@ -1,0 +1,12 @@
+---
+layout: post
+title: "ProjectEuler on F#"
+date: 2007-11-18
+comments: false
+categories:
+ - .net
+ - f#
+---
+
+<div class='post'>
+So, whilst poring through Pickering's book and browsing through <a href="http://tomasp.net/about/fsharp.aspx">Tomas Petricek's blog</a> (which has a promising <a href="http://tomasp.net/articles/fswebtools-intro.aspx">F# AJAX toolkit</a>, which alas, doesn't work yet) and stealing glances at the <a href="http://caml.inria.fr/pub/docs/oreilly-book/html/index.html">O'Reilly online OCAML book</a>, I decided to write some programs to exercise my understanding of the material. After some stumbling, I found <a href="http://projecteuler.net/index.php?section=problems">Project Euler</a>, a great site full of math programming puzzles.<br /><br />I solved <a href="http://projecteuler.net/index.php?section=problems&amp;id=1">Problem #1</a> naively in ~ 10 lines of F# using list comprehensions and recursion (I've seen a one-liner using Seq.fold). <a href="http://projecteuler.net/index.php?section=problems&amp;id=2">Problem #2</a> builds on this and takes about 30, including a debugging function to print results (<a href="http://blogs.msdn.com/chrsmith/archive/2007/10/26/Project-Euler-in-F_2300_-_2D00_-Problem-2.aspx">better solutions</a>, using Seq.unfold, do it in 10). I posted my code solutions to the <a href="http://projecteuler.net/index.php?section=forum">forum</a>, so as not to spoil anyone else's fun (you can only post to the forum for that problem after you've solved it). It's very interesting to see all of the other solutions in different languages, and the algorithm discussion is fascinating too.<br /><br />It's also quite impressive how easily F# morphs into math problems (though I am still writing some horrid C#/F# hybrid presently).<br /><br />Oh, and here's a nifty 100-line podcast downloader, <a href="http://dcooney.com/ViewEntry.aspx?ID=499">slurppodcasts</a>.<br /><br />(Note that <span style="color: rgb(51, 51, 255);">Idioms.using</span> is no longer necessary, since <span style="color: rgb(51, 51, 255);">using</span> is integrated into F#)<br /><br />Finally, here's <a href="http://feeds.feedburner.com/planet_fsharp">Feedburner's Planet F#</a>.</div>

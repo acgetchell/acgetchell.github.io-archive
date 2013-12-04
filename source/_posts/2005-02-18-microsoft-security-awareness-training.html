@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Microsoft Security Awareness training"
+date: 2005-02-18
+comments: false
+categories:
+ - openbsd
+---
+
+<div class='post'>
+<a href="http://www.atrevido.net/blog/PermaLink.aspx?guid=256b6bb4-f6f4-43a5-985b-7fe5796b809c">This</a> is just too funny to pass up.<br /><br />So far, <a href="http://windowssecrets.com/050127/#story1">malware's winning the war of attrition</a>.<br /><br />Well, at least <a href="http://www.microsoft.com/athome/security/spyware/software/default.mspx">Microsoft Anti-Spyware</a> is going to be free.<br /><br />Too bad there's already <a href="http://www.pcworld.com/resource/article/0,aid,119641,pg,1,RSS,RSS,00.asp">malware which targets it</a>.<br /><br />You do have a real hardware firewall, don't you? If not, there's no reason why you shouldn't -- here's my <a href="http://insecure.ucdavis.edu/OpenBSD/openbrick">OpenBSD recipe</a> that works beautifully on inexpensive hardware, and has big-bucks features like stateful filtering, source tracking, bandwidth queuing, NAT, OS detection, adaptive state table timeouts, MAC address tagging (with brconfig), macros and tables, and hardware failover capability. All for the price of an <a href="http://www.openbsd.org/orders.html">OpenBSD CD</a> and whatever hardware you run it on.<br /><br />(One of the firewalls I set up for a class C network was a Pentium 166 with 32MB of RAM, and it mostly sat at 99% idle filtering a 100MB full-duplex LAN. OpenBSD has a very efficient network stack. When I've gone around to help setup OpenBSD firewalls for departments at UC Davis, we mostly recycle leftover desktops that have been replaced.)<br /><br />Of course, to help deal with malware you'll also have to do egress filtering (not just ingress filtering, where most rulesets stop), and as always, keep your systems patched.<br /><br />But then, there's no such thing as a panacea.<br /><br />Did I also mention that pf rules are nearly plain-language?<br /><br /><a href="http://www.openbsd.org/faq/pf/index.html">pf</a> r0x0rs!</div>
