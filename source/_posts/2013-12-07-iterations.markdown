@@ -74,7 +74,7 @@ We all kinda knew it. The internet is a vast info-trawl for almost anything, but
 Martial Arts++
 --------------
 
-I've been practicing martial arts of various types for quite awhile now.
+I've been practicing martial arts of various types for quite awhile now. I'm fairly highly ranked in a few.
 
 But the empirical evidence is in, and it is this:
 
@@ -90,9 +90,9 @@ All of these statements are pretty easily tested. You can personally test it by 
 
 And if you object that all of these places have rules, and aren't a real fight, I'd like you to tell me why you think various dirty tricks will win the day for you, especially when you're in an inferior position where your opponent can do the same back to you, but 10x worse.
 
-I teach Hapkido at the university, and I've always loved that Hapkido *did* learn techniques in all of these areas. I learned and competed in Taekwondo and Judo, and Hapkido synthesized them all together. It was good for practical self-defense.
+I teach Hapkido at the university, and I've always loved that Hapkido *did* learn techniques in all of these areas. I learned and competed in Taekwondo and Judo, and Hapkido synthesized them all together. It was good for practical self-defense. I try to teach it as such.
 
-But times change and new things develop, and it's time to adapt and learn what works. And my [BJJ academy][50], [professor][51], and jiu-jitsu family rock!
+But times change and things develop, and it's time to adapt and learn what works. And my [BJJ academy][50], [professor][51], and jiu-jitsu family rock!
 
 Also, competing in BJJ is scary fun!
 
