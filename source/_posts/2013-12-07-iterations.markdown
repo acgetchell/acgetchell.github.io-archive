@@ -30,9 +30,9 @@ First, for scientific research MacOS < (Windows)++.
 
 I've tried both, I simply get more done in MacOS. Mainly, it's because there's generations of Unix tools I can still use in an honest bash shell. [Homesick][2] is simply lovely for managing your dotfiles, and [bash-it][3] is another awesome shell configuration management tool). I pretty much live in [GitHub][4] for anything public (research papers and code, presentations, work projects, and this blog) and with tools like [Homebrew][5] I can restore my development environment and files on any Mac I care to just by running a shell script.
 
-Second, any large complex pieces of software that I find worth purchasing such as Mathematica, Maple, Office, MindNode Pro, Parallels, [SublimeText][6], or [1Password][7] already runs fine on MacOS. As do myriads of other useful free or open source tools like (let me look at my Dock) [Chrome][8], [Tor][9], [DashDoc][10], [GitHub][11], [LightTable][12], [EverNote][13], [Zotero][14], [Anki][15], and [TrueCrypt][16]. And then there's the software Apple bundles such as XCode iTunes, iMessage, iWork, iMovie, and Garage band. Let's not forget that any non-console games I care about work great on [Battle.Net][17] or [Steam][18]. Or that the AppStore keeps paid apps in the cloud, and Homebrew/Homesick keeps the rest. Finally, if there are any Windows tools I absolutely have to have such as [Visual Studio][19] or modern versions of Outlook, [Parallels][20] works dandy.
+Second, any large complex pieces of software that I find worth purchasing such as Mathematica, Maple, Office, MindNode Pro, Parallels, [SublimeText][6], or [1Password][7] already runs fine on MacOS. As do myriads of other useful free or open source tools such as (let me look at my Dock) [Chrome][8], [Tor][9], [DashDoc][10], [GitHub][11], [LightTable][12], [EverNote][13], [Zotero][14], [Anki][15], and [TrueCrypt][16]. And then there's the software Apple bundles such as XCode, iTunes, iMessage, iWork, iMovie, and Garage band. Let's not forget that any non-console games I care about work great on [Battle.Net][17] or [Steam][18]. Or that the AppStore keeps paid apps in the cloud, and Homebrew/Homesick keeps the rest. Finally, if there are any Windows tools I absolutely have to have such as [Visual Studio][19] or modern versions of Outlook, [Parallels][20] works dandy.
 
-Now, putting on my IT hat for a moment, if you are in a corporate environment and don't care one whit about the command line, then Windows is the best for you. Or rather, you're probably indiffernt (although you may want *teh shiny*), but for your tech staff, Windows machines can be managed by the thousands with relative ease. Microsoft actually supports doing so in an efficient business fashion. Apple simply doesn't care about the enterprise space, and [Google's][21] [toolkit][22] doesn't quite fill in the gaps (although I am sure that [Puppet][23] masters will disagree with me).
+Now, putting on my IT hat for a moment, if you are in a corporate environment and don't care one whit about the command line, then Windows is the best for you. Or rather, you're probably indifferent (although you may want *teh shiny*), but for your tech staff, Windows machines can be managed by the thousands with relative ease. Microsoft actually supports doing so in an efficient business fashion. Apple simply doesn't care about the enterprise space, and [Google's][21] [toolkit][22] doesn't quite fill in the gaps (although I am sure that [Puppet][23] masters will disagree with me).
 
 Also, if you live in [Azure][24] or Visual Studio or like the [Surface][25] hardware (and they are interesting) Windows has got it going (although some of us just buy Macs and load Windows, because the hardware is still [shiny][26]).
 
@@ -62,14 +62,14 @@ I [moved from Blogger][41] to [Octopress][42] for a number of reasons.
 - I want to [reclaim my network identity][44], and a platform that I can regenerate anyplace with just a `git pull`
 - Mirroring the move to C++, this blog is written very infrequently but read, well more often than it is written. So the overhead of a database and a dynamic site is not worth it.
 - Did I mention it works in git and GitHub? I live there these days. And the [bash-it git aliases][45] rock!
-- `rake preview` `rake generate` `rake deploy` then `gall` `gca` `gpo source` is a lovely workflow
-- Lot's of lovely [resources][46] [to][47] [get][48] [going][49].
+- `rake preview` `rake generate` `rake deploy` then `gall` `gca` `gpo source` is a lovely workflow.
+- Lot's of [resources][46] [to][47] [get][48] [going][49].
 
 
 Prismbreak++
 ------------
 
-We all kinda knew it. The internet is a vast info-trawl for almost anything, but especially all the private info people are trading away for services. Getting your own independent network identity is just the first step, but there are many, many others (and quite a few inconviences, after all there's a reason folks want to use the privacy-invading "free" services). I'll (possibly) have more to say on this later.
+We all kinda knew it. The internet is a vast info-trawl for almost anything, but especially all the private info people are trading away for services. Getting your own independent network identity is just the [first step][50], but there are many, many others, and quite a few inconviences. After all there's a reason folks want to use the privacy-invading "free" services, and no I don't want to Linux for my laptop. I'll (possibly) have more to say on this later.
 
 Martial Arts++
 --------------
@@ -88,11 +88,13 @@ And on the ground, of course, Brazilian Jiu-Jitsu is king.
 
 All of these statements are pretty easily tested. You can personally test it by going to boxing clubs, wrestling workouts, and BJJ gyms and see how you fare in these areas. Or you can just watch UFC and see professionals do the same.
 
-And if you object that all of these places have rules, and aren't a real fight, I'd like you to tell me why you think various dirty tricks will win the day for you, especially when you're in an inferior position where your opponent can do the same back to you, but 10x worse.
+And if you object that all of these places have rules, and aren't a real fight: please tell me why you think various dirty tricks will win the day for you, especially when you're in an inferior position where your opponent can do the same back to you (but 10x worse).
 
-I teach Hapkido at the university, and I've always loved that Hapkido *did* learn techniques in all of these areas. I learned and competed in Taekwondo and Judo, and Hapkido synthesized them all together. It was good for practical self-defense. I try to teach it as such.
+I teach Hapkido at the university, and I've always enjoyed that Hapkidoja *did* learn techniques in all of these areas. I competed in Taekwondo and Judo, and Hapkido synthesized them all together. It was good for practical self-defense. I try to teach it as such.
 
-But times change and things develop, and it's time to adapt and learn what works. And my [BJJ academy][50], [professor][51], and jiu-jitsu family rock!
+(Yes, martial arts with sporting equivalents are superior. Nothing beats realistic practice.)
+
+But times change and things develop, and it's time to adapt and learn what works. And my [BJJ academy][51], [professor][52], and jiu-jitsu family rock!
 
 Also, competing in BJJ is scary fun!
 
@@ -145,5 +147,6 @@ Also, competing in BJJ is scary fun!
 [47]: http://jekyllrb.com
 [48]: https://github.com/robertkowalski/octopress-coderwall
 [49]: http://asaf.github.io/blog/2013/07/08/blogging-with-octopress-add-about-page/
-[50]: http://fabiopradobjj.com
-[51]: http://fabiopradobjj.com/about-fabio-prad0/
+[50]: https://prism-break.org
+[51]: http://fabiopradobjj.com
+[52]: http://fabiopradobjj.com/about-fabio-prad0/
