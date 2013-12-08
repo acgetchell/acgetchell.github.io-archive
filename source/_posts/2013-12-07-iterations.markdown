@@ -9,7 +9,7 @@ categories:
     - octopress
     - prismbreak
     - bjj
-published: false
+published: true
 ---
 
 It's been quite awhile since the last post, with lots of changes. I've:
@@ -86,13 +86,13 @@ I learned Judo and love the throws, but I'd rate it below Wrestling and Sambo in
 
 And on the ground, of course, Brazilian Jiu-Jitsu is king.
 
-All of these statements are pretty easily tested. You can personally test it by going to boxing clubs, wrestling works, and BJJ gyms and see how you fare in these areas. Or you can just watch UFC and see professionals do the same.
+All of these statements are pretty easily tested. You can personally test it by going to boxing clubs, wrestling workouts, and BJJ gyms and see how you fare in these areas. Or you can just watch UFC and see professionals do the same.
 
 And if you object that all of these places have rules, and aren't a real fight, I'd like you to tell me why you think various dirty tricks will win the day for you, especially when you're in an inferior position where your opponent can do the same back to you, but 10x worse.
 
 I teach Hapkido at the university, and I've always loved that Hapkido *did* learn techniques in all of these areas. I learned and competed in Taekwondo and Judo, and Hapkido synthesized them all together. It was good for practical self-defense.
 
-But times change and new things develop, and it's time to adapt and learn what works.
+But times change and new things develop, and it's time to adapt and learn what works. And my [BJJ academy][50], [professor][51], and jiu-jitsu family rock!
 
 Also, competing in BJJ is scary fun!
 
@@ -145,3 +145,5 @@ Also, competing in BJJ is scary fun!
 [47]: http://jekyllrb.com
 [48]: https://github.com/robertkowalski/octopress-coderwall
 [49]: http://asaf.github.io/blog/2013/07/08/blogging-with-octopress-add-about-page/
+[50]: http://fabiopradobjj.com
+[51]: http://fabiopradobjj.com/about-fabio-prad0/
