@@ -69,7 +69,7 @@ I [moved from Blogger][41] to [Octopress][42] for a number of reasons.
 Prismbreak++
 ------------
 
-We all kinda knew it. The internet is a vast info-trawl for almost anything, but especially all the private info people are trading away for services. Getting your own independent network identity is just the [first step][50], but there are many, many others, and quite a few inconviences. After all there's a reason folks want to use the privacy-invading "free" services, and no I don't want to Linux for my laptop. I'll (possibly) have more to say on this later.
+We all kinda knew it. The internet is a vast info-trawl for almost anything, but especially all the private info people are trading away for services. Getting your own independent network identity is just the [first step][50], but there are many, many others (such as using [TrueCrypt][16] for any cloud file storage on any files you care to keep private). There are also quite a few inconviences; after all there's a reason folks use the privacy-invading "[free][51]" services, and no I don't want Linux for my primary laptop. I'll (possibly) have more to say on this later.
 
 Martial Arts++
 --------------
@@ -94,7 +94,7 @@ I teach Hapkido at the university, and I've always enjoyed that Hapkidoja *did* 
 
 (Yes, martial arts with sporting equivalents are superior. Nothing beats realistic practice.)
 
-But times change and things develop, and it's time to adapt and learn what works. And my [BJJ academy][51], [professor][52], and jiu-jitsu family rock!
+But times change and things develop, and it's time to adapt and learn what works. And my [BJJ academy][52], [professor][53], and jiu-jitsu family rock!
 
 Also, competing in BJJ is scary fun!
 
@@ -148,5 +148,6 @@ Also, competing in BJJ is scary fun!
 [48]: https://github.com/robertkowalski/octopress-coderwall
 [49]: http://asaf.github.io/blog/2013/07/08/blogging-with-octopress-add-about-page/
 [50]: https://prism-break.org
-[51]: http://fabiopradobjj.com
-[52]: http://fabiopradobjj.com/about-fabio-prad0/
+[51]: http://lifehacker.com/5697167/if-youre-not-paying-for-it-youre-the-product
+[52]: http://fabiopradobjj.com
+[53]: http://fabiopradobjj.com/about-fabio-prad0/
