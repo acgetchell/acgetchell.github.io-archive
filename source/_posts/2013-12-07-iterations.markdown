@@ -28,7 +28,7 @@ MacOS++
 -------
 First, for scientific research MacOS < (Windows)++. 
 
-I've tried both, I simply get more done in MacOS. Mainly, it's because there's generations of Unix tools I can still use in an honest bash shell. [Homesick][2] is simply lovely for managing your dotfiles, and [bash-it][3] is another awesome shell configuration management tool). I pretty much live in [GitHub][4] for anything public (research papers and code, presentations, work projects, and this blog) and with tools like [Homebrew][5] I can restore my development environment and files on any Mac I care to just by running a shell script.
+I've tried both, I simply get more done in MacOS. Mainly, it's because there's generations of Unix tools I can still use in an honest bash shell. [Homesick][2] is simply lovely for managing your dotfiles, and [bash-it][3] is another awesome shell configuration management tool. I pretty much live in [GitHub][4] for anything public (research papers and code, presentations, work projects, and this blog) and with tools like [Homebrew][5] I can restore my development environment and files on any Mac I care to just by running a shell script.
 
 Second, any large complex pieces of software that I find worth purchasing such as Mathematica, Maple, Office, MindNode Pro, Parallels, [SublimeText][6], or [1Password][7] already runs fine on MacOS. As do myriads of other useful free or open source tools such as (let me look at my Dock) [Chrome][8], [Tor][9], [DashDoc][10], [GitHub][11], [LightTable][12], [EverNote][13], [Zotero][14], [Anki][15], and [TrueCrypt][16]. And then there's the software Apple bundles such as XCode, iTunes, iMessage, iWork, iMovie, and Garage band. Let's not forget that any non-console games I care about work great on [Battle.Net][17] or [Steam][18]. Or that the AppStore keeps paid apps in the cloud, and Homebrew/Homesick keeps the rest. Finally, if there are any Windows tools I absolutely have to have such as [Visual Studio][19] or modern versions of Outlook, [Parallels][20] works dandy.
 
@@ -69,7 +69,9 @@ I [moved from Blogger][41] to [Octopress][42] for a number of reasons.
 Prismbreak++
 ------------
 
-We all kinda knew it. The internet is a vast info-trawl for almost anything, but especially all the private info people are trading away for services. Getting your own independent network identity is just the [first step][50], but there are many, many others (such as using [TrueCrypt][16] for any cloud file storage on any files you care to keep private). There are also quite a few inconviences; after all there's a reason folks use the privacy-invading "[free][51]" services, and no I don't want Linux for my primary laptop. I'll (possibly) have more to say on this later.
+We [all][50] [kinda][51] [knew][52] [it][53]. The internet is a vast info-trawl for almost anything, but especially [all the private info people are trading away for services][54]. Getting your own independent network identity is just the [first step][55], but there are many, many others (such as using [TrueCrypt][16] for any cloud file storage on any files you care to keep private). There are also quite a few inconviences; after all there's a reason folks use the privacy-invading "[free][54]" services, and no I don't want Linux for my primary laptop. I'll (possibly) have more to say on this later.
+
+(If you *are* going to pick an operating system for privacy, the best choice is [OpenBSD][56].)
 
 Martial Arts++
 --------------
@@ -94,7 +96,7 @@ I teach Hapkido at the university, and I've always enjoyed that Hapkidoja *did* 
 
 (Yes, martial arts with sporting equivalents are superior. Nothing beats realistic practice.)
 
-But times change and things develop, and it's time to adapt and learn what works. And my [BJJ academy][52], [professor][53], and jiu-jitsu family rock!
+But times change and things develop, and it's time to adapt and learn what works. And my [BJJ academy][57], [professor][58], and jiu-jitsu family rock!
 
 Also, competing in BJJ is scary fun!
 
@@ -147,7 +149,13 @@ Also, competing in BJJ is scary fun!
 [47]: http://jekyllrb.com
 [48]: https://github.com/robertkowalski/octopress-coderwall
 [49]: http://asaf.github.io/blog/2013/07/08/blogging-with-octopress-add-about-page/
-[50]: https://prism-break.org
-[51]: http://lifehacker.com/5697167/if-youre-not-paying-for-it-youre-the-product
-[52]: http://fabiopradobjj.com
-[53]: http://fabiopradobjj.com/about-fabio-prad0/
+[50]: https://www.aclu.org/technology-and-liberty/internet-privacy
+[51]: https://www.eff.org/nsa-spying
+[52]: http://www.foxnews.com/politics/2013/11/19/docs-say-nsa-repeatedly-assured-court-it-would-stop-surveillance-rules
+[53]: http://www.wired.com/threatlevel/2012/03/ff_nsadatacenter/
+[54]: http://lifehacker.com/5697167/if-youre-not-paying-for-it-youre-the-product
+[55]: https://prism-break.org
+[56]: http://www.openbsd.org
+[57]: http://fabiopradobjj.com
+[58]: http://fabiopradobjj.com/about-fabio-prad0/
+
