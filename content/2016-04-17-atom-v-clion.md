@@ -3,8 +3,7 @@ Date: 2016-04-17
 Category: Programming
 Tags: c++
 
-So today I decided to give [CLion][1] a try. After all, I need all the help I
-can get.
+So today I decided to give [CLion][1] a try. I need all the help I can get.
 
 [Atom][2] is very nice, and I've been using it since 0.1 for everything from
 $\LaTeX$ing papers to writing this blog to everyday coding in C++. However, my

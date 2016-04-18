@@ -26,7 +26,7 @@ CLOUDFILES_CONTAINER=my_cloudfiles_container
 DROPBOX_DIR=~/Dropbox/Public/
 
 GITHUB_PAGES_ORIGIN=git@github.com:acgetchell/acgetchell.github.io.git
-GITHUB_PAGES_ORIGIN_BRANCH=gh-pages
+GITHUB_PAGES_ORIGIN_BRANCH=source
 GITHUB_PAGES_BRANCH=master
 
 DEBUG ?= 0
