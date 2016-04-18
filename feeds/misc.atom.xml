@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Adam's Entropy</title><link href="http://adamgetchell.org/" rel="alternate"></link><link href="http://adamgetchell.org/feeds/misc.atom.xml" rel="self"></link><id>http://adamgetchell.org/</id><updated>2013-12-07T18:56:50-08:00</updated><entry><title>Iterations</title><link href="http://adamgetchell.org/iterations.html" rel="alternate"></link><updated>2013-12-07T18:56:50-08:00</updated><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2013-12-07:iterations.html</id><summary type="html">&lt;p&gt;It&amp;#8217;s been quite awhile since the last post, with lots of changes.&amp;nbsp;I&amp;#8217;ve:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Adam's Entropy</title><link href="http://adamgetchell.org/" rel="alternate"></link><link href="http://adamgetchell.org/feeds/misc.atom.xml" rel="self"></link><id>http://adamgetchell.org/</id><updated>2013-12-07T18:56:50-08:00</updated><entry><title>Iterations</title><link href="http://adamgetchell.org/iterations.html" rel="alternate"></link><published>2013-12-07T18:56:50-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2013-12-07:iterations.html</id><summary type="html">&lt;p&gt;It&amp;#8217;s been quite awhile since the last post, with lots of changes.&amp;nbsp;I&amp;#8217;ve:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Converted to&amp;nbsp;MacOS&lt;/li&gt;
 &lt;li&gt;Changed my research codebase to&amp;nbsp;C++&lt;/li&gt;
@@ -49,7 +49,7 @@
 &lt;p&gt;I teach Hapkido at the university, and I&amp;#8217;ve always enjoyed that Hapkidoja &lt;em&gt;did&lt;/em&gt; learn techniques in all of these areas. I competed in Taekwondo and Judo, and Hapkido synthesized them all together. It was good for practical self-defense. I try to teach it as&amp;nbsp;such.&lt;/p&gt;
 &lt;p&gt;(Yes, martial arts with sporting equivalents are superior. Nothing beats realistic&amp;nbsp;practice.)&lt;/p&gt;
 &lt;p&gt;But times change and things develop, and it&amp;#8217;s time to adapt and learn what works. And my &lt;a href="http://fabiopradobjj.com"&gt;&lt;span class="caps"&gt;BJJ&lt;/span&gt; academy&lt;/a&gt;, &lt;a href="http://fabiopradobjj.com/about-fabio-prad0/"&gt;professor&lt;/a&gt;, and jiu-jitsu family&amp;nbsp;rock!&lt;/p&gt;
-&lt;p&gt;Also, competing in &lt;span class="caps"&gt;BJJ&lt;/span&gt; is scary&amp;nbsp;fun!&lt;/p&gt;</summary><category term="macos"></category><category term="c++"></category><category term="octopress"></category><category term="prismbreak"></category><category term="bjj"></category></entry><entry><title>Hapkido Practicum Fall 2009</title><link href="http://adamgetchell.org/hapkido-practicum-fall-2009_29.html" rel="alternate"></link><updated>2011-12-20T07:58:00-08:00</updated><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2011-12-20:hapkido-practicum-fall-2009_29.html</id><summary type="html">&lt;div style="text-align: center;"&gt;
+&lt;p&gt;Also, competing in &lt;span class="caps"&gt;BJJ&lt;/span&gt; is scary&amp;nbsp;fun!&lt;/p&gt;</summary><category term="macos"></category><category term="c++"></category><category term="octopress"></category><category term="prismbreak"></category><category term="bjj"></category></entry><entry><title>Hapkido Practicum Fall 2009</title><link href="http://adamgetchell.org/hapkido-practicum-fall-2009_29.html" rel="alternate"></link><published>2011-12-20T07:58:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2011-12-20:hapkido-practicum-fall-2009_29.html</id><summary type="html">&lt;div style="text-align: center;"&gt;
 
 &lt;span style="font-size: 100%;"&gt;&lt;span id="hpy."&gt;[Physical Education
 Program, &lt;span class="caps"&gt;UC&lt;/span&gt;
@@ -107,7 +107,7 @@ id="f7lx"&gt;&lt;a href="http://www.youtube.com/watch?v=zu-tix0pdQY" title="MMA 
 &lt;span id="c0.s"&gt;&lt;a href="http://www.youtube.com/watch?v=LhezbNHHYno" title="Elbow strike tutorial"&gt;elbow&amp;nbsp;strikes&lt;/a&gt;&lt;/span&gt;  &lt;/p&gt;
 &lt;p&gt;Further updates can be found at:
 &lt;a href="http://docs.google.com/View?id=dckp3cwx_62csk8r4gk"&gt;http://docs.google.com/View?id=dckp3cwx_62csk8r4gk&lt;/a&gt;&lt;/p&gt;
-&lt;/p&gt;</summary><category term="hapkido"></category></entry><entry><title>Socialism, Capitalism, Spending, oh my!</title><link href="http://adamgetchell.org/socialism-capitalism-spending-oh-my.html" rel="alternate"></link><updated>2010-12-04T01:50:00-08:00</updated><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2010-12-04:socialism-capitalism-spending-oh-my.html</id><summary type="html">&lt;p&gt;For a change of pace, I&amp;#8217;m going to ruminate on the state of affairs as I
+&lt;/p&gt;</summary><category term="hapkido"></category></entry><entry><title>Socialism, Capitalism, Spending, oh my!</title><link href="http://adamgetchell.org/socialism-capitalism-spending-oh-my.html" rel="alternate"></link><published>2010-12-04T01:50:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2010-12-04:socialism-capitalism-spending-oh-my.html</id><summary type="html">&lt;p&gt;For a change of pace, I&amp;#8217;m going to ruminate on the state of affairs as I
 see&amp;nbsp;them.&lt;/p&gt;
 &lt;div&gt;
 
@@ -650,7 +650,7 @@ Okay, back to considering things I have somewhat of a clue about.
 
 &lt;/div&gt;
 
-&lt;/p&gt;</summary><category term="politics"></category></entry><entry><title>Microsoft Security Awareness training</title><link href="http://adamgetchell.org/microsoft-security-awareness-training.html" rel="alternate"></link><updated>2007-09-22T23:41:00-07:00</updated><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:microsoft-security-awareness-training.html</id><summary type="html">&lt;p&gt;&lt;a href="http://www.atrevido.net/blog/PermaLink.aspx?guid=256b6bb4-f6f4-43a5-985b-7fe5796b809c"&gt;This&lt;/a&gt;
+&lt;/p&gt;</summary><category term="politics"></category></entry><entry><title>Microsoft Security Awareness training</title><link href="http://adamgetchell.org/microsoft-security-awareness-training.html" rel="alternate"></link><published>2007-09-22T23:41:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:microsoft-security-awareness-training.html</id><summary type="html">&lt;p&gt;&lt;a href="http://www.atrevido.net/blog/PermaLink.aspx?guid=256b6bb4-f6f4-43a5-985b-7fe5796b809c"&gt;This&lt;/a&gt;
 is just too funny to pass&amp;nbsp;up.  &lt;/p&gt;
 &lt;p&gt;So far, &lt;a href="http://windowssecrets.com/050127/#story1"&gt;malware&amp;#8217;s winning the war of
 attrition&lt;/a&gt;.  &lt;/p&gt;
