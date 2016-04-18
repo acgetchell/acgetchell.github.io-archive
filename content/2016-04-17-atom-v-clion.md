@@ -10,9 +10,13 @@ students, teachers, and non-commercial open source projects][7].)
 
 [Atom][2] is very nice, and I've been using it since 0.1 for everything from
 $\LaTeX$ing papers to writing this blog to everyday coding in C++. However, my
-latest travails involve heavy use of the [debugger][3], and doing that on the
-command line is not so nice. So I was lured in with the promise of a nice,
-graphical debugger in an honest IDE.
+latest travails involve heavy use of the [debugger][3], and doing so with
+heavily templated code on the command line is not so nice.
+
+![Debugging on the command line](images/cli-debugger.png)
+
+So I was lured in with the promise of a nice, graphical debugger in an honest
+IDE.
 
 After tinkering around with it for an hour or so, and trawling through the
 forums, I've managed to get CLion to look very close to my Atom setup, except
@@ -35,7 +39,7 @@ perceptibly (but a [hack][5] exists).
 (but see the [roadmap for 2016.2][5]).
 - The debugger skips right past my set breakpoints.
 
-Sadly, that last one is pretty much a dealbreaker.
+Sadly, the last two are pretty much dealbreakers.
 
 I've submitted a support request, and I really think that CLion 2016.2 looks
 very promising.
