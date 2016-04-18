@@ -54,10 +54,18 @@ TWITTER_USERNAME = 'adamgetchell'
 TWITTER_WIDGET_ID = 701556215399194624
 AVATAR = 'images/adam_ben.jpg'
 ABOUT_ME = 'Physics and computing'
-STATIC_PATHS = ['images', 'extra/CNAME', 'extra/favicon.ico']
+STATIC_PATHS = [
+    'images',
+    'extra/CNAME',
+    'extra/favicon.ico',
+    'extra/apple-icon-precomposed.png',
+    'extra/apple-icon.png'
+]
 EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
-    'extra/favicon.ico': {'path': 'favicon.ico'}
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/apple-icon': {'path': 'apple-icon.png'},
+    'extra/apple-icon-precomposed': {'path': 'apple-icon-precomposed.png'}
 }
 RESPONSIVE_IMAGES = True
 TYPOGRIFY = True
