@@ -26,7 +26,7 @@ CLOUDFILES_CONTAINER=my_cloudfiles_container
 DROPBOX_DIR=~/Dropbox/Public/
 
 GITHUB_PAGES_ORIGIN=git@github.com:acgetchell/acgetchell.github.io.git
-GITHUB_PAGES_ORIGIN_BRANCH=source
+GITHUB_PAGES_ORIGIN_BRANCH=gh-pages
 GITHUB_PAGES_BRANCH=master
 
 DEBUG ?= 0
@@ -106,10 +106,8 @@ cf_upload: publish
 	cd $(OUTPUTDIR) && swift -v -A https://auth.api.rackspacecloud.com/v1.0 -U $(CLOUDFILES_USERNAME) -K $(CLOUDFILES_API_KEY) upload -c $(CLOUDFILES_CONTAINER) .
 
 github: publish
-	# ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
-	# git push $(GITHUB_PAGES_ORIGIN) $(GITHUB_PAGES_ORIGIN_BRANCH):$(GITHUB_PAGES_BRANCH)
 	pelican content -o output -s pelicanconf.py
-	ghp-import output
-	git push origin gh-pages:master
+	ghp-import -m "Generate Pelican site" $(OUTPUTDIR)
+	git push $(GITHUB_PAGES_ORIGIN) $(GITHUB_PAGES_ORIGIN_BRANCH):$(GITHUB_PAGES_BRANCH) --force
 
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
