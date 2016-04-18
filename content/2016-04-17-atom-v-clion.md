@@ -27,7 +27,9 @@ really bothers me.
 Pros:
 
 - Code completion is nice.
-- Refactoring is wonderful.
+- Refactoring is wonderful. Also, CLion is smart enough to point out things
+you don't need, such as .gitignore items covered by other definitions. In
+general, CLion seems to have a lot of best practices baked right in.
 - It's really nice to be working with a tool that understands the C++
 constructs, instead of just doing some clever pattern matching.
 
