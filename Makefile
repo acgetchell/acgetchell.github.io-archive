@@ -110,6 +110,6 @@ github: publish
 	# git push $(GITHUB_PAGES_ORIGIN) $(GITHUB_PAGES_ORIGIN_BRANCH):$(GITHUB_PAGES_BRANCH)
 	pelican content -o output -s pelicanconf.py
 	ghp-import output
-	git push origin master
+	git push origin gh-pages:master
 
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
