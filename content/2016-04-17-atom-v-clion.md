@@ -5,6 +5,9 @@ Tags: c++
 
 Today I decided to give [CLion][1] a try. I need all the help I can get.
 
+(I also should mention that JetBrains generously gives [free CLion licenses to
+students, teachers, and non-commercial open source projects][7].)
+
 [Atom][2] is very nice, and I've been using it since 0.1 for everything from
 $\LaTeX$ing papers to writing this blog to everyday coding in C++. However, my
 latest travails involve heavy use of the [debugger][3], and doing that on the
@@ -50,3 +53,4 @@ But as of now I'll still be writing/coding in Atom.
 [4]: https://ninja-build.org
 [5]: http://nevkontakte.com/2015/rogue-ninja-support-in-clion.html
 [6]: https://blog.jetbrains.com/clion/2016/03/clion-2016-2-roadmap/
+[7]: https://www.jetbrains.com/clion/buy/#edition=discounts
