@@ -1,7 +1,7 @@
 Title: Causal Dynamical Triangulations
 Date: 2008-08-01 08:33
 Author: Adam Getchell
-Tags: quantum gravity, vmware, ubuntu, cdt
+Tags: cdt, quantum gravity, vmware, ubuntu
 Slug: causal-dynamical-triangulations
 Category: Physics
 

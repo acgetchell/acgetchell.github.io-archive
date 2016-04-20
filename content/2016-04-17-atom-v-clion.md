@@ -1,7 +1,7 @@
 Title: Atom vs. CLion
 Date: 2016-04-17
 Category: Programming
-Tags: c++
+Tags: c++, atom, clion
 
 Today I decided to give [CLion][1] a try. I need all the help I can get.
 

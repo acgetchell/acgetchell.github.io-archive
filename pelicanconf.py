@@ -21,7 +21,8 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 THEME = 'pelican-themes/pelican-bootstrap3'
 PLUGIN_PATHS = ['pelican-plugins']
-PLUGINS = ['gravatar', 'pelican_gist', 'render_math', 'neighbors', 'tag_cloud']
+PLUGINS = ['gravatar', 'pelican_gist', 'render_math', 'neighbors',
+           'tag_cloud', 'related_posts']
 
 # Blogroll
 LINKS = (('Mozilla Science Lab', 'http://mozillascience.org'),
@@ -40,19 +41,22 @@ DEFAULT_PAGINATION = 5
 RELATIVE_URLS = True
 
 TAG_CLOUD_STEPS = 4
-TAG_CLOUD_MAX_ITEMS = 7
+TAG_CLOUD_MAX_ITEMS = 9
 TAG_CLOUD_BADGE = True
 TAG_CLOUD_SORTING = 'random'
-DISPLAY_TAGS_ON_SIDEBAR = False
+DISPLAY_TAGS_ON_SIDEBAR = True
+DISPLAY_TAGS_INLINE = True
 SHOW_ARTICLE_CATEGORY = True
 DISPLAY_BREADCRUMBS = True
 DISPLAY_CATEGORY_IN_BREADCRUMBS = True
 DISPLAY_ARTICLE_INFO_ON_INDEX = True
 GITHUB_USER = 'acgetchell'
+GITHUB_REPO_COUNT = 4
 TWITTER_CARDS = True
 TWITTER_USERNAME = 'adamgetchell'
 TWITTER_WIDGET_ID = 701556215399194624
 AVATAR = 'images/adam_ben.jpg'
+# BANNER = 'images/adam_ben.jpg'
 ABOUT_ME = 'Physics and computing'
 STATIC_PATHS = [
     'images',
@@ -69,3 +73,4 @@ EXTRA_PATH_METADATA = {
 }
 RESPONSIVE_IMAGES = True
 TYPOGRIFY = True
+FAVICON = 'favicon.ico'

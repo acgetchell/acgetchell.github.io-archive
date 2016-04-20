@@ -18,13 +18,58 @@ Next, add the following to your $\LaTeX$ preamble: I know the package
 name says **feynmp**; if you use that, you'll have a lot more errors.
 The feynmp package is nicer, and included when you install feynmf.
 
-[gist:id=3595449,file=feynmp-preamble.tex]  
+<!-- [gist:id=3595449,file=feynmp-preamble-tex] -->
+```TeX
+\usepackage[final]{feynmp}
+\DeclareGraphicsRule{*}{mps}{*}{}
+\makeatletter
+\def\endfmffile{%
+	\fmfcmd{\p@rcent\space the end.^^J%
+			end.^^J%
+			endinput;}%
+	\if@fmfio
+		\immediate\closeout\@outfmf
+	\fi
+	\ifnum\pdfshellescape=\@ne
+		\immediate\write18{mpost \thefmffile}%
+	\fi}
+\makeatother
+\title{Your title}
+\author{You \\
+    \texttt{Your email}}
+\date{\today}
+\begin{document}
+	\unitlength = 1mm
+```  
 
 Now, let's say you want to add a diagram for Compton scattering (the
 point of the whole exercise). I suggest wrapping it in a $\LaTeX$
 figure for convenience; doing so will lead to something like this:
 
-<!-- [gist:id=3595628,file=compton.tex] -->
+<!-- [gist:id=3595628,file=compton-tex] -->
+```TeX
+\begin{figure}
+	\centering
+	\begin{fmffile}{compton}
+		\begin{fmfgraph*}(80,50)
+			\fmfleft{i1,i2}
+			\fmfright{o1,o2}
+
+			\fmflabel{$\gamma$}{i2}
+			\fmflabel{$e^-$}{i1}
+			\fmflabel{$\gamma$}{o1}
+			\fmflabel{$e^-$}{o2}
+
+			\fmf{photon}{i2,v2}
+			\fmf{fermion}{i1,v1,v2,o2}
+			\fmf{photon}{v1,o1}
+		\end{fmfgraph*}
+	\end{fmffile}
+
+	\caption[Compton Scattering]{Feynman diagram for Compton scattering}
+	\label{fig:compton-scattering}
+\end{figure}
+```
 
 Note the name of the file is compton. In your $\LaTeX$ working directory,
 there will be a file called compton.mp. You need to run the mpost
