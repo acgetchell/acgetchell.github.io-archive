@@ -33,6 +33,8 @@ general, CLion seems to have a lot of best practices baked right in.
 - It's really nice to be working with a tool that understands the
 [C++ constructs][8], instead of just doing some clever pattern matching.
 
+![CLion with CodeGlance](images/clion-codeglance.png)
+
 Cons:
 
 - No option to use [Ninja][4] as my build tool. This increases build times
@@ -46,7 +48,7 @@ Sadly, the last two are pretty much dealbreakers.
 I've submitted a support request, and I really think that CLion 2016.2 looks
 very promising.
 
-But as of now I'll still be writing/coding in Atom.
+But as of now I'll still be writing/<del>coding</del> in Atom.
 
 
 

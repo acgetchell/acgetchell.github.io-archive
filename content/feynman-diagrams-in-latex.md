@@ -24,7 +24,7 @@ Now, let's say you want to add a diagram for Compton scattering (the
 point of the whole exercise). I suggest wrapping it in a $\LaTeX$
 figure for convenience; doing so will lead to something like this:
 
-[gist:id=3595628,file=compton.tex]
+<!-- [gist:id=3595628,file=compton.tex] -->
 
 Note the name of the file is compton. In your $\LaTeX$ working directory,
 there will be a file called compton.mp. You need to run the mpost
