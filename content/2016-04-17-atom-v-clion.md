@@ -50,7 +50,15 @@ very promising.
 
 But as of now I'll still be writing/<del>coding</del> in Atom.
 
+**UPDATE 2016-04-25**
 
+Debugging works now, it's reportedly an issue with symbolic links in the project
+path, and improvements are expected in the next version. I've configured
+Run/Debug so that GoogleTests are pleasant to use now, as is the VCS GitHub
+integration. CLion has now replaced my Terminal window and GitHub desktop, so
+I'm pretty comfortable coding in CLion now, and don't really want to go back.
+
+![CLion Debugging](images/clion-debugging.png)
 
 
 
