@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = u'Adam Getchell'
 SITENAME = u"Adam's Entropy"
 SITESUBTITLE = u"One particular random walk through life"
-SITEURL = 'http://adamgetchell.org'
+SITEURL = 'https://adamgetchell.org'
 
 PATH = 'content'
 
@@ -29,11 +29,13 @@ LINKS = (('Mozilla Science Lab', 'http://mozillascience.org'),
          ('Current CDT papers', 'http://arxiv.org/find/all/1/all:+AND+triangulations+AND+causal+dynamical/0/1/0/all/0/1'),)
 
 # Social widget
-SOCIAL = (('AboutMe', 'http://about.me/adamgetchell'),
+SOCIAL = (('AboutMe', 'https://about.me/adamgetchell'),
+          ('GitHub', 'https://github.com/acgetchell'),
+          ('Keybase', 'https://keybase.io/adamgetchell'),
+          ('LastFM', 'http://www.last.fm/user/adamgetchell'),
+          ('LinkedIn','https://www.linkedin.com/in/adamgetchell'),
           ('Twitter', 'https://twitter.com/adamgetchell'),
-          ('LinkedIn','http://www.linkedin.com/in/adamgetchell'),
-          ('GitHub', 'http://github.com/acgetchell'),
-          ('LastFM', 'http://www.last.fm/user/adamgetchell'),)
+          )
 
 DEFAULT_PAGINATION = 5
 

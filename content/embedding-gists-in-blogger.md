@@ -30,14 +30,14 @@ Computing](http://fsharpnews.blogspot.com/2010/04/visual-f-2010-for-technical-co
 First, we want a union type which represents (i.e. abstracts away) the
 F\# type system:  
 
-
+<script src="https://gist.github.com/acgetchell/926997.js"></script>
 
 Next, we want a (recursive) function (called, straightforwardly enough,
-type\_of) that reflects (using FSharpType) and translates a given
-System.Type object into one of the 'a ty union types defined
+`type_of`) that reflects (using FSharpType) and translates a given
+`System.Type` object into one of the `'a ty` union types defined
 previously:  
 
-
+<script src="https://gist.github.com/acgetchell/926994.js"></script>
 
 This then allows us to emit the following two liner which can parse
 objects such as the List.fold function! (Note: everything after the ;;
