@@ -65,13 +65,15 @@ STATIC_PATHS = [
     'extra/CNAME',
     'extra/favicon.ico',
     'extra/apple-icon-precomposed.png',
-    'extra/apple-icon.png'
+    'extra/apple-icon.png',
+    'extra/keybase.txt'
 ]
 EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
     'extra/favicon.ico': {'path': 'favicon.ico'},
     'extra/apple-icon': {'path': 'apple-icon.png'},
-    'extra/apple-icon-precomposed': {'path': 'apple-icon-precomposed.png'}
+    'extra/apple-icon-precomposed': {'path': 'apple-icon-precomposed.png'},
+    'extra/keybase.txt': {'path': 'keybase.txt'}
 }
 RESPONSIVE_IMAGES = True
 TYPOGRIFY = True
