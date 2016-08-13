@@ -31,7 +31,8 @@ ProtonMail has encrypted identities in order to retrieve your data, is housed
 in Switzerland (so certain entities won't obtain access easily), is encrypted
 again with your own key which ProtonMail doesn't know so that they cannot
 access your data even if certain entities force them to hand it over, has mobile app versions, and implements all the right sorts of technologies to
-patch up the leaky sieve of general purpose electronic correspondence.
+patch up the leaky sieve of general purpose electronic correspondence while
+still remaining useful to non-Sendmail-grognards.
 
 Now, if I'm going to bother to have a vanity domain like [adamgetchell.org][4],
 I may as well have an email address like adam@... So while the free version of
@@ -83,7 +84,7 @@ On Joker I can specify the CloudFlare will be my DNS server like so:
 
 ![CloudFlare DNS Settings on Joker](images/cloudflare-dns.png)
 
-A helpful wizard will pop up telling you that you're about to tranfer records
+A helpful wizard will pop up telling you that you're about to transfer records
 over, which you should do. (Actually, I turned on DNSSEC much later in the
 process than what I'm writing here. Thus, most of my DNS changes were actually
 made on Joker's DNS servers, then migrated over to CloudFlare. That worked just
@@ -95,7 +96,7 @@ matter to switch on DNSSEC:
 ![CloudFlare DNSSEC](images/cloudflare-dnssec.png)
 
 Now, back to email! Just like we don't want someone to spoof our domain, we
-don't want to someone to spoof emails. Time for [DKIM][9], [SPF][10],and
+don't want to someone to spoof emails. Time for [DKIM][9], [SPF][10], and
 [DMARC][11].
 
 ProtonMail has a fantastic guide to setting up [Anti-spoofing for Custom
