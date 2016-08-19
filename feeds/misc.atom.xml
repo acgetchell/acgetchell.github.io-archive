@@ -1,5 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Adam's Entropy</title><link href="http://adamgetchell.org/" rel="alternate"></link><link href="http://adamgetchell.org/feeds/misc.atom.xml" rel="self"></link><id>http://adamgetchell.org/</id><updated>2013-12-07T18:56:50-08:00</updated><entry><title>Iterations</title><link href="http://adamgetchell.org/iterations.html" rel="alternate"></link><published>2013-12-07T18:56:50-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2013-12-07:iterations.html</id><summary type="html">&lt;p&gt;It&amp;#8217;s been quite awhile since the last post, with lots of changes.&amp;nbsp;I&amp;#8217;ve:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Adam's Entropy</title><link href="https://adamgetchell.org/" rel="alternate"></link><link href="https://adamgetchell.org/feeds/misc.atom.xml" rel="self"></link><id>https://adamgetchell.org/</id><updated>2016-08-15T12:23:00-07:00</updated><entry><title>Secure, Verifiable, Public Identity</title><link href="https://adamgetchell.org/secure-verifiable-public-identity.html" rel="alternate"></link><published>2016-08-15T12:23:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2016-08-12:secure-verifiable-public-identity.html</id><summary type="html">&lt;p&gt;For awhile, I&amp;#8217;ve been interested in establishing a secure, verifiable, public&amp;nbsp;identity.&lt;/p&gt;
+&lt;p&gt;There are &lt;a href="https://keybase.io/blog/2014-10-08/the-horror-of-a-secure-golden-key"&gt;any&lt;/a&gt; &lt;a href="http://www.zdnet.com/article/microsoft-secure-boot-key-debacle-causes-security-panic/"&gt;number&lt;/a&gt; of reasons to do this, for example,
+&lt;a href="https://www.youtube.com/watch?v=pDmj_xe7EIQ"&gt;authenticity&lt;/a&gt; and &lt;a href="http://security.stackexchange.com/questions/6730/what-is-the-difference-between-authenticity-and-non-repudiation"&gt;non-repudiation&lt;/a&gt;,
+&lt;a href="https://keybase.io/docs/kbfs"&gt;frictionless sharing of files&lt;/a&gt;, and so forth. But that&amp;#8217;s the topic of
+another article. What I want to talk about here is how I got to the promised&amp;nbsp;land.&lt;/p&gt;
+&lt;p&gt;First up is &lt;a href="https://keybase.io"&gt;Keybase&lt;/a&gt;, which is a really awesome software
+stack that maps your identity to your public keys. You might want to
+&lt;a href="https://keybase.io/docs/kbfs"&gt;read about&lt;/a&gt; it. Go ahead, I&amp;#8217;ll&amp;nbsp;wait.&lt;/p&gt;
+&lt;p&gt;Signup is currently by invite only, but if you know &lt;a href="https://keybase.io/adamgetchell"&gt;someone&lt;/a&gt; already on it
+you might be able to wrangle an&amp;nbsp;invite.&lt;/p&gt;
+&lt;p&gt;When you do sign up, they&amp;#8217;ll ask for an email address. Of course, we all
+know that email is &lt;a href="https://www.viget.com/articles/email-is-completely-insecure-by-default"&gt;notoriously insecure&lt;/a&gt;, &lt;a href="http://www.howtogeek.com/180604/htg-explains-why-is-spam-still-a-problem/"&gt;subject to spamming&lt;/a&gt;,
+&lt;a href="http://www.wired.com/2015/03/ugly-mail/"&gt;ad-analytics&lt;/a&gt;, and any number of security maladies, but I didn&amp;#8217;t want to
+bow to that (seeming)&amp;nbsp;inevitability.&lt;/p&gt;
+&lt;p&gt;As it turns out, this was the perfect opportunity to use another highly secure
+service I&amp;#8217;d been playing with: &lt;a href="https://protonmail.com"&gt;ProtonMail&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;ProtonMail has encrypted identities in order to retrieve your data, is housed
+in Switzerland (so certain entities won&amp;#8217;t obtain access easily), is encrypted
+again with your own key which ProtonMail doesn&amp;#8217;t know so that they cannot
+access your data even if certain entities force them to hand it over, has mobile app versions, and implements all the right sorts of technologies to
+patch up the leaky sieve of general purpose electronic correspondence while
+still remaining useful to&amp;nbsp;non-Sendmail-grognards.&lt;/p&gt;
+&lt;p&gt;Now, if I&amp;#8217;m going to bother to have a vanity domain like &lt;a href="https://adamgetchell.org"&gt;adamgetchell.org&lt;/a&gt;,
+I may as well have an email address like adam@&amp;#8230; So while the free version of
+&lt;a href="https://protonmail.com"&gt;ProtonMail&lt;/a&gt; is fine for tinkering, I stepped up to a paid account in order
+to get these and other features, as we&amp;#8217;ll go over shortly. For $48 per year,
+not too bad, and I felt good about supporting&amp;nbsp;them.&lt;/p&gt;
+&lt;p&gt;The next step towards greater email security is to verify you own your&amp;nbsp;domain.&lt;/p&gt;
+&lt;p&gt;My domain registrar is &lt;a href="https://joker.com"&gt;Joker&lt;/a&gt;, a fine German domain registrar also housed
+in Switzerland (seeing a theme?) that runs me about $12/year. ProtonMail
+provides a nice wizard to step you through everything, so from&amp;nbsp;that:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="DNS Verification" src="images/dns-verification.png" /&gt;&lt;/p&gt;
+&lt;p&gt;You go to your &lt;span class="caps"&gt;DNS&lt;/span&gt; registrar and add the requested &lt;span class="caps"&gt;TXT&lt;/span&gt; record.
+&lt;a href="https://docs.menandmice.com/display/MM/How+to+test+DNSSEC+validation"&gt;Validate it&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Next, you&amp;#8217;ll need to add the &lt;span class="caps"&gt;MX&lt;/span&gt; record for your vanity domain, with the data
+that ProtonMail supplies. There&amp;#8217;s a pretty screenshot I could show, but data is
+rather trivial: set up an &lt;span class="caps"&gt;MX&lt;/span&gt; record, with a value of &lt;code&gt;mail.protonmail.ch&lt;/code&gt; and a
+priority of &lt;code&gt;10&lt;/code&gt;, and you&amp;#8217;re good to go. Give it some time to propagate through
+&lt;span class="caps"&gt;DNS&lt;/span&gt;-land; eat lunch, or have some coffee, or play your favorite game for a tick
+or&amp;nbsp;two.&lt;/p&gt;
+&lt;p&gt;Now you can just add the address in ProtonMail&amp;#8217;s Wizard&amp;nbsp;(Settings-&amp;gt;Domains)&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Setup address using your domain in ProtonMail" src="images/protonmail-vanity.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Alright, vanity email address, &lt;span class="math"&gt;\(\checkmark\)&lt;/span&gt;. Now it&amp;#8217;s time to secure&amp;nbsp;it.&lt;/p&gt;
+&lt;p&gt;You don&amp;#8217;t want someone to be able to fake your brand new domain. This is where
+&lt;a href="http://dnssec.net"&gt;&lt;span class="caps"&gt;DNSSEC&lt;/span&gt;&lt;/a&gt; comes in. However, in my case, &lt;a href="https://joker.com"&gt;Joker&lt;/a&gt;&amp;#8216;s &lt;span class="caps"&gt;DNS&lt;/span&gt; servers don&amp;#8217;t
+support it. No problem &amp;#8212; switch to someone who&amp;nbsp;does!&lt;/p&gt;
+&lt;p&gt;That someone is &lt;a href="https://www.cloudflare.com"&gt;CloudFlare&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;CloudFlare is a cool service that boosts your website speed via optimizations
+and CDNs, helps protect your website against some forms of malicious attacks,
+and can even mitigate&amp;nbsp;DDoS.&lt;/p&gt;
+&lt;p&gt;In this case, I&amp;#8217;m interested in them because they provide fast, secure &lt;span class="caps"&gt;DNS&lt;/span&gt;, and
+because I can get a free account for my single website. What&amp;#8217;s not to&amp;nbsp;like?&lt;/p&gt;
+&lt;p&gt;I also highly recommend them in general. I&amp;#8217;ve used them for a number of years
+professionally, and they&amp;#8217;ve been worth the&amp;nbsp;cost.&lt;/p&gt;
+&lt;p&gt;On Joker I can specify the CloudFlare will be my &lt;span class="caps"&gt;DNS&lt;/span&gt; server like&amp;nbsp;so:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="CloudFlare DNS Settings on Joker" src="images/cloudflare-dns.png" /&gt;&lt;/p&gt;
+&lt;p&gt;A helpful wizard will pop up telling you that you&amp;#8217;re about to transfer records
+over, which you should do. (Actually, I turned on &lt;span class="caps"&gt;DNSSEC&lt;/span&gt; much later in the
+process than what I&amp;#8217;m writing here. Thus, most of my &lt;span class="caps"&gt;DNS&lt;/span&gt; changes were actually
+made on Joker&amp;#8217;s &lt;span class="caps"&gt;DNS&lt;/span&gt; servers, then migrated over to CloudFlare. That worked just&amp;nbsp;fine.)&lt;/p&gt;
+&lt;p&gt;Once you&amp;#8217;ve verified that CloudFlare is now handling your &lt;span class="caps"&gt;DNS&lt;/span&gt;, it&amp;#8217;s a simple
+matter to switch on &lt;span class="caps"&gt;DNSSEC&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="CloudFlare DNSSEC" src="images/cloudflare-dnssec.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Now, back to email! Just like we don&amp;#8217;t want someone to spoof our domain, we
+don&amp;#8217;t want to someone to spoof emails. Time for &lt;a href="http://www.dkim.org"&gt;&lt;span class="caps"&gt;DKIM&lt;/span&gt;&lt;/a&gt;, &lt;a href="http://www.openspf.org"&gt;&lt;span class="caps"&gt;SPF&lt;/span&gt;&lt;/a&gt;, and
+&lt;a href="https://dmarc.org"&gt;&lt;span class="caps"&gt;DMARC&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;ProtonMail has a fantastic guide to setting up &lt;a href="https://protonmail.com/support/knowledge-base/anti-spoofing/"&gt;Anti-spoofing for Custom
+Domains&lt;/a&gt;. Again, I&amp;#8217;ll wait while you read&amp;nbsp;it.&lt;/p&gt;
+&lt;p&gt;Whew! That was a long detour, but we finally have a secure email address to use
+for &lt;a href="https://keybase.io/docs/kbfs"&gt;Keybase&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Email Spamminess" src="images/spamminess.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Once you&amp;#8217;ve installed Keybase (e.g. &lt;code&gt;brew cask install keybase&lt;/code&gt;), you&amp;#8217;ll want to
+note down your &amp;#8216;paper&amp;#8217; key someplace safe (like, say, a Secure Note in
+&lt;a href="https://1password.com"&gt;1Password&lt;/a&gt;). And then, you&amp;#8217;ll want to start adding identities, such as
+Twitter, GitHub, Reddit, and your&amp;nbsp;website.&lt;/p&gt;
+&lt;p&gt;This is pretty straightforward; you sign objects with your public key and
+post them someplace public on that service (e.g. a tweet, gist, post, or static&amp;nbsp;file).&lt;/p&gt;
+&lt;p&gt;For example, here&amp;#8217;s my GitHub&amp;nbsp;proof:&lt;/p&gt;
+&lt;script src="https://gist.github.com/acgetchell/7b68d1168a45859624d0cb3369931ace.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;The neat thing about Keybase is that you don&amp;#8217;t need a central server to verify
+someone&amp;#8217;s identity: you can do it yourself right from the command&amp;nbsp;line:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Keybase proof from CLI" src="images/keybase-id-proof.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Now, if you want your website to be part of your identity, you&amp;#8217;ll want it to be
+secure. My website happens to be generated by &lt;a href="http://blog.getpelican.com"&gt;Pelican&lt;/a&gt; and hosted on
+GitHub, for which I have 2-factor authentication turned on. But by default,
+&lt;a href="https://help.github.com/articles/securing-your-github-pages-site-with-https/"&gt;GitHub hosted sites only support &lt;span class="caps"&gt;SSL&lt;/span&gt; for &lt;code&gt;*.github.io&lt;/code&gt; domains&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.cloudflare.com"&gt;CloudFlare&lt;/a&gt; does, sorta. So we come to the second reason for
+using CloudFlare: enabling &lt;code&gt;https&lt;/code&gt; on your static, custom domain. It&amp;#8217;s as easy
+as flicking a&amp;nbsp;switch:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="GitHub SSL" src="images/github-ssl.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class="caps"&gt;HOWEVER&lt;/span&gt;&lt;/strong&gt; this is not complete; it only encrypts communication between
+the client browser and CloudFlare. &lt;a href="https://konklone.com/post/github-pages-now-sorta-supports-https-so-use-it"&gt;The connection between CloudFlare and
+GitHub is unencrypted for custom domains&lt;/a&gt;. It is also easy to do &lt;a href="https://thehackerblog.com/keeping-positive-obtaining-arbitrary-wildcard-ssl-certificates-from-comodo-via-dangling-markup-injection/index.html"&gt;the
+wrong way&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you didn&amp;#8217;t have a custom domain, then this doesn&amp;#8217;t apply. But where&amp;#8217;s the
+fun in&amp;nbsp;that?&lt;/p&gt;
+&lt;p&gt;Finally, to prevent the client from downgrading from &lt;code&gt;https&lt;/code&gt; to &lt;code&gt;http&lt;/code&gt;, you can
+turn on &lt;span class="caps"&gt;HTTP&lt;/span&gt; Strict Transport Security &lt;a href="https://www.owasp.org/index.php/HTTP_Strict_Transport_Security_Cheat_Sheet"&gt;(&lt;span class="caps"&gt;HSTS&lt;/span&gt;)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="HTTP Strict Transport Security on CloudFlare" src="images/hsts.png" /&gt;&lt;/p&gt;
+&lt;p&gt;This comes with some sizeable caveats, so definitely read&amp;nbsp;them.&lt;/p&gt;
+&lt;p&gt;At last, you can check your work here: &lt;a href="https://en.internet.nl"&gt;https://en.internet.nl&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;And now, finally, you have a &lt;a href="https://keybase.io/docs/kbfs"&gt;nice, secure, publicly verifiable identity&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Adam's Keybase info" src="images/keybase.png" /&gt;&lt;/p&gt;
+&lt;h2&gt;Update&lt;/h2&gt;
+&lt;p&gt;Here are two videos from CloudFlare on boosting site speed and&amp;nbsp;security:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://vimeo.com/157530322"&gt;Increase the speed of your site - CloudFlare Performance&amp;nbsp;Tips&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://vimeo.com/162142298"&gt;User Privacy &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Data&amp;nbsp;Integrity&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</summary><category term="prismbreak"></category><category term="keybase"></category><category term="protonmail"></category><category term="joker"></category><category term="cloudflare"></category><category term="github"></category></entry><entry><title>Iterations</title><link href="https://adamgetchell.org/iterations.html" rel="alternate"></link><published>2013-12-07T18:56:50-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2013-12-07:iterations.html</id><summary type="html">&lt;p&gt;It&amp;#8217;s been quite awhile since the last post, with lots of changes.&amp;nbsp;I&amp;#8217;ve:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Converted to&amp;nbsp;MacOS&lt;/li&gt;
 &lt;li&gt;Changed my research codebase to&amp;nbsp;C++&lt;/li&gt;
@@ -49,7 +215,7 @@
 &lt;p&gt;I teach Hapkido at the university, and I&amp;#8217;ve always enjoyed that Hapkidoja &lt;em&gt;did&lt;/em&gt; learn techniques in all of these areas. I competed in Taekwondo and Judo, and Hapkido synthesized them all together. It was good for practical self-defense. I try to teach it as&amp;nbsp;such.&lt;/p&gt;
 &lt;p&gt;(Yes, martial arts with sporting equivalents are superior. Nothing beats realistic&amp;nbsp;practice.)&lt;/p&gt;
 &lt;p&gt;But times change and things develop, and it&amp;#8217;s time to adapt and learn what works. And my &lt;a href="http://fabiopradobjj.com"&gt;&lt;span class="caps"&gt;BJJ&lt;/span&gt; academy&lt;/a&gt;, &lt;a href="http://fabiopradobjj.com/about-fabio-prad0/"&gt;professor&lt;/a&gt;, and jiu-jitsu family&amp;nbsp;rock!&lt;/p&gt;
-&lt;p&gt;Also, competing in &lt;span class="caps"&gt;BJJ&lt;/span&gt; is scary&amp;nbsp;fun!&lt;/p&gt;</summary><category term="macos"></category><category term="c++"></category><category term="octopress"></category><category term="prismbreak"></category><category term="bjj"></category></entry><entry><title>Hapkido Practicum Fall 2009</title><link href="http://adamgetchell.org/hapkido-practicum-fall-2009_29.html" rel="alternate"></link><published>2011-12-20T07:58:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2011-12-20:hapkido-practicum-fall-2009_29.html</id><summary type="html">&lt;div style="text-align: center;"&gt;
+&lt;p&gt;Also, competing in &lt;span class="caps"&gt;BJJ&lt;/span&gt; is scary&amp;nbsp;fun!&lt;/p&gt;</summary><category term="macos"></category><category term="c++"></category><category term="octopress"></category><category term="prismbreak"></category><category term="bjj"></category></entry><entry><title>Hapkido Practicum Fall 2009</title><link href="https://adamgetchell.org/hapkido-practicum-fall-2009_29.html" rel="alternate"></link><published>2011-12-20T07:58:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2011-12-20:hapkido-practicum-fall-2009_29.html</id><summary type="html">&lt;div style="text-align: center;"&gt;
 
 &lt;span style="font-size: 100%;"&gt;&lt;span id="hpy."&gt;[Physical Education
 Program, &lt;span class="caps"&gt;UC&lt;/span&gt;
@@ -107,7 +273,7 @@ id="f7lx"&gt;&lt;a href="http://www.youtube.com/watch?v=zu-tix0pdQY" title="MMA 
 &lt;span id="c0.s"&gt;&lt;a href="http://www.youtube.com/watch?v=LhezbNHHYno" title="Elbow strike tutorial"&gt;elbow&amp;nbsp;strikes&lt;/a&gt;&lt;/span&gt;  &lt;/p&gt;
 &lt;p&gt;Further updates can be found at:
 &lt;a href="http://docs.google.com/View?id=dckp3cwx_62csk8r4gk"&gt;http://docs.google.com/View?id=dckp3cwx_62csk8r4gk&lt;/a&gt;&lt;/p&gt;
-&lt;/p&gt;</summary><category term="hapkido"></category></entry><entry><title>Socialism, Capitalism, Spending, oh my!</title><link href="http://adamgetchell.org/socialism-capitalism-spending-oh-my.html" rel="alternate"></link><published>2010-12-04T01:50:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2010-12-04:socialism-capitalism-spending-oh-my.html</id><summary type="html">&lt;p&gt;For a change of pace, I&amp;#8217;m going to ruminate on the state of affairs as I
+&lt;/p&gt;</summary><category term="hapkido"></category></entry><entry><title>Socialism, Capitalism, Spending, oh my!</title><link href="https://adamgetchell.org/socialism-capitalism-spending-oh-my.html" rel="alternate"></link><published>2010-12-04T01:50:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2010-12-04:socialism-capitalism-spending-oh-my.html</id><summary type="html">&lt;p&gt;For a change of pace, I&amp;#8217;m going to ruminate on the state of affairs as I
 see&amp;nbsp;them.&lt;/p&gt;
 &lt;div&gt;
 
@@ -650,7 +816,7 @@ Okay, back to considering things I have somewhat of a clue about.
 
 &lt;/div&gt;
 
-&lt;/p&gt;</summary><category term="politics"></category></entry><entry><title>Microsoft Security Awareness training</title><link href="http://adamgetchell.org/microsoft-security-awareness-training.html" rel="alternate"></link><published>2007-09-22T23:41:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:microsoft-security-awareness-training.html</id><summary type="html">&lt;p&gt;&lt;a href="http://www.atrevido.net/blog/PermaLink.aspx?guid=256b6bb4-f6f4-43a5-985b-7fe5796b809c"&gt;This&lt;/a&gt;
+&lt;/p&gt;</summary><category term="politics"></category></entry><entry><title>Microsoft Security Awareness training</title><link href="https://adamgetchell.org/microsoft-security-awareness-training.html" rel="alternate"></link><published>2007-09-22T23:41:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:microsoft-security-awareness-training.html</id><summary type="html">&lt;p&gt;&lt;a href="http://www.atrevido.net/blog/PermaLink.aspx?guid=256b6bb4-f6f4-43a5-985b-7fe5796b809c"&gt;This&lt;/a&gt;
 is just too funny to pass&amp;nbsp;up.  &lt;/p&gt;
 &lt;p&gt;So far, &lt;a href="http://windowssecrets.com/050127/#story1"&gt;malware&amp;#8217;s winning the war of
 attrition&lt;/a&gt;.  &lt;/p&gt;

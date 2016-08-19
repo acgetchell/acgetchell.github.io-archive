@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Adam's Entropy</title><link href="http://adamgetchell.org/" rel="alternate"></link><link href="http://adamgetchell.org/feeds/physics.atom.xml" rel="self"></link><id>http://adamgetchell.org/</id><updated>2014-12-31T13:26:46+02:00</updated><entry><title>Jerusalem 2014-15</title><link href="http://adamgetchell.org/jerusalem-2014-15.html" rel="alternate"></link><published>2014-12-31T13:26:46+02:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2014-12-31:jerusalem-2014-15.html</id><summary type="html">&lt;p&gt;And again, it&amp;#8217;s been quite&amp;nbsp;awhile.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Adam's Entropy</title><link href="https://adamgetchell.org/" rel="alternate"></link><link href="https://adamgetchell.org/feeds/physics.atom.xml" rel="self"></link><id>https://adamgetchell.org/</id><updated>2014-12-31T13:26:46+02:00</updated><entry><title>Jerusalem 2014-15</title><link href="https://adamgetchell.org/jerusalem-2014-15.html" rel="alternate"></link><published>2014-12-31T13:26:46+02:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2014-12-31:jerusalem-2014-15.html</id><summary type="html">&lt;p&gt;And again, it&amp;#8217;s been quite&amp;nbsp;awhile.&lt;/p&gt;
 &lt;p&gt;The big news is the welcome addition of Benjamin to our family. You can see him studying with me in my profile picture. He&amp;#8217;s an incredible ball of energy and joy, and there&amp;#8217;s nothing like having him around to remind one of the meaning of&amp;nbsp;life.&lt;/p&gt;
 &lt;p&gt;Aside from that, and with Benjamin&amp;#8217;s encouragement, I&amp;#8217;ve been busy the past year getting serious about doing my research. &lt;a href="http://collaborate.mozillascience.org/projects/quantumGravity"&gt;My project&lt;/a&gt; was recently accepted by the &lt;a href="http://collaborate.mozillascience.org/projects/quantumGravity"&gt;Mozilla Science Lab&lt;/a&gt;, a really cool effort which aims to harness open-source software towards basic research. This is a part of a general movement, along with &amp;#8220;new&amp;#8221; trends such as &lt;a href="http://software-carpentry.org"&gt;Software Carpentry&lt;/a&gt; and &lt;a href="https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century/"&gt;Data Science&lt;/a&gt; (themselves based on practices and techniques from &lt;a href="http://www.sei.cmu.edu"&gt;Software Engineering&lt;/a&gt;, &lt;a href="http://www.agilemanifesto.org"&gt;Agile Development&lt;/a&gt;, and &lt;a href="http://nosql-database.org"&gt;NoSQL&lt;/a&gt; to name just a&amp;nbsp;few).&lt;/p&gt;
 &lt;p&gt;However, as I type this I am sitting here at &lt;a href="http://new.huji.ac.il"&gt;Hebrew University&lt;/a&gt;, in sunny (but chilly, at least by a Californian&amp;#8217;s standards) Jerusalem attending the &lt;a href="http://www.as.huji.ac.il/schools/phys32"&gt;32nd Winter School in Theoretical Physics on 100 Years of General Relativity: From Theory to Experiment and Back&lt;/a&gt;. I&amp;#8217;m having a blast getting my brain filled! I will post more about what I&amp;#8217;ve learned&amp;nbsp;later.&lt;/p&gt;
@@ -10,7 +10,7 @@
 &lt;img alt="Us at the Wailing Wall" src="images/wailing_wall.jpg" /&gt;
 &lt;img alt="Golgotha" src="images/golgotha.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Also, I&amp;#8217;ve migrated from Octopress to Pelican, as &lt;a href="https://jakevdp.github.io/blog/2013/05/07/migrating-from-octopress-to-pelican/"&gt;others have done&lt;/a&gt;, for similar reasons. &lt;a href="http://code.mumak.net/2014/07/migrated-to-pelican.html"&gt;This post&lt;/a&gt; was very helpful in doing the conversion, especially the Blogger support added into pelican-import.py. &lt;a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html"&gt;This post&lt;/a&gt; helped with the GitHub pages&amp;nbsp;support.&lt;/p&gt;
-&lt;p&gt;Shalom and Happy New&amp;nbsp;Year!&lt;/p&gt;</summary><category term="travel"></category><category term="pelican"></category></entry><entry><title>General Relativity flash-cards using Anki</title><link href="http://adamgetchell.org/general-relativity-flash-cards-using.html" rel="alternate"></link><published>2013-10-24T05:52:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2013-10-24:general-relativity-flash-cards-using.html</id><summary type="html">&lt;p&gt;&lt;a href="http://ankisrs.net/"&gt;Anki&lt;/a&gt; is a neat &lt;a href="http://www.supermemo.com/english/ol/background.htm"&gt;spaced repetition
+&lt;p&gt;Shalom and Happy New&amp;nbsp;Year!&lt;/p&gt;</summary><category term="travel"></category><category term="pelican"></category><category term="cdt"></category><category term="c++"></category><category term="quantum gravity"></category></entry><entry><title>General Relativity flash-cards using Anki</title><link href="https://adamgetchell.org/general-relativity-flash-cards-using.html" rel="alternate"></link><published>2013-10-24T05:52:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2013-10-24:general-relativity-flash-cards-using.html</id><summary type="html">&lt;p&gt;&lt;a href="http://ankisrs.net/"&gt;Anki&lt;/a&gt; is a neat &lt;a href="http://www.supermemo.com/english/ol/background.htm"&gt;spaced repetition
 system&lt;/a&gt; that allows
 you to maximize memorization efficiency, or something like that.
 Interestingly, I came across it on the &lt;a href="http://groups.google.com/group/clojure"&gt;Clojure
@@ -118,7 +118,7 @@ synchronized and uploaded, I will post a link to&amp;nbsp;it.  &lt;/p&gt;
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</summary><category term="general relativity"></category></entry><entry><title>Feynman diagrams in LaTeX</title><link href="http://adamgetchell.org/feynman-diagrams-in-latex.html" rel="alternate"></link><published>2012-09-02T09:15:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2012-09-02:feynman-diagrams-in-latex.html</id><summary type="html">&lt;p&gt;Sometimes you need Feynman diagrams in papers. It turns out there are
+&lt;/script&gt;</summary><category term="general relativity"></category></entry><entry><title>Feynman diagrams in LaTeX</title><link href="https://adamgetchell.org/feynman-diagrams-in-latex.html" rel="alternate"></link><published>2012-09-02T09:15:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2012-09-02:feynman-diagrams-in-latex.html</id><summary type="html">&lt;p&gt;Sometimes you need Feynman diagrams in papers. It turns out there are
 quite a few ways to get there, but the handiest is FeynMP. I&amp;#8217;m using, in
 particular, MikTeX and TeXMaker, but something like this should work for
 other setups. Here are the&amp;nbsp;steps:  &lt;/p&gt;
@@ -127,36 +127,60 @@ other setups. Here are the&amp;nbsp;steps:  &lt;/p&gt;
 &lt;p&gt;Next, add the following to your &lt;span class="math"&gt;\(\LaTeX\)&lt;/span&gt; preamble: I know the package
 name says &lt;strong&gt;feynmp&lt;/strong&gt;; if you use that, you&amp;#8217;ll have a lot more errors.
 The feynmp package is nicer, and included when you install&amp;nbsp;feynmf.&lt;/p&gt;
-&lt;p&gt;[gist:id=3595449,file=feynmp-preamble.tex]  &lt;/p&gt;
+&lt;!-- [gist:id=3595449,file=feynmp-preamble-tex] --&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="na"&gt;[final]&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;feynmp&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\DeclareGraphicsRule&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;*&lt;span class="nb"&gt;}{&lt;/span&gt;mps&lt;span class="nb"&gt;}{&lt;/span&gt;*&lt;span class="nb"&gt;}{}&lt;/span&gt;
+&lt;span class="k"&gt;\makeatletter&lt;/span&gt;
+&lt;span class="k"&gt;\def\endfmffile&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="c"&gt;%&lt;/span&gt;
+    &lt;span class="k"&gt;\fmfcmd&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\p&lt;/span&gt;@rcent&lt;span class="k"&gt;\space&lt;/span&gt; the end.&lt;span class="nb"&gt;^^&lt;/span&gt;J&lt;span class="c"&gt;%&lt;/span&gt;
+            end.&lt;span class="nb"&gt;^^&lt;/span&gt;J&lt;span class="c"&gt;%&lt;/span&gt;
+            endinput;&lt;span class="nb"&gt;}&lt;/span&gt;&lt;span class="c"&gt;%&lt;/span&gt;
+    &lt;span class="k"&gt;\if&lt;/span&gt;@fmfio
+        &lt;span class="k"&gt;\immediate\closeout\@&lt;/span&gt;outfmf
+    &lt;span class="k"&gt;\fi&lt;/span&gt;
+    &lt;span class="k"&gt;\ifnum\pdfshellescape&lt;/span&gt;=&lt;span class="k"&gt;\@&lt;/span&gt;ne
+        &lt;span class="k"&gt;\immediate\write&lt;/span&gt;18&lt;span class="nb"&gt;{&lt;/span&gt;mpost &lt;span class="k"&gt;\thefmffile&lt;/span&gt;&lt;span class="nb"&gt;}&lt;/span&gt;&lt;span class="c"&gt;%&lt;/span&gt;
+    &lt;span class="k"&gt;\fi&lt;/span&gt;&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\makeatother&lt;/span&gt;
+&lt;span class="k"&gt;\title&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;Your title&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\author&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;You &lt;span class="k"&gt;\\&lt;/span&gt;
+    &lt;span class="k"&gt;\texttt&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;Your email&lt;span class="nb"&gt;}}&lt;/span&gt;
+&lt;span class="k"&gt;\date&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\today&lt;/span&gt;&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;document&lt;span class="nb"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;\unitlength&lt;/span&gt; = 1mm
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Now, let&amp;#8217;s say you want to add a diagram for Compton scattering (the
 point of the whole exercise). I suggest wrapping it in a &lt;span class="math"&gt;\(\LaTeX\)&lt;/span&gt;
 figure for convenience; doing so will lead to something like&amp;nbsp;this:&lt;/p&gt;
-&lt;div class="gist"&gt;
-    &lt;script src='https://gist.github.com/3595628.js?file=compton.tex'&gt;&lt;/script&gt;
-    &lt;noscript&gt;
-        &lt;pre&gt;&lt;code&gt;\begin{figure}
-	\centering
-	\begin{fmffile}{compton}
-		\begin{fmfgraph*}(80,50)
-			\fmfleft{i1,i2}
-			\fmfright{o1,o2}
+&lt;!-- [gist:id=3595628,file=compton-tex] --&gt;
 
-			\fmflabel{$\gamma$}{i2}
-			\fmflabel{$e^-$}{i1}
-			\fmflabel{$\gamma$}{o1}
-			\fmflabel{$e^-$}{o2}
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;figure&lt;span class="nb"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;\centering&lt;/span&gt;
+    &lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;fmffile&lt;span class="nb"&gt;}{&lt;/span&gt;compton&lt;span class="nb"&gt;}&lt;/span&gt;
+        &lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;fmfgraph*&lt;span class="nb"&gt;}&lt;/span&gt;(80,50)
+            &lt;span class="k"&gt;\fmfleft&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;i1,i2&lt;span class="nb"&gt;}&lt;/span&gt;
+            &lt;span class="k"&gt;\fmfright&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;o1,o2&lt;span class="nb"&gt;}&lt;/span&gt;
 
-			\fmf{photon}{i2,v2}
-			\fmf{fermion}{i1,v1,v2,o2}
-			\fmf{photon}{v1,o1}
-		\end{fmfgraph*}
-	\end{fmffile}
+            &lt;span class="k"&gt;\fmflabel&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="s"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;\gamma&lt;/span&gt;&lt;span class="s"&gt;$&lt;/span&gt;&lt;span class="nb"&gt;}{&lt;/span&gt;i2&lt;span class="nb"&gt;}&lt;/span&gt;
+            &lt;span class="k"&gt;\fmflabel&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="s"&gt;$&lt;/span&gt;&lt;span class="nb"&gt;e^&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="s"&gt;$&lt;/span&gt;&lt;span class="nb"&gt;}{&lt;/span&gt;i1&lt;span class="nb"&gt;}&lt;/span&gt;
+            &lt;span class="k"&gt;\fmflabel&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="s"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;\gamma&lt;/span&gt;&lt;span class="s"&gt;$&lt;/span&gt;&lt;span class="nb"&gt;}{&lt;/span&gt;o1&lt;span class="nb"&gt;}&lt;/span&gt;
+            &lt;span class="k"&gt;\fmflabel&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="s"&gt;$&lt;/span&gt;&lt;span class="nb"&gt;e^&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="s"&gt;$&lt;/span&gt;&lt;span class="nb"&gt;}{&lt;/span&gt;o2&lt;span class="nb"&gt;}&lt;/span&gt;
 
-	\caption[Compton Scattering]{Feynman diagram for Compton scattering}
-	\label{fig:compton-scattering}
-\end{figure}&lt;/code&gt;&lt;/pre&gt;
-    &lt;/noscript&gt;
-&lt;/div&gt;
+            &lt;span class="k"&gt;\fmf&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;photon&lt;span class="nb"&gt;}{&lt;/span&gt;i2,v2&lt;span class="nb"&gt;}&lt;/span&gt;
+            &lt;span class="k"&gt;\fmf&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;fermion&lt;span class="nb"&gt;}{&lt;/span&gt;i1,v1,v2,o2&lt;span class="nb"&gt;}&lt;/span&gt;
+            &lt;span class="k"&gt;\fmf&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;photon&lt;span class="nb"&gt;}{&lt;/span&gt;v1,o1&lt;span class="nb"&gt;}&lt;/span&gt;
+        &lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;fmfgraph*&lt;span class="nb"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;fmffile&lt;span class="nb"&gt;}&lt;/span&gt;
+
+    &lt;span class="k"&gt;\caption&lt;/span&gt;&lt;span class="na"&gt;[Compton Scattering]&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;Feynman diagram for Compton scattering&lt;span class="nb"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;\label&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;fig:compton-scattering&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;figure&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Note the name of the file is compton. In your &lt;span class="math"&gt;\(\LaTeX\)&lt;/span&gt; working directory,
 there will be a file called compton.mp. You need to run the mpost
 command on it, like&amp;nbsp;so:  &lt;/p&gt;
@@ -241,7 +265,7 @@ any feedback or corrections, send notes or pull requests to the&amp;nbsp;gists. 
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</summary><category term="latex"></category><category term="qft"></category></entry><entry><title>Can LIGO detect a graviton?</title><link href="http://adamgetchell.org/can-ligo-detect-graviton.html" rel="alternate"></link><published>2011-12-28T00:09:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2011-12-28:can-ligo-detect-graviton.html</id><summary type="html">&lt;p&gt;A lecture given 10/27/08 by Professor Freeman Dyson of the Institute of
+&lt;/script&gt;</summary><category term="latex"></category><category term="qft"></category></entry><entry><title>Can LIGO detect a graviton?</title><link href="https://adamgetchell.org/can-ligo-detect-graviton.html" rel="alternate"></link><published>2011-12-28T00:09:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2011-12-28:can-ligo-detect-graviton.html</id><summary type="html">&lt;p&gt;A lecture given 10/27/08 by Professor Freeman Dyson of the Institute of
 Advanced Studies at Princeton, in honor of the 100th anniversary of the
 founding of the University of California,&amp;nbsp;Davis.  &lt;/p&gt;
 &lt;div class="math"&gt;$$E=\left(\frac{c^{2}}{32\pi G}\right)\omega^{2}f^{2}$$&lt;/div&gt;
@@ -370,7 +394,7 @@ giving some good background&amp;nbsp;information.&lt;/em&gt;&lt;/p&gt;
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</summary><category term="general relativity"></category></entry><entry><title>A Nobel Pursuit</title><link href="http://adamgetchell.org/nobel-pursuit.html" rel="alternate"></link><published>2008-11-12T06:58:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-11-12:nobel-pursuit.html</id><summary type="html">&lt;p&gt;Well, the Nobel Prizewinners are to be announced ~~tomorrow~~Tuesday. In
+&lt;/script&gt;</summary><category term="general relativity"></category></entry><entry><title>A Nobel Pursuit</title><link href="https://adamgetchell.org/nobel-pursuit.html" rel="alternate"></link><published>2008-11-12T06:58:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-11-12:nobel-pursuit.html</id><summary type="html">&lt;p&gt;Well, the Nobel Prizewinners are to be announced ~~tomorrow~~Tuesday. In
 the spirit of fun (and to demonstrate how much science really does
 advance), here are some predictions and other fun facts gleaned from
 around the&amp;nbsp;&amp;#8216;Net:  &lt;/p&gt;
@@ -442,7 +466,7 @@ Physics in
 2008&lt;/a&gt;, quite
 deservedly, for discovery of &lt;a href="http://hyperphysics.phy-astr.gsu.edu/hbase/forces/unify.html"&gt;spontaneous symmetry
 breaking&lt;/a&gt;.&lt;/p&gt;
-&lt;/p&gt;</summary></entry><entry><title>Causal Dynamical Triangulations</title><link href="http://adamgetchell.org/causal-dynamical-triangulations.html" rel="alternate"></link><published>2008-08-01T08:33:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-08-01:causal-dynamical-triangulations.html</id><summary type="html">&lt;p&gt;Rajesh Kommu and &lt;a href="http://www.physics.ucdavis.edu/Text/Carlip.html"&gt;Professor Steve
+&lt;/p&gt;</summary></entry><entry><title>Causal Dynamical Triangulations</title><link href="https://adamgetchell.org/causal-dynamical-triangulations.html" rel="alternate"></link><published>2008-08-01T08:33:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-08-01:causal-dynamical-triangulations.html</id><summary type="html">&lt;p&gt;Rajesh Kommu and &lt;a href="http://www.physics.ucdavis.edu/Text/Carlip.html"&gt;Professor Steve
 Carlip&lt;/a&gt; are working on
 interesting ways to model quantum gravity using computational methods.
 Rajesh has been kind enough to help show me where to get&amp;nbsp;started:  &lt;/p&gt;
@@ -533,7 +557,7 @@ besides the&amp;nbsp;point).  &lt;/p&gt;
 stdfx.h. Just missing one file &amp;#8230;&amp;nbsp;again!  &lt;/p&gt;
 &lt;p&gt;On the other hand, now I can read code in two OSes. Sure is interesting
 dereferencing all those&amp;nbsp;pointers!  &lt;/p&gt;
-&lt;p&gt;Quantizing spacetime is fun,&amp;nbsp;though!&lt;/p&gt;</summary><category term="quantum gravity"></category><category term="vmware"></category><category term="ubuntu"></category><category term="cdt"></category></entry><entry><title>Causal Dynamical Triangulations updates</title><link href="http://adamgetchell.org/causal-dynamical-triangulation.html" rel="alternate"></link><published>2008-08-01T08:27:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-08-01:causal-dynamical-triangulation.html</id><summary type="html">&lt;p&gt;The papers to read to get started:&lt;br /&gt;
+&lt;p&gt;Quantizing spacetime is fun,&amp;nbsp;though!&lt;/p&gt;</summary><category term="cdt"></category><category term="quantum gravity"></category><category term="vmware"></category><category term="ubuntu"></category></entry><entry><title>Causal Dynamical Triangulations updates</title><link href="https://adamgetchell.org/causal-dynamical-triangulation.html" rel="alternate"></link><published>2008-08-01T08:27:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-08-01:causal-dynamical-triangulation.html</id><summary type="html">&lt;p&gt;The papers to read to get started:&lt;br /&gt;
 &lt;a href="http://arxiv.org/abs/hep-th/0212340"&gt;&lt;br /&gt;
 A discrete history of the Lorentzian path
 integral&lt;/a&gt;&lt;br /&gt;
@@ -554,7 +578,7 @@ Spectral dimension of the&amp;nbsp;Universe&lt;/a&gt;  &lt;/p&gt;
 from&amp;nbsp;Marcus)  &lt;/p&gt;
 &lt;p&gt;And finally, the &lt;a href="http://arxiv.org/find/all/1/all:+AND+triangulations+AND+causal+dynamical/0/1/0/all/0/1"&gt;current
 literature&lt;/a&gt;
-on&amp;nbsp;ArXiv.&lt;/p&gt;</summary><category term="quantum gravity"></category><category term="cdt"></category></entry><entry><title>Are we living in a simulation?</title><link href="http://adamgetchell.org/are-we-living-in-simulation.html" rel="alternate"></link><published>2008-05-05T02:24:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-05-05:are-we-living-in-simulation.html</id><summary type="html">&lt;p&gt;Today I came across one of Dr. Nick Bostrom&amp;#8217;s &lt;a href="http://www.simulation-argument.com/simulation.html"&gt;existential philosophy
+on&amp;nbsp;ArXiv.&lt;/p&gt;</summary><category term="quantum gravity"></category><category term="cdt"></category></entry><entry><title>Are we living in a simulation?</title><link href="https://adamgetchell.org/are-we-living-in-simulation.html" rel="alternate"></link><published>2008-05-05T02:24:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-05-05:are-we-living-in-simulation.html</id><summary type="html">&lt;p&gt;Today I came across one of Dr. Nick Bostrom&amp;#8217;s &lt;a href="http://www.simulation-argument.com/simulation.html"&gt;existential philosophy
 papers&lt;/a&gt; regarding
 life vs. sim-life (aka are we living in the&amp;nbsp;Matrix?).  &lt;/p&gt;
 &lt;p&gt;To me, the really interesting question is the assumption of
@@ -622,7 +646,7 @@ don&amp;#8217;t believe we&amp;#8217;re living in a&amp;nbsp;simulation:  &lt;/p
 &lt;/ul&gt;
 &lt;p&gt;Anyways, this is a very interesting topic, but I should continue my
 sidetracking avoidance and get back to my&amp;nbsp;research.&lt;/p&gt;
-&lt;/p&gt;</summary><category term="information theory"></category><category term="qft"></category><category term="voting"></category></entry><entry><title>Cosmology and Quantitative Biology</title><link href="http://adamgetchell.org/cosmology-and-quantitative-biology.html" rel="alternate"></link><published>2008-01-23T08:02:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-01-23:cosmology-and-quantitative-biology.html</id><summary type="html">&lt;p&gt;Went to an interesting seminar today about detecting traces of the
+&lt;/p&gt;</summary><category term="information theory"></category><category term="qft"></category><category term="voting"></category></entry><entry><title>Cosmology and Quantitative Biology</title><link href="https://adamgetchell.org/cosmology-and-quantitative-biology.html" rel="alternate"></link><published>2008-01-23T08:02:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-01-23:cosmology-and-quantitative-biology.html</id><summary type="html">&lt;p&gt;Went to an interesting seminar today about detecting traces of the
 reheat portion of the Hot Big Bang (the part that occurs after
 inflation), papers not yet out on arxiv (links posted here when they
 come&amp;nbsp;out).  &lt;/p&gt;
@@ -678,10 +702,10 @@ other similar-sized particle in a colloidal suspension.&lt;br /&gt;
 &lt;a href="http://ptonline.aip.org/journals/doc/PHTOAD-ft/vol_61/iss_1/42_1.shtml"&gt;&lt;br /&gt;
 &lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;</summary><category term="string theory"></category><category term="cosmology"></category><category term="quantitative biology"></category></entry><entry><title>Undecidability, Regularity, and Decoherence</title><link href="http://adamgetchell.org/undecidability-regularity-and.html" rel="alternate"></link><published>2008-01-22T11:49:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-01-22:undecidability-regularity-and.html</id><summary type="html">&lt;p&gt;&lt;a href="http://arxiv.org/PS_cache/arxiv/pdf/0801/0801.2564v1.pdf"&gt;Modern space-time and undecidability&lt;br /&gt;
+&lt;/ol&gt;</summary><category term="string theory"></category><category term="cosmology"></category><category term="quantitative biology"></category></entry><entry><title>Undecidability, Regularity, and Decoherence</title><link href="https://adamgetchell.org/undecidability-regularity-and.html" rel="alternate"></link><published>2008-01-22T11:49:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-01-22:undecidability-regularity-and.html</id><summary type="html">&lt;p&gt;&lt;a href="http://arxiv.org/PS_cache/arxiv/pdf/0801/0801.2564v1.pdf"&gt;Modern space-time and undecidability&lt;br /&gt;
 &lt;/a&gt;&lt;br /&gt;
-&lt;a href="http://en.wikipedia.org/wiki/Quantum_decoherence"&gt;Quantum&amp;nbsp;Decoherence&lt;/a&gt;&lt;/p&gt;</summary><category term="qft"></category><category term="general relativity"></category></entry><entry><title>Ultra-strong electric and magnetic fields, monopoles</title><link href="http://adamgetchell.org/ultra-strong-electric-and-magnetic.html" rel="alternate"></link><published>2008-01-22T11:46:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-01-22:ultra-strong-electric-and-magnetic.html</id><summary type="html">&lt;p&gt;&lt;a href="http://www.amolf.nl/publications/pdf/4339.pdf"&gt;Response of Polyatomic Molecules to Ultrastrong Laser- and Ion-Induced&amp;nbsp;Fields&lt;/a&gt;  &lt;/p&gt;
-&lt;p&gt;&lt;a href="http://arxiv.org/PS_cache/astro-ph/pdf/0002/0002442v1.pdf"&gt;Physics in Ultra-strong Magnetic&amp;nbsp;Fields&lt;/a&gt;&lt;/p&gt;</summary><category term="qft"></category></entry><entry><title>Dynamical Triangulations, SAGE</title><link href="http://adamgetchell.org/dynamical-triangulations-sage.html" rel="alternate"></link><published>2007-12-10T19:09:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-12-10:dynamical-triangulations-sage.html</id><summary type="html">&lt;p&gt;The first paper I read for Causal Dynamical Triangulations is a fairly
+&lt;a href="http://en.wikipedia.org/wiki/Quantum_decoherence"&gt;Quantum&amp;nbsp;Decoherence&lt;/a&gt;&lt;/p&gt;</summary><category term="qft"></category><category term="general relativity"></category></entry><entry><title>Ultra-strong electric and magnetic fields, monopoles</title><link href="https://adamgetchell.org/ultra-strong-electric-and-magnetic.html" rel="alternate"></link><published>2008-01-22T11:46:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-01-22:ultra-strong-electric-and-magnetic.html</id><summary type="html">&lt;p&gt;&lt;a href="http://www.amolf.nl/publications/pdf/4339.pdf"&gt;Response of Polyatomic Molecules to Ultrastrong Laser- and Ion-Induced&amp;nbsp;Fields&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;a href="http://arxiv.org/PS_cache/astro-ph/pdf/0002/0002442v1.pdf"&gt;Physics in Ultra-strong Magnetic&amp;nbsp;Fields&lt;/a&gt;&lt;/p&gt;</summary><category term="qft"></category></entry><entry><title>Dynamical Triangulations, SAGE</title><link href="https://adamgetchell.org/dynamical-triangulations-sage.html" rel="alternate"></link><published>2007-12-10T19:09:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-12-10:dynamical-triangulations-sage.html</id><summary type="html">&lt;p&gt;The first paper I read for Causal Dynamical Triangulations is a fairly
 steep introduction (for me), so I went and looked over the
 &lt;a href="http://arxiv.org/abs/hep-th/9805108"&gt;2D&lt;/a&gt; case and
 &lt;a href="http://arxiv.org/abs/hep-th/9806241"&gt;lessons&lt;/a&gt;, as well as a general
@@ -719,7 +743,7 @@ available on Google&amp;nbsp;Groups.  &lt;/p&gt;
 &lt;p&gt;PostScript: &lt;span class="caps"&gt;SAGE&lt;/span&gt; can be upgraded to Gutsy, I used the Upgrade Manager
 available in Xubuntu (I wanted a &lt;span class="caps"&gt;GUI&lt;/span&gt; for some &lt;span class="caps"&gt;SAGE&lt;/span&gt; file management via
 apt-get install&amp;nbsp;xubuntu-desktop)  &lt;/p&gt;
-&lt;p&gt;Doesn&amp;#8217;t work yet on &lt;span class="caps"&gt;BSD&lt;/span&gt;, alas, and running a &lt;span class="caps"&gt;SAGE&lt;/span&gt; server has security&amp;nbsp;implications.&lt;/p&gt;</summary><category term="SAGE"></category><category term="cdt"></category><category term="python"></category><category term="vmware"></category><category term="ubuntu"></category></entry><entry><title>F#, Regge Calculus, and other interludes</title><link href="http://adamgetchell.org/f-regge-calculus-and-other-interludes.html" rel="alternate"></link><published>2007-11-19T05:39:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-11-19:f-regge-calculus-and-other-interludes.html</id><summary type="html">&lt;p&gt;Still working on &lt;a href="http://adamgetchell.blogspot.com/2007_10_01_archive.html"&gt;Causal Dynamical
+&lt;p&gt;Doesn&amp;#8217;t work yet on &lt;span class="caps"&gt;BSD&lt;/span&gt;, alas, and running a &lt;span class="caps"&gt;SAGE&lt;/span&gt; server has security&amp;nbsp;implications.&lt;/p&gt;</summary><category term="SAGE"></category><category term="cdt"></category><category term="python"></category><category term="vmware"></category><category term="ubuntu"></category></entry><entry><title>F#, Regge Calculus, and other interludes</title><link href="https://adamgetchell.org/f-regge-calculus-and-other-interludes.html" rel="alternate"></link><published>2007-11-19T05:39:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-11-19:f-regge-calculus-and-other-interludes.html</id><summary type="html">&lt;p&gt;Still working on &lt;a href="http://adamgetchell.blogspot.com/2007_10_01_archive.html"&gt;Causal Dynamical
 Triangulations&lt;/a&gt;,
 I&amp;#8217;ve also taken some time out to (start to) learn a delightful new
 functional programming language,
@@ -863,7 +887,7 @@ gravitational&amp;nbsp;waves?&lt;/a&gt;  &lt;/p&gt;
 &lt;p&gt;Taking a 2 solar mass black hole traveling at .38c and converting 90% of
 its rest mass into a lobe-shaped pulse with width deltaU \~ 40 for 10E40
 GeV\^2 sounds&amp;nbsp;exciting!&lt;/p&gt;
-&lt;/p&gt;</summary><category term="cdt"></category><category term=".net"></category><category term="information theory"></category><category term="thermodynamics"></category><category term="quantum mechanics"></category><category term="f#"></category></entry><entry><title>Holomorphy and friends</title><link href="http://adamgetchell.org/holomorphy-and-friends.html" rel="alternate"></link><published>2007-10-03T04:48:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-10-03:holomorphy-and-friends.html</id><summary type="html">&lt;p&gt;I&amp;#8217;m reading Chapter 8 of &lt;a href="http://particle.physics.ucdavis.edu/modernsusy/index.html"&gt;Modern
+&lt;/p&gt;</summary><category term="cdt"></category><category term=".net"></category><category term="information theory"></category><category term="thermodynamics"></category><category term="quantum mechanics"></category><category term="f#"></category></entry><entry><title>Holomorphy and friends</title><link href="https://adamgetchell.org/holomorphy-and-friends.html" rel="alternate"></link><published>2007-10-03T04:48:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-10-03:holomorphy-and-friends.html</id><summary type="html">&lt;p&gt;I&amp;#8217;m reading Chapter 8 of &lt;a href="http://particle.physics.ucdavis.edu/modernsusy/index.html"&gt;Modern
 Supersymmetry&lt;/a&gt;.  &lt;/p&gt;
 &lt;p&gt;To understand the first sentence, I had to review Maldacena&amp;#8217;s
 &lt;a href="http://arxiv.org/PS_cache/hep-th/pdf/9711/9711200v3.pdf"&gt;paper&lt;/a&gt;, which
@@ -875,7 +899,7 @@ numerous
 theorems&lt;/a&gt; and
 &lt;a href="http://arxiv.org/PS_cache/hep-th/pdf/9802/9802109v2.pdf"&gt;Wilsonian effective
 action&lt;/a&gt;.  &lt;/p&gt;
-&lt;p&gt;Wow, lots to&amp;nbsp;catchup!&lt;/p&gt;</summary><category term="string theory"></category><category term="SUSY"></category></entry><entry><title>Quantum Parallel Universes</title><link href="http://adamgetchell.org/quantum-parallel-universes.html" rel="alternate"></link><published>2007-09-28T06:35:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-28:quantum-parallel-universes.html</id><summary type="html">&lt;p&gt;Professor Andy Albrecht has kindly pointed me to one of a series of
+&lt;p&gt;Wow, lots to&amp;nbsp;catchup!&lt;/p&gt;</summary><category term="string theory"></category><category term="SUSY"></category></entry><entry><title>Quantum Parallel Universes</title><link href="https://adamgetchell.org/quantum-parallel-universes.html" rel="alternate"></link><published>2007-09-28T06:35:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-28:quantum-parallel-universes.html</id><summary type="html">&lt;p&gt;Professor Andy Albrecht has kindly pointed me to one of a series of
 papers by David Deutsch that begins the proof of Hugh Everett&amp;#8217;s
 &lt;a href="http://plato.stanford.edu/entries/qm-manyworlds/"&gt;Many-World&amp;#8217;s
 Hypothesis&lt;/a&gt;:  &lt;/p&gt;
@@ -894,7 +918,7 @@ probability in the &lt;span class="caps"&gt;MWI&lt;/span&gt;.  &lt;/p&gt;
 &lt;a href="http://particle.physics.ucdavis.edu/teaching/246B/index.php"&gt;class&lt;/a&gt;,
 taught by Prof. John Terning, which picks up where my last &lt;span class="caps"&gt;SUSY&lt;/span&gt; class
 left off. Wow, I need to
-&lt;a href="http://particle.physics.ucdavis.edu/teaching/246/index.php"&gt;review&lt;/a&gt;!&lt;/p&gt;</summary><category term="qft"></category><category term="SUSY"></category></entry><entry><title>A new direction</title><link href="http://adamgetchell.org/new-direction.html" rel="alternate"></link><published>2007-09-23T22:07:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-23:new-direction.html</id><summary type="html">&lt;p&gt;After a long hiatus, I&amp;#8217;m back&amp;nbsp;&amp;#8230;  &lt;/p&gt;
+&lt;a href="http://particle.physics.ucdavis.edu/teaching/246/index.php"&gt;review&lt;/a&gt;!&lt;/p&gt;</summary><category term="qft"></category><category term="SUSY"></category></entry><entry><title>A new direction</title><link href="https://adamgetchell.org/new-direction.html" rel="alternate"></link><published>2007-09-23T22:07:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-23:new-direction.html</id><summary type="html">&lt;p&gt;After a long hiatus, I&amp;#8217;m back&amp;nbsp;&amp;#8230;  &lt;/p&gt;
 &lt;p&gt;Back to what? Well, most of that hiatus was due to work, and I already
 keep a (boring) work journal. But the main thing is I&amp;#8217;m back to doing
 physics&amp;nbsp;&amp;#8230;  &lt;/p&gt;
@@ -916,7 +940,7 @@ together&lt;/a&gt;.  &lt;/p&gt;
 &lt;p&gt;With a reference to the&amp;nbsp;classics:  &lt;/p&gt;
 &lt;p&gt;&lt;a href="http://math.ucr.edu/home/baez/einstein/einstein.html"&gt;http://math.ucr.edu/home/baez/einstein/einstein.html&lt;/a&gt;  &lt;/p&gt;
 &lt;p&gt;&lt;a href="http://math.ucr.edu/home/baez/gr/gr.html"&gt;http://math.ucr.edu/home/baez/gr/gr.html&lt;/a&gt;  &lt;/p&gt;
-&lt;p&gt;Well, that should be enough to start with this&amp;nbsp;weekend!&lt;/p&gt;</summary><category term="quantum gravity"></category></entry><entry><title>Beginning String Theory</title><link href="http://adamgetchell.org/beginning-string-theory.html" rel="alternate"></link><published>2007-09-22T23:39:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:beginning-string-theory.html</id><summary type="html">&lt;p&gt;Okay, I’ve been posting enough about my day&amp;nbsp;job.&lt;/p&gt;
+&lt;p&gt;Well, that should be enough to start with this&amp;nbsp;weekend!&lt;/p&gt;</summary><category term="quantum gravity"></category></entry><entry><title>Beginning String Theory</title><link href="https://adamgetchell.org/beginning-string-theory.html" rel="alternate"></link><published>2007-09-22T23:39:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:beginning-string-theory.html</id><summary type="html">&lt;p&gt;Okay, I’ve been posting enough about my day&amp;nbsp;job.&lt;/p&gt;
 &lt;p&gt;By night I’m a physics graduate student. Well, my work lets me go to
 class during the day, but (when I’m productive) night and
 weekend minutes are for physics (sounds like a mobile phone&amp;nbsp;commercial).&lt;/p&gt;

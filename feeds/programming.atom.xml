@@ -1,36 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Adam's Entropy</title><link href="http://adamgetchell.org/" rel="alternate"></link><link href="http://adamgetchell.org/feeds/programming.atom.xml" rel="self"></link><id>http://adamgetchell.org/</id><updated>2016-04-17T00:00:00-07:00</updated><entry><title>Atom vs. CLion</title><link href="http://adamgetchell.org/atom-vs-clion.html" rel="alternate"></link><published>2016-04-17T00:00:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2016-04-17:atom-vs-clion.html</id><summary type="html">&lt;p&gt;Today I decided to give &lt;a href="https://www.jetbrains.com/clion/"&gt;CLion&lt;/a&gt; a try. I need all the help I can&amp;nbsp;get.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Adam's Entropy</title><link href="https://adamgetchell.org/" rel="alternate"></link><link href="https://adamgetchell.org/feeds/programming.atom.xml" rel="self"></link><id>https://adamgetchell.org/</id><updated>2016-04-17T00:00:00-07:00</updated><entry><title>Atom vs. CLion</title><link href="https://adamgetchell.org/atom-vs-clion.html" rel="alternate"></link><published>2016-04-17T00:00:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2016-04-17:atom-vs-clion.html</id><summary type="html">&lt;p&gt;Today I decided to give &lt;a href="https://www.jetbrains.com/clion/"&gt;CLion&lt;/a&gt; a try. I need all the help I can&amp;nbsp;get.&lt;/p&gt;
+&lt;p&gt;(I also should mention that JetBrains generously gives &lt;a href="https://www.jetbrains.com/clion/buy/#edition=discounts"&gt;free CLion licenses&lt;/a&gt;
+to students, teachers, and non-commercial open source&amp;nbsp;projects.)&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://atom.io"&gt;Atom&lt;/a&gt; is very nice, and I&amp;#8217;ve been using it since 0.1 for everything from
-&lt;span class="math"&gt;\(\LaTeX\)&lt;/span&gt;ing papers to writing this blog to everyday coding in C++. However, my
-latest travails involve heavy use of the &lt;a href="http://lldb.llvm.org"&gt;debugger&lt;/a&gt;, and doing that on the
-command line is not so nice. So I was lured in with the promise of a nice,
-graphical debugger in an honest &lt;span class="caps"&gt;IDE&lt;/span&gt;.&lt;/p&gt;
+&lt;span class="math"&gt;\(\LaTeX\)&lt;/span&gt;ing papers to writing this blog to everyday coding. However, my
+latest travails involve heavy use of the &lt;a href="http://lldb.llvm.org"&gt;debugger&lt;/a&gt;, and doing so with
+heavily templated code on the command line is not so&amp;nbsp;nice.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Debugging on the command line" src="images/cli-debugger.png" /&gt;&lt;/p&gt;
+&lt;p&gt;So I was lured in with the promise of a nice, graphical debugger in an honest
+&lt;span class="caps"&gt;IDE&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;After tinkering around with it for an hour or so, and trawling through the
-forums, I&amp;#8217;ve managed to get CLion to look very close to my Atom setup. Except
-for the different colors used in syntax highlighting, but I&amp;#8217;ll get used to that,
+forums, I&amp;#8217;ve managed to get CLion to look very close to my Atom setup, except
+for the different syntax highlighting colors. But I&amp;#8217;ll get used to that,
 or I can always customize the color scheme to Atom&amp;#8217;s material syntax if it
 really bothers&amp;nbsp;me.&lt;/p&gt;
-&lt;p&gt;So, here are the Pros and&amp;nbsp;Cons.&lt;/p&gt;
 &lt;p&gt;Pros:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Code completion is nice! (Really, really&amp;nbsp;nice.)&lt;/li&gt;
-&lt;li&gt;Refactoring is wonderful. There is just an order of magnitude more things
-CLion does because&amp;nbsp;&amp;#8230;&lt;/li&gt;
-&lt;li&gt;It&amp;#8217;s really nice to be working with a tool that understands the C++
-constructs, instead of just doing some clever pattern&amp;nbsp;matching.&lt;/li&gt;
+&lt;li&gt;Code completion is&amp;nbsp;nice.&lt;/li&gt;
+&lt;li&gt;Refactoring is wonderful. Also, CLion is smart enough to point out things
+you don&amp;#8217;t need, such as .gitignore items covered by other definitions. In
+general, CLion seems to have a lot of best practices baked right&amp;nbsp;in.&lt;/li&gt;
+&lt;li&gt;It&amp;#8217;s really nice to be working with a tool that understands the
+&lt;a href="http://www.meetup.com/SF-Bay-Area-Cpp/events/228070137/"&gt;C++ constructs&lt;/a&gt;, instead of just doing some clever pattern&amp;nbsp;matching.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;img alt="CLion with CodeGlance" src="images/clion-codeglance.png" /&gt;&lt;/p&gt;
 &lt;p&gt;Cons:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;No option to use &lt;a href="https://ninja-build.org"&gt;Ninja&lt;/a&gt; as my build tool. This increases build times
-perceptibly. (&lt;a href="http://nevkontakte.com/2015/rogue-ninja-support-in-clion.html"&gt;Here&amp;#8217;s a hack&lt;/a&gt;.)&lt;/li&gt;
+perceptibly (but a &lt;a href="http://nevkontakte.com/2015/rogue-ninja-support-in-clion.html"&gt;hack&lt;/a&gt;&amp;nbsp;exists).&lt;/li&gt;
 &lt;li&gt;Inexplicably builds in some hidden directory instead of the output directory
 (but see the &lt;a href="https://blog.jetbrains.com/clion/2016/03/clion-2016-2-roadmap/"&gt;roadmap for 2016.2&lt;/a&gt;).&lt;/li&gt;
 &lt;li&gt;The debugger skips right past my set&amp;nbsp;breakpoints.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Sadly, that last one is pretty much a&amp;nbsp;dealbreaker.&lt;/p&gt;
+&lt;p&gt;Sadly, the last two are pretty much&amp;nbsp;dealbreakers.&lt;/p&gt;
 &lt;p&gt;I&amp;#8217;ve submitted a support request, and I really think that CLion 2016.2 looks
 very&amp;nbsp;promising.&lt;/p&gt;
-&lt;p&gt;But as of now I&amp;#8217;ll still be writing/coding in&amp;nbsp;Atom.&lt;/p&gt;
+&lt;p&gt;But as of now I&amp;#8217;ll still be writing/&lt;del&gt;coding&lt;/del&gt; in&amp;nbsp;Atom.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class="caps"&gt;UPDATE&lt;/span&gt;&amp;nbsp;2016-04-25&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Debugging works now, it&amp;#8217;s reportedly an issue with symbolic links in the project
+path, and improvements are expected in the next version. I&amp;#8217;ve configured
+Run/Debug so that GoogleTests are pleasant to use, as is the &lt;span class="caps"&gt;VCS&lt;/span&gt; GitHub
+integration. CLion has replaced my Atom/Terminal/GitHub Desktop trifecta;
+I&amp;#8217;m pretty comfortable coding in CLion now, and don&amp;#8217;t really want to go&amp;nbsp;back.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="CLion Debugging" src="images/clion-debugging.png" /&gt;&lt;/p&gt;
 &lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
         indent = "0em",
@@ -87,7 +99,7 @@ very&amp;nbsp;promising.&lt;/p&gt;
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</summary><category term="c++"></category></entry><entry><title>Lisp Conversion</title><link href="http://adamgetchell.org/lisp-conversion.html" rel="alternate"></link><published>2011-12-01T23:32:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2011-12-01:lisp-conversion.html</id><summary type="html">&lt;p&gt;A few months and a lot of Lisp later, I find myself convinced/converted&amp;nbsp;&amp;#8230;  &lt;/p&gt;
+&lt;/script&gt;</summary><category term="c++"></category><category term="atom"></category><category term="clion"></category></entry><entry><title>Lisp Conversion</title><link href="https://adamgetchell.org/lisp-conversion.html" rel="alternate"></link><published>2011-12-01T23:32:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2011-12-01:lisp-conversion.html</id><summary type="html">&lt;p&gt;A few months and a lot of Lisp later, I find myself convinced/converted&amp;nbsp;&amp;#8230;  &lt;/p&gt;
 &lt;p&gt;&amp;#8230; To &lt;a href="http://clojure.org/"&gt;Clojure&lt;/a&gt;.  &lt;/p&gt;
 &lt;p&gt;Rajesh, you were&amp;nbsp;right!  &lt;/p&gt;
 &lt;p&gt;As far as language ~~snobbery~~ coolness, it has a bunch of features I
@@ -205,7 +217,7 @@ and start with the &lt;a href="https://github.com/ucdavis/CDT"&gt;&lt;span class
 &lt;p&gt;So, a modern Lisp with powerful IDEs, modern libraries from the &lt;span class="caps"&gt;JVM&lt;/span&gt;,
 interactive &lt;span class="caps"&gt;REPL&lt;/span&gt;/&lt;span class="caps"&gt;TDD&lt;/span&gt;, great documentation, learning resources, and
 books &amp;#8212; what&amp;#8217;s not to&amp;nbsp;like?  &lt;/p&gt;
-&lt;/p&gt;</summary><category term="lisp"></category><category term="tdd"></category><category term="clojure"></category></entry><entry><title>Reflection tools for F#</title><link href="http://adamgetchell.org/embedding-gists-in-blogger.html" rel="alternate"></link><published>2011-04-19T08:52:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2011-04-19:embedding-gists-in-blogger.html</id><summary type="html">&lt;p&gt;I went to the fabuluous &lt;a href="http://codeconf.com/"&gt;CodeConf 2011&lt;/a&gt; (view
+&lt;/p&gt;</summary><category term="lisp"></category><category term="tdd"></category><category term="clojure"></category></entry><entry><title>Reflection tools for F#</title><link href="https://adamgetchell.org/embedding-gists-in-blogger.html" rel="alternate"></link><published>2011-04-19T08:52:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2011-04-19:embedding-gists-in-blogger.html</id><summary type="html">&lt;p&gt;I went to the fabuluous &lt;a href="http://codeconf.com/"&gt;CodeConf 2011&lt;/a&gt; (view
 &lt;a href="http://lanyrd.com/2011/codeconf/slides/"&gt;slides&lt;/a&gt;,
 &lt;a href="https://github.com/blog/835-codeconf-2011-mission-accomplished"&gt;recaps&lt;/a&gt;
 &lt;a href="http://www.peebs.org/2011/04/codeconf-2011-day-one/"&gt;here&lt;/a&gt;,
@@ -226,14 +238,18 @@ informative example in his book &lt;a href="http://fsharpnews.blogspot.com/2010/
 Computing&lt;/a&gt;.  &lt;/p&gt;
 &lt;p&gt;First, we want a union type which represents (i.e. abstracts away) the
 F# type&amp;nbsp;system:  &lt;/p&gt;
+&lt;script src="https://gist.github.com/acgetchell/926997.js"&gt;&lt;/script&gt;
+
 &lt;p&gt;Next, we want a (recursive) function (called, straightforwardly enough,
-type_of) that reflects (using FSharpType) and translates a given
-System.Type object into one of the &amp;#8216;a ty union types defined&amp;nbsp;previously:  &lt;/p&gt;
+&lt;code&gt;type_of&lt;/code&gt;) that reflects (using FSharpType) and translates a given
+&lt;code&gt;System.Type&lt;/code&gt; object into one of the &lt;code&gt;'a ty&lt;/code&gt; union types defined&amp;nbsp;previously:  &lt;/p&gt;
+&lt;script src="https://gist.github.com/acgetchell/926994.js"&gt;&lt;/script&gt;
+
 &lt;p&gt;This then allows us to emit the following two liner which can parse
 objects such as the List.fold function! (Note: everything after the ;;
 is the F# Interactive&amp;nbsp;response.)  &lt;/p&gt;
 &lt;p&gt;Neat stuff! I&amp;#8217;ve a thousand or two lines of Lisp to look at, so this is
-not something I want to have to remember&amp;nbsp;later.&lt;/p&gt;</summary><category term="f#"></category></entry><entry><title>Software Archaeology</title><link href="http://adamgetchell.org/software-archaeology.html" rel="alternate"></link><published>2011-04-11T22:19:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2011-04-11:software-archaeology.html</id><summary type="html">&lt;p&gt;&lt;a href="http://en.wikipedia.org/wiki/Vernor_Vinge"&gt;Vernor Vinge&lt;/a&gt; prophetically
+not something I want to have to remember&amp;nbsp;later.&lt;/p&gt;</summary><category term="f#"></category></entry><entry><title>Software Archaeology</title><link href="https://adamgetchell.org/software-archaeology.html" rel="alternate"></link><published>2011-04-11T22:19:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2011-04-11:software-archaeology.html</id><summary type="html">&lt;p&gt;&lt;a href="http://en.wikipedia.org/wiki/Vernor_Vinge"&gt;Vernor Vinge&lt;/a&gt; prophetically
 &lt;a href="http://books.slashdot.org/story/03/09/18/0411259/Review-A-Fire-Upon-the-Deep-Special-Edition"&gt;wrote of a
 time&lt;/a&gt;
 when programmer-archaeologists maintained the fabric of civilization by
@@ -619,7 +635,7 @@ I hope this was informative, or at least, entertaining!
 
 &lt;/div&gt;
 
-&lt;/p&gt;</summary></entry><entry><title>CDT rewrite toolbox</title><link href="http://adamgetchell.org/cdt-rewrite-toolbox.html" rel="alternate"></link><published>2010-01-20T07:54:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2010-01-20:cdt-rewrite-toolbox.html</id><summary type="html">&lt;p&gt;So, my colleagues have developed a
+&lt;/p&gt;</summary></entry><entry><title>CDT rewrite toolbox</title><link href="https://adamgetchell.org/cdt-rewrite-toolbox.html" rel="alternate"></link><published>2010-01-20T07:54:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2010-01-20:cdt-rewrite-toolbox.html</id><summary type="html">&lt;p&gt;So, my colleagues have developed a
 &lt;a href="http://adamgetchell.blogspot.com/2007_10_01_archive.html"&gt;&lt;span class="caps"&gt;CDT&lt;/span&gt;&lt;/a&gt; program
 that&amp;#8217;s usable. Fortunately for me, it&amp;#8217;s in &lt;span class="caps"&gt;LISP&lt;/span&gt;, which lacks parallel
 processing, modern libraries, a nice &lt;span class="caps"&gt;IDE&lt;/span&gt;, and the other goodies I&amp;#8217;ve
@@ -638,7 +654,7 @@ and &lt;a href="http://ironscheme.codeplex.com/"&gt;IronScheme&lt;/a&gt;.  &lt;/
 setup)&lt;/a&gt;:  &lt;/p&gt;
 &lt;p&gt;And voila, no more excuses to complain about&amp;nbsp;development.  &lt;/p&gt;
 &lt;p&gt;(Yes, the end goal is to make it Python and cross-platform, although I&amp;#8217;m
-really eying&amp;nbsp;F#)&lt;/p&gt;</summary><category term="lisp"></category><category term="cdt"></category><category term="python"></category></entry><entry><title>ProjectEuler on F#</title><link href="http://adamgetchell.org/projecteuler-on-f.html" rel="alternate"></link><published>2007-11-19T09:24:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-11-19:projecteuler-on-f.html</id><summary type="html">&lt;p&gt;So, whilst poring through Pickering&amp;#8217;s book and browsing through &lt;a href="http://tomasp.net/about/fsharp.aspx"&gt;Tomas
+really eying&amp;nbsp;F#)&lt;/p&gt;</summary><category term="lisp"></category><category term="cdt"></category><category term="python"></category></entry><entry><title>ProjectEuler on F#</title><link href="https://adamgetchell.org/projecteuler-on-f.html" rel="alternate"></link><published>2007-11-19T09:24:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-11-19:projecteuler-on-f.html</id><summary type="html">&lt;p&gt;So, whilst poring through Pickering&amp;#8217;s book and browsing through &lt;a href="http://tomasp.net/about/fsharp.aspx"&gt;Tomas
 Petricek&amp;#8217;s blog&lt;/a&gt; (which has a
 promising &lt;a href="http://tomasp.net/articles/fswebtools-intro.aspx"&gt;F# &lt;span class="caps"&gt;AJAX&lt;/span&gt;
 toolkit&lt;/a&gt;, which alas,
@@ -670,7 +686,7 @@ fascinating&amp;nbsp;too.  &lt;/p&gt;
 no longer necessary, since &lt;span
 style="color: rgb(51, 51, 255);"&gt;using&lt;/span&gt; is integrated into&amp;nbsp;F#)  &lt;/p&gt;
 &lt;p&gt;Finally, here&amp;#8217;s &lt;a href="http://feeds.feedburner.com/planet_fsharp"&gt;Feedburner&amp;#8217;s Planet
-F#&lt;/a&gt;.&lt;/p&gt;</summary><category term=".net"></category><category term="f#"></category></entry><entry><title>Fun with Microsoft’s Enterprise Library</title><link href="http://adamgetchell.org/fun-with-microsofts-enterprise-library.html" rel="alternate"></link><published>2007-09-22T23:42:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:fun-with-microsofts-enterprise-library.html</id><summary type="html">&lt;p&gt;Oh yeah, back to my day-job: I&amp;#8217;m a&amp;nbsp;programmer.  &lt;/p&gt;
+F#&lt;/a&gt;.&lt;/p&gt;</summary><category term=".net"></category><category term="f#"></category></entry><entry><title>Fun with Microsoft’s Enterprise Library</title><link href="https://adamgetchell.org/fun-with-microsofts-enterprise-library.html" rel="alternate"></link><published>2007-09-22T23:42:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:fun-with-microsofts-enterprise-library.html</id><summary type="html">&lt;p&gt;Oh yeah, back to my day-job: I&amp;#8217;m a&amp;nbsp;programmer.  &lt;/p&gt;
 &lt;p&gt;So we&amp;#8217;ve got a new application to update the current stone-tablet
 process in the University that determines if students actually&amp;nbsp;graduate.  &lt;/p&gt;
 &lt;p&gt;Now, I like to write good code, and furthermore, if someone else writes
@@ -879,7 +895,7 @@ exercise will exceed the several thousand I could be writing if I just
 wrote everything&amp;nbsp;myself.  &lt;/p&gt;
 &lt;p&gt;What&amp;#8217;s that again about the virtues of programmers? Laziness,
 impatience, and hubris. Oh, alright&amp;nbsp;then.&lt;/p&gt;
-&lt;/p&gt;</summary><category term=".net"></category></entry><entry><title>Fun with Microsoft Enterprise Library, part 2</title><link href="http://adamgetchell.org/fun-with-microsoft-enterprise-library.html" rel="alternate"></link><published>2007-09-22T23:41:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:fun-with-microsoft-enterprise-library.html</id><summary type="html">&lt;p&gt;Okay, I can see that this is going to be a long series&amp;nbsp;&amp;#8230;.  &lt;/p&gt;
+&lt;/p&gt;</summary><category term=".net"></category></entry><entry><title>Fun with Microsoft Enterprise Library, part 2</title><link href="https://adamgetchell.org/fun-with-microsoft-enterprise-library.html" rel="alternate"></link><published>2007-09-22T23:41:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:fun-with-microsoft-enterprise-library.html</id><summary type="html">&lt;p&gt;Okay, I can see that this is going to be a long series&amp;nbsp;&amp;#8230;.  &lt;/p&gt;
 &lt;p&gt;Here&amp;#8217;s what I&amp;#8217;m talking about on how to get Visual Studio to see
 Enterprise Library assemblies without browsing (taken from the GotDotNet
 workspace patterns &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; practices: Enterprise Library: Message&amp;nbsp;Boards):  &lt;/p&gt;
@@ -975,7 +991,7 @@ like extending the Logging class to handle &lt;span class="caps"&gt;XML&lt;/span
 Tests there built to ensure its continued functionality. So I need that
 book on Test Driven Development real soon&amp;nbsp;now.  &lt;/p&gt;
 &lt;p&gt;Well, at least I&amp;#8217;m not bored.&lt;br /&gt;
-&lt;/span&gt;&lt;/p&gt;</summary><category term=".net"></category></entry><entry><title>Enterprise Library authentication</title><link href="http://adamgetchell.org/enterprise-library-authentication.html" rel="alternate"></link><published>2007-09-22T23:40:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:enterprise-library-authentication.html</id><summary type="html">&lt;p&gt;&lt;a href="http://weblogs.asp.net/drohrer/"&gt;Doug Rohrer&lt;/a&gt;, one of
+&lt;/span&gt;&lt;/p&gt;</summary><category term=".net"></category></entry><entry><title>Enterprise Library authentication</title><link href="https://adamgetchell.org/enterprise-library-authentication.html" rel="alternate"></link><published>2007-09-22T23:40:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:enterprise-library-authentication.html</id><summary type="html">&lt;p&gt;&lt;a href="http://weblogs.asp.net/drohrer/"&gt;Doug Rohrer&lt;/a&gt;, one of
 &lt;a href="http://www.avanade.com/"&gt;Avanade&lt;/a&gt; guys who worked on the Enterprise
 Library, has posted a fantastic End to End Enterprise Library project
 which incorporates the &lt;span class="caps"&gt;EL&lt;/span&gt; into &lt;span class="caps"&gt;ASP&lt;/span&gt;.&lt;span class="caps"&gt;NET&lt;/span&gt; and Winforms&amp;nbsp;applications.  &lt;/p&gt;
@@ -1369,7 +1385,7 @@ to Login&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Cool&amp;nbsp;stuff!&lt;/p&gt;
-&lt;/p&gt;</summary><category term=".net"></category></entry><entry><title>Fun with ASP.NET security and Windows 2003 SP1 breakage</title><link href="http://adamgetchell.org/fun-with-aspnet-security-and-windows.html" rel="alternate"></link><published>2007-09-22T23:40:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:fun-with-aspnet-security-and-windows.html</id><summary type="html">&lt;p&gt;Problem: you want secure database access, using a connection string like&amp;nbsp;this:&lt;/p&gt;
+&lt;/p&gt;</summary><category term=".net"></category></entry><entry><title>Fun with ASP.NET security and Windows 2003 SP1 breakage</title><link href="https://adamgetchell.org/fun-with-aspnet-security-and-windows.html" rel="alternate"></link><published>2007-09-22T23:40:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:fun-with-aspnet-security-and-windows.html</id><summary type="html">&lt;p&gt;Problem: you want secure database access, using a connection string like&amp;nbsp;this:&lt;/p&gt;
 &lt;div class="cf"&gt;
 
 &lt;span class="cb1"&gt;\&lt;&lt;/span&gt;&lt;span class="cb2"&gt;add&lt;/span&gt;&lt;span
@@ -1607,7 +1623,7 @@ synchronization&lt;/font&gt;&lt;/p&gt;
 &lt;p&gt;&lt;font face="Arial" size="2"&gt;Thank goodness Whidbey and Enterprise
 Library v2.0 aren’t coming out until September.&lt;/font&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;/p&gt;</summary><category term=".net"></category></entry><entry><title>Using Enterprise Library Logging</title><link href="http://adamgetchell.org/using-enterprise-library-logging.html" rel="alternate"></link><published>2007-09-22T23:40:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:using-enterprise-library-logging.html</id><summary type="html">&lt;p&gt;To get logging working without pesky &lt;span class="caps"&gt;WMI&lt;/span&gt;/Performance counter errors on
+&lt;/p&gt;</summary><category term=".net"></category></entry><entry><title>Using Enterprise Library Logging</title><link href="https://adamgetchell.org/using-enterprise-library-logging.html" rel="alternate"></link><published>2007-09-22T23:40:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:using-enterprise-library-logging.html</id><summary type="html">&lt;p&gt;To get logging working without pesky &lt;span class="caps"&gt;WMI&lt;/span&gt;/Performance counter errors on
 &lt;span style="font-style: italic;"&gt;every&lt;/span&gt; logged&amp;nbsp;event:  &lt;/p&gt;
 &lt;p&gt;Per &lt;a href="http://weblogs.asp.net/tomholl/archive/2005/02/18/376187.aspx#FeedBack"&gt;Tom Hollander&amp;#8217;s&amp;nbsp;weblog&lt;/a&gt;  &lt;/p&gt;
 &lt;p&gt;Go to the Logging project, Project Properties dialog for the Common
@@ -1776,5 +1792,5 @@ trial VisualPerl installation that won&amp;#8217;t&amp;nbsp;uninstall.  &lt;/p&g
 this&amp;nbsp;feature.  &lt;/p&gt;
 &lt;p&gt;&lt;span class="caps"&gt;P.S.&lt;/span&gt; Collin worked to fix &lt;span class="caps"&gt;CSAH&lt;/span&gt;, and I nuked and reinstalled my system,
 including Visual Studio 2003.&lt;span class="caps"&gt;NET&lt;/span&gt;. That seems to have done the&amp;nbsp;trick.&lt;/p&gt;
-&lt;/p&gt;</summary><category term=".net"></category></entry><entry><title>Signing and Installing the EnterpriseLibrary in the GAC</title><link href="http://adamgetchell.org/signing-and-installing.html" rel="alternate"></link><published>2007-09-22T23:39:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:signing-and-installing.html</id><summary type="html">&lt;p&gt;If you want to know how to do this, the gory details are
+&lt;/p&gt;</summary><category term=".net"></category></entry><entry><title>Signing and Installing the EnterpriseLibrary in the GAC</title><link href="https://adamgetchell.org/signing-and-installing.html" rel="alternate"></link><published>2007-09-22T23:39:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:signing-and-installing.html</id><summary type="html">&lt;p&gt;If you want to know how to do this, the gory details are
 &lt;a href="http://practices.gotdotnet.com/messageboard/thread.aspx?id=295a464a-6072-4e25-94e2-91be63527327&amp;amp;mbid=12e6b3c0-1261-461b-b86d-eff86af3939d&amp;amp;threadid=cd6a5007-bccd-4802-83a4-b4940d72088c"&gt;here&lt;/a&gt;.&lt;/p&gt;</summary><category term=".net"></category></entry></feed>

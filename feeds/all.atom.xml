@@ -1,36 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Adam's Entropy</title><link href="http://adamgetchell.org/" rel="alternate"></link><link href="http://adamgetchell.org/feeds/all.atom.xml" rel="self"></link><id>http://adamgetchell.org/</id><updated>2016-04-17T00:00:00-07:00</updated><entry><title>Atom vs. CLion</title><link href="http://adamgetchell.org/atom-vs-clion.html" rel="alternate"></link><published>2016-04-17T00:00:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2016-04-17:atom-vs-clion.html</id><summary type="html">&lt;p&gt;Today I decided to give &lt;a href="https://www.jetbrains.com/clion/"&gt;CLion&lt;/a&gt; a try. I need all the help I can&amp;nbsp;get.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://atom.io"&gt;Atom&lt;/a&gt; is very nice, and I&amp;#8217;ve been using it since 0.1 for everything from
-&lt;span class="math"&gt;\(\LaTeX\)&lt;/span&gt;ing papers to writing this blog to everyday coding in C++. However, my
-latest travails involve heavy use of the &lt;a href="http://lldb.llvm.org"&gt;debugger&lt;/a&gt;, and doing that on the
-command line is not so nice. So I was lured in with the promise of a nice,
-graphical debugger in an honest &lt;span class="caps"&gt;IDE&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;After tinkering around with it for an hour or so, and trawling through the
-forums, I&amp;#8217;ve managed to get CLion to look very close to my Atom setup. Except
-for the different colors used in syntax highlighting, but I&amp;#8217;ll get used to that,
-or I can always customize the color scheme to Atom&amp;#8217;s material syntax if it
-really bothers&amp;nbsp;me.&lt;/p&gt;
-&lt;p&gt;So, here are the Pros and&amp;nbsp;Cons.&lt;/p&gt;
-&lt;p&gt;Pros:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Adam's Entropy</title><link href="https://adamgetchell.org/" rel="alternate"></link><link href="https://adamgetchell.org/feeds/all.atom.xml" rel="self"></link><id>https://adamgetchell.org/</id><updated>2016-08-15T12:23:00-07:00</updated><entry><title>Secure, Verifiable, Public Identity</title><link href="https://adamgetchell.org/secure-verifiable-public-identity.html" rel="alternate"></link><published>2016-08-15T12:23:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2016-08-12:secure-verifiable-public-identity.html</id><summary type="html">&lt;p&gt;For awhile, I&amp;#8217;ve been interested in establishing a secure, verifiable, public&amp;nbsp;identity.&lt;/p&gt;
+&lt;p&gt;There are &lt;a href="https://keybase.io/blog/2014-10-08/the-horror-of-a-secure-golden-key"&gt;any&lt;/a&gt; &lt;a href="http://www.zdnet.com/article/microsoft-secure-boot-key-debacle-causes-security-panic/"&gt;number&lt;/a&gt; of reasons to do this, for example,
+&lt;a href="https://www.youtube.com/watch?v=pDmj_xe7EIQ"&gt;authenticity&lt;/a&gt; and &lt;a href="http://security.stackexchange.com/questions/6730/what-is-the-difference-between-authenticity-and-non-repudiation"&gt;non-repudiation&lt;/a&gt;,
+&lt;a href="https://keybase.io/docs/kbfs"&gt;frictionless sharing of files&lt;/a&gt;, and so forth. But that&amp;#8217;s the topic of
+another article. What I want to talk about here is how I got to the promised&amp;nbsp;land.&lt;/p&gt;
+&lt;p&gt;First up is &lt;a href="https://keybase.io"&gt;Keybase&lt;/a&gt;, which is a really awesome software
+stack that maps your identity to your public keys. You might want to
+&lt;a href="https://keybase.io/docs/kbfs"&gt;read about&lt;/a&gt; it. Go ahead, I&amp;#8217;ll&amp;nbsp;wait.&lt;/p&gt;
+&lt;p&gt;Signup is currently by invite only, but if you know &lt;a href="https://keybase.io/adamgetchell"&gt;someone&lt;/a&gt; already on it
+you might be able to wrangle an&amp;nbsp;invite.&lt;/p&gt;
+&lt;p&gt;When you do sign up, they&amp;#8217;ll ask for an email address. Of course, we all
+know that email is &lt;a href="https://www.viget.com/articles/email-is-completely-insecure-by-default"&gt;notoriously insecure&lt;/a&gt;, &lt;a href="http://www.howtogeek.com/180604/htg-explains-why-is-spam-still-a-problem/"&gt;subject to spamming&lt;/a&gt;,
+&lt;a href="http://www.wired.com/2015/03/ugly-mail/"&gt;ad-analytics&lt;/a&gt;, and any number of security maladies, but I didn&amp;#8217;t want to
+bow to that (seeming)&amp;nbsp;inevitability.&lt;/p&gt;
+&lt;p&gt;As it turns out, this was the perfect opportunity to use another highly secure
+service I&amp;#8217;d been playing with: &lt;a href="https://protonmail.com"&gt;ProtonMail&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;ProtonMail has encrypted identities in order to retrieve your data, is housed
+in Switzerland (so certain entities won&amp;#8217;t obtain access easily), is encrypted
+again with your own key which ProtonMail doesn&amp;#8217;t know so that they cannot
+access your data even if certain entities force them to hand it over, has mobile app versions, and implements all the right sorts of technologies to
+patch up the leaky sieve of general purpose electronic correspondence while
+still remaining useful to&amp;nbsp;non-Sendmail-grognards.&lt;/p&gt;
+&lt;p&gt;Now, if I&amp;#8217;m going to bother to have a vanity domain like &lt;a href="https://adamgetchell.org"&gt;adamgetchell.org&lt;/a&gt;,
+I may as well have an email address like adam@&amp;#8230; So while the free version of
+&lt;a href="https://protonmail.com"&gt;ProtonMail&lt;/a&gt; is fine for tinkering, I stepped up to a paid account in order
+to get these and other features, as we&amp;#8217;ll go over shortly. For $48 per year,
+not too bad, and I felt good about supporting&amp;nbsp;them.&lt;/p&gt;
+&lt;p&gt;The next step towards greater email security is to verify you own your&amp;nbsp;domain.&lt;/p&gt;
+&lt;p&gt;My domain registrar is &lt;a href="https://joker.com"&gt;Joker&lt;/a&gt;, a fine German domain registrar also housed
+in Switzerland (seeing a theme?) that runs me about $12/year. ProtonMail
+provides a nice wizard to step you through everything, so from&amp;nbsp;that:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="DNS Verification" src="images/dns-verification.png" /&gt;&lt;/p&gt;
+&lt;p&gt;You go to your &lt;span class="caps"&gt;DNS&lt;/span&gt; registrar and add the requested &lt;span class="caps"&gt;TXT&lt;/span&gt; record.
+&lt;a href="https://docs.menandmice.com/display/MM/How+to+test+DNSSEC+validation"&gt;Validate it&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Next, you&amp;#8217;ll need to add the &lt;span class="caps"&gt;MX&lt;/span&gt; record for your vanity domain, with the data
+that ProtonMail supplies. There&amp;#8217;s a pretty screenshot I could show, but data is
+rather trivial: set up an &lt;span class="caps"&gt;MX&lt;/span&gt; record, with a value of &lt;code&gt;mail.protonmail.ch&lt;/code&gt; and a
+priority of &lt;code&gt;10&lt;/code&gt;, and you&amp;#8217;re good to go. Give it some time to propagate through
+&lt;span class="caps"&gt;DNS&lt;/span&gt;-land; eat lunch, or have some coffee, or play your favorite game for a tick
+or&amp;nbsp;two.&lt;/p&gt;
+&lt;p&gt;Now you can just add the address in ProtonMail&amp;#8217;s Wizard&amp;nbsp;(Settings-&amp;gt;Domains)&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Setup address using your domain in ProtonMail" src="images/protonmail-vanity.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Alright, vanity email address, &lt;span class="math"&gt;\(\checkmark\)&lt;/span&gt;. Now it&amp;#8217;s time to secure&amp;nbsp;it.&lt;/p&gt;
+&lt;p&gt;You don&amp;#8217;t want someone to be able to fake your brand new domain. This is where
+&lt;a href="http://dnssec.net"&gt;&lt;span class="caps"&gt;DNSSEC&lt;/span&gt;&lt;/a&gt; comes in. However, in my case, &lt;a href="https://joker.com"&gt;Joker&lt;/a&gt;&amp;#8216;s &lt;span class="caps"&gt;DNS&lt;/span&gt; servers don&amp;#8217;t
+support it. No problem &amp;#8212; switch to someone who&amp;nbsp;does!&lt;/p&gt;
+&lt;p&gt;That someone is &lt;a href="https://www.cloudflare.com"&gt;CloudFlare&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;CloudFlare is a cool service that boosts your website speed via optimizations
+and CDNs, helps protect your website against some forms of malicious attacks,
+and can even mitigate&amp;nbsp;DDoS.&lt;/p&gt;
+&lt;p&gt;In this case, I&amp;#8217;m interested in them because they provide fast, secure &lt;span class="caps"&gt;DNS&lt;/span&gt;, and
+because I can get a free account for my single website. What&amp;#8217;s not to&amp;nbsp;like?&lt;/p&gt;
+&lt;p&gt;I also highly recommend them in general. I&amp;#8217;ve used them for a number of years
+professionally, and they&amp;#8217;ve been worth the&amp;nbsp;cost.&lt;/p&gt;
+&lt;p&gt;On Joker I can specify the CloudFlare will be my &lt;span class="caps"&gt;DNS&lt;/span&gt; server like&amp;nbsp;so:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="CloudFlare DNS Settings on Joker" src="images/cloudflare-dns.png" /&gt;&lt;/p&gt;
+&lt;p&gt;A helpful wizard will pop up telling you that you&amp;#8217;re about to transfer records
+over, which you should do. (Actually, I turned on &lt;span class="caps"&gt;DNSSEC&lt;/span&gt; much later in the
+process than what I&amp;#8217;m writing here. Thus, most of my &lt;span class="caps"&gt;DNS&lt;/span&gt; changes were actually
+made on Joker&amp;#8217;s &lt;span class="caps"&gt;DNS&lt;/span&gt; servers, then migrated over to CloudFlare. That worked just&amp;nbsp;fine.)&lt;/p&gt;
+&lt;p&gt;Once you&amp;#8217;ve verified that CloudFlare is now handling your &lt;span class="caps"&gt;DNS&lt;/span&gt;, it&amp;#8217;s a simple
+matter to switch on &lt;span class="caps"&gt;DNSSEC&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="CloudFlare DNSSEC" src="images/cloudflare-dnssec.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Now, back to email! Just like we don&amp;#8217;t want someone to spoof our domain, we
+don&amp;#8217;t want to someone to spoof emails. Time for &lt;a href="http://www.dkim.org"&gt;&lt;span class="caps"&gt;DKIM&lt;/span&gt;&lt;/a&gt;, &lt;a href="http://www.openspf.org"&gt;&lt;span class="caps"&gt;SPF&lt;/span&gt;&lt;/a&gt;, and
+&lt;a href="https://dmarc.org"&gt;&lt;span class="caps"&gt;DMARC&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;ProtonMail has a fantastic guide to setting up &lt;a href="https://protonmail.com/support/knowledge-base/anti-spoofing/"&gt;Anti-spoofing for Custom
+Domains&lt;/a&gt;. Again, I&amp;#8217;ll wait while you read&amp;nbsp;it.&lt;/p&gt;
+&lt;p&gt;Whew! That was a long detour, but we finally have a secure email address to use
+for &lt;a href="https://keybase.io/docs/kbfs"&gt;Keybase&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Email Spamminess" src="images/spamminess.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Once you&amp;#8217;ve installed Keybase (e.g. &lt;code&gt;brew cask install keybase&lt;/code&gt;), you&amp;#8217;ll want to
+note down your &amp;#8216;paper&amp;#8217; key someplace safe (like, say, a Secure Note in
+&lt;a href="https://1password.com"&gt;1Password&lt;/a&gt;). And then, you&amp;#8217;ll want to start adding identities, such as
+Twitter, GitHub, Reddit, and your&amp;nbsp;website.&lt;/p&gt;
+&lt;p&gt;This is pretty straightforward; you sign objects with your public key and
+post them someplace public on that service (e.g. a tweet, gist, post, or static&amp;nbsp;file).&lt;/p&gt;
+&lt;p&gt;For example, here&amp;#8217;s my GitHub&amp;nbsp;proof:&lt;/p&gt;
+&lt;script src="https://gist.github.com/acgetchell/7b68d1168a45859624d0cb3369931ace.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;The neat thing about Keybase is that you don&amp;#8217;t need a central server to verify
+someone&amp;#8217;s identity: you can do it yourself right from the command&amp;nbsp;line:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Keybase proof from CLI" src="images/keybase-id-proof.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Now, if you want your website to be part of your identity, you&amp;#8217;ll want it to be
+secure. My website happens to be generated by &lt;a href="http://blog.getpelican.com"&gt;Pelican&lt;/a&gt; and hosted on
+GitHub, for which I have 2-factor authentication turned on. But by default,
+&lt;a href="https://help.github.com/articles/securing-your-github-pages-site-with-https/"&gt;GitHub hosted sites only support &lt;span class="caps"&gt;SSL&lt;/span&gt; for &lt;code&gt;*.github.io&lt;/code&gt; domains&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.cloudflare.com"&gt;CloudFlare&lt;/a&gt; does, sorta. So we come to the second reason for
+using CloudFlare: enabling &lt;code&gt;https&lt;/code&gt; on your static, custom domain. It&amp;#8217;s as easy
+as flicking a&amp;nbsp;switch:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="GitHub SSL" src="images/github-ssl.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class="caps"&gt;HOWEVER&lt;/span&gt;&lt;/strong&gt; this is not complete; it only encrypts communication between
+the client browser and CloudFlare. &lt;a href="https://konklone.com/post/github-pages-now-sorta-supports-https-so-use-it"&gt;The connection between CloudFlare and
+GitHub is unencrypted for custom domains&lt;/a&gt;. It is also easy to do &lt;a href="https://thehackerblog.com/keeping-positive-obtaining-arbitrary-wildcard-ssl-certificates-from-comodo-via-dangling-markup-injection/index.html"&gt;the
+wrong way&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you didn&amp;#8217;t have a custom domain, then this doesn&amp;#8217;t apply. But where&amp;#8217;s the
+fun in&amp;nbsp;that?&lt;/p&gt;
+&lt;p&gt;Finally, to prevent the client from downgrading from &lt;code&gt;https&lt;/code&gt; to &lt;code&gt;http&lt;/code&gt;, you can
+turn on &lt;span class="caps"&gt;HTTP&lt;/span&gt; Strict Transport Security &lt;a href="https://www.owasp.org/index.php/HTTP_Strict_Transport_Security_Cheat_Sheet"&gt;(&lt;span class="caps"&gt;HSTS&lt;/span&gt;)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="HTTP Strict Transport Security on CloudFlare" src="images/hsts.png" /&gt;&lt;/p&gt;
+&lt;p&gt;This comes with some sizeable caveats, so definitely read&amp;nbsp;them.&lt;/p&gt;
+&lt;p&gt;At last, you can check your work here: &lt;a href="https://en.internet.nl"&gt;https://en.internet.nl&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;And now, finally, you have a &lt;a href="https://keybase.io/docs/kbfs"&gt;nice, secure, publicly verifiable identity&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Adam's Keybase info" src="images/keybase.png" /&gt;&lt;/p&gt;
+&lt;h2&gt;Update&lt;/h2&gt;
+&lt;p&gt;Here are two videos from CloudFlare on boosting site speed and&amp;nbsp;security:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Code completion is nice! (Really, really&amp;nbsp;nice.)&lt;/li&gt;
-&lt;li&gt;Refactoring is wonderful. There is just an order of magnitude more things
-CLion does because&amp;nbsp;&amp;#8230;&lt;/li&gt;
-&lt;li&gt;It&amp;#8217;s really nice to be working with a tool that understands the C++
-constructs, instead of just doing some clever pattern&amp;nbsp;matching.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://vimeo.com/157530322"&gt;Increase the speed of your site - CloudFlare Performance&amp;nbsp;Tips&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://vimeo.com/162142298"&gt;User Privacy &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Data&amp;nbsp;Integrity&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Cons:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;No option to use &lt;a href="https://ninja-build.org"&gt;Ninja&lt;/a&gt; as my build tool. This increases build times
-perceptibly. (&lt;a href="http://nevkontakte.com/2015/rogue-ninja-support-in-clion.html"&gt;Here&amp;#8217;s a hack&lt;/a&gt;.)&lt;/li&gt;
-&lt;li&gt;Inexplicably builds in some hidden directory instead of the output directory
-(but see the &lt;a href="https://blog.jetbrains.com/clion/2016/03/clion-2016-2-roadmap/"&gt;roadmap for 2016.2&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;The debugger skips right past my set&amp;nbsp;breakpoints.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Sadly, that last one is pretty much a&amp;nbsp;dealbreaker.&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;ve submitted a support request, and I really think that CLion 2016.2 looks
-very&amp;nbsp;promising.&lt;/p&gt;
-&lt;p&gt;But as of now I&amp;#8217;ll still be writing/coding in&amp;nbsp;Atom.&lt;/p&gt;
 &lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
         indent = "0em",
@@ -87,7 +165,107 @@ very&amp;nbsp;promising.&lt;/p&gt;
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</summary><category term="c++"></category></entry><entry><title>Jerusalem 2014-15</title><link href="http://adamgetchell.org/jerusalem-2014-15.html" rel="alternate"></link><published>2014-12-31T13:26:46+02:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2014-12-31:jerusalem-2014-15.html</id><summary type="html">&lt;p&gt;And again, it&amp;#8217;s been quite&amp;nbsp;awhile.&lt;/p&gt;
+&lt;/script&gt;</summary><category term="prismbreak"></category><category term="keybase"></category><category term="protonmail"></category><category term="joker"></category><category term="cloudflare"></category><category term="github"></category></entry><entry><title>Atom vs. CLion</title><link href="https://adamgetchell.org/atom-vs-clion.html" rel="alternate"></link><published>2016-04-17T00:00:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2016-04-17:atom-vs-clion.html</id><summary type="html">&lt;p&gt;Today I decided to give &lt;a href="https://www.jetbrains.com/clion/"&gt;CLion&lt;/a&gt; a try. I need all the help I can&amp;nbsp;get.&lt;/p&gt;
+&lt;p&gt;(I also should mention that JetBrains generously gives &lt;a href="https://www.jetbrains.com/clion/buy/#edition=discounts"&gt;free CLion licenses&lt;/a&gt;
+to students, teachers, and non-commercial open source&amp;nbsp;projects.)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://atom.io"&gt;Atom&lt;/a&gt; is very nice, and I&amp;#8217;ve been using it since 0.1 for everything from
+&lt;span class="math"&gt;\(\LaTeX\)&lt;/span&gt;ing papers to writing this blog to everyday coding. However, my
+latest travails involve heavy use of the &lt;a href="http://lldb.llvm.org"&gt;debugger&lt;/a&gt;, and doing so with
+heavily templated code on the command line is not so&amp;nbsp;nice.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Debugging on the command line" src="images/cli-debugger.png" /&gt;&lt;/p&gt;
+&lt;p&gt;So I was lured in with the promise of a nice, graphical debugger in an honest
+&lt;span class="caps"&gt;IDE&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;After tinkering around with it for an hour or so, and trawling through the
+forums, I&amp;#8217;ve managed to get CLion to look very close to my Atom setup, except
+for the different syntax highlighting colors. But I&amp;#8217;ll get used to that,
+or I can always customize the color scheme to Atom&amp;#8217;s material syntax if it
+really bothers&amp;nbsp;me.&lt;/p&gt;
+&lt;p&gt;Pros:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Code completion is&amp;nbsp;nice.&lt;/li&gt;
+&lt;li&gt;Refactoring is wonderful. Also, CLion is smart enough to point out things
+you don&amp;#8217;t need, such as .gitignore items covered by other definitions. In
+general, CLion seems to have a lot of best practices baked right&amp;nbsp;in.&lt;/li&gt;
+&lt;li&gt;It&amp;#8217;s really nice to be working with a tool that understands the
+&lt;a href="http://www.meetup.com/SF-Bay-Area-Cpp/events/228070137/"&gt;C++ constructs&lt;/a&gt;, instead of just doing some clever pattern&amp;nbsp;matching.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="CLion with CodeGlance" src="images/clion-codeglance.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Cons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;No option to use &lt;a href="https://ninja-build.org"&gt;Ninja&lt;/a&gt; as my build tool. This increases build times
+perceptibly (but a &lt;a href="http://nevkontakte.com/2015/rogue-ninja-support-in-clion.html"&gt;hack&lt;/a&gt;&amp;nbsp;exists).&lt;/li&gt;
+&lt;li&gt;Inexplicably builds in some hidden directory instead of the output directory
+(but see the &lt;a href="https://blog.jetbrains.com/clion/2016/03/clion-2016-2-roadmap/"&gt;roadmap for 2016.2&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;The debugger skips right past my set&amp;nbsp;breakpoints.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Sadly, the last two are pretty much&amp;nbsp;dealbreakers.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ve submitted a support request, and I really think that CLion 2016.2 looks
+very&amp;nbsp;promising.&lt;/p&gt;
+&lt;p&gt;But as of now I&amp;#8217;ll still be writing/&lt;del&gt;coding&lt;/del&gt; in&amp;nbsp;Atom.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class="caps"&gt;UPDATE&lt;/span&gt;&amp;nbsp;2016-04-25&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Debugging works now, it&amp;#8217;s reportedly an issue with symbolic links in the project
+path, and improvements are expected in the next version. I&amp;#8217;ve configured
+Run/Debug so that GoogleTests are pleasant to use, as is the &lt;span class="caps"&gt;VCS&lt;/span&gt; GitHub
+integration. CLion has replaced my Atom/Terminal/GitHub Desktop trifecta;
+I&amp;#8217;m pretty comfortable coding in CLion now, and don&amp;#8217;t really want to go&amp;nbsp;back.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="CLion Debugging" src="images/clion-debugging.png" /&gt;&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</summary><category term="c++"></category><category term="atom"></category><category term="clion"></category></entry><entry><title>Jerusalem 2014-15</title><link href="https://adamgetchell.org/jerusalem-2014-15.html" rel="alternate"></link><published>2014-12-31T13:26:46+02:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2014-12-31:jerusalem-2014-15.html</id><summary type="html">&lt;p&gt;And again, it&amp;#8217;s been quite&amp;nbsp;awhile.&lt;/p&gt;
 &lt;p&gt;The big news is the welcome addition of Benjamin to our family. You can see him studying with me in my profile picture. He&amp;#8217;s an incredible ball of energy and joy, and there&amp;#8217;s nothing like having him around to remind one of the meaning of&amp;nbsp;life.&lt;/p&gt;
 &lt;p&gt;Aside from that, and with Benjamin&amp;#8217;s encouragement, I&amp;#8217;ve been busy the past year getting serious about doing my research. &lt;a href="http://collaborate.mozillascience.org/projects/quantumGravity"&gt;My project&lt;/a&gt; was recently accepted by the &lt;a href="http://collaborate.mozillascience.org/projects/quantumGravity"&gt;Mozilla Science Lab&lt;/a&gt;, a really cool effort which aims to harness open-source software towards basic research. This is a part of a general movement, along with &amp;#8220;new&amp;#8221; trends such as &lt;a href="http://software-carpentry.org"&gt;Software Carpentry&lt;/a&gt; and &lt;a href="https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century/"&gt;Data Science&lt;/a&gt; (themselves based on practices and techniques from &lt;a href="http://www.sei.cmu.edu"&gt;Software Engineering&lt;/a&gt;, &lt;a href="http://www.agilemanifesto.org"&gt;Agile Development&lt;/a&gt;, and &lt;a href="http://nosql-database.org"&gt;NoSQL&lt;/a&gt; to name just a&amp;nbsp;few).&lt;/p&gt;
 &lt;p&gt;However, as I type this I am sitting here at &lt;a href="http://new.huji.ac.il"&gt;Hebrew University&lt;/a&gt;, in sunny (but chilly, at least by a Californian&amp;#8217;s standards) Jerusalem attending the &lt;a href="http://www.as.huji.ac.il/schools/phys32"&gt;32nd Winter School in Theoretical Physics on 100 Years of General Relativity: From Theory to Experiment and Back&lt;/a&gt;. I&amp;#8217;m having a blast getting my brain filled! I will post more about what I&amp;#8217;ve learned&amp;nbsp;later.&lt;/p&gt;
@@ -98,7 +276,7 @@ very&amp;nbsp;promising.&lt;/p&gt;
 &lt;img alt="Us at the Wailing Wall" src="images/wailing_wall.jpg" /&gt;
 &lt;img alt="Golgotha" src="images/golgotha.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Also, I&amp;#8217;ve migrated from Octopress to Pelican, as &lt;a href="https://jakevdp.github.io/blog/2013/05/07/migrating-from-octopress-to-pelican/"&gt;others have done&lt;/a&gt;, for similar reasons. &lt;a href="http://code.mumak.net/2014/07/migrated-to-pelican.html"&gt;This post&lt;/a&gt; was very helpful in doing the conversion, especially the Blogger support added into pelican-import.py. &lt;a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html"&gt;This post&lt;/a&gt; helped with the GitHub pages&amp;nbsp;support.&lt;/p&gt;
-&lt;p&gt;Shalom and Happy New&amp;nbsp;Year!&lt;/p&gt;</summary><category term="travel"></category><category term="pelican"></category></entry><entry><title>Iterations</title><link href="http://adamgetchell.org/iterations.html" rel="alternate"></link><published>2013-12-07T18:56:50-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2013-12-07:iterations.html</id><summary type="html">&lt;p&gt;It&amp;#8217;s been quite awhile since the last post, with lots of changes.&amp;nbsp;I&amp;#8217;ve:&lt;/p&gt;
+&lt;p&gt;Shalom and Happy New&amp;nbsp;Year!&lt;/p&gt;</summary><category term="travel"></category><category term="pelican"></category><category term="cdt"></category><category term="c++"></category><category term="quantum gravity"></category></entry><entry><title>Iterations</title><link href="https://adamgetchell.org/iterations.html" rel="alternate"></link><published>2013-12-07T18:56:50-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2013-12-07:iterations.html</id><summary type="html">&lt;p&gt;It&amp;#8217;s been quite awhile since the last post, with lots of changes.&amp;nbsp;I&amp;#8217;ve:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Converted to&amp;nbsp;MacOS&lt;/li&gt;
 &lt;li&gt;Changed my research codebase to&amp;nbsp;C++&lt;/li&gt;
@@ -148,7 +326,7 @@ very&amp;nbsp;promising.&lt;/p&gt;
 &lt;p&gt;I teach Hapkido at the university, and I&amp;#8217;ve always enjoyed that Hapkidoja &lt;em&gt;did&lt;/em&gt; learn techniques in all of these areas. I competed in Taekwondo and Judo, and Hapkido synthesized them all together. It was good for practical self-defense. I try to teach it as&amp;nbsp;such.&lt;/p&gt;
 &lt;p&gt;(Yes, martial arts with sporting equivalents are superior. Nothing beats realistic&amp;nbsp;practice.)&lt;/p&gt;
 &lt;p&gt;But times change and things develop, and it&amp;#8217;s time to adapt and learn what works. And my &lt;a href="http://fabiopradobjj.com"&gt;&lt;span class="caps"&gt;BJJ&lt;/span&gt; academy&lt;/a&gt;, &lt;a href="http://fabiopradobjj.com/about-fabio-prad0/"&gt;professor&lt;/a&gt;, and jiu-jitsu family&amp;nbsp;rock!&lt;/p&gt;
-&lt;p&gt;Also, competing in &lt;span class="caps"&gt;BJJ&lt;/span&gt; is scary&amp;nbsp;fun!&lt;/p&gt;</summary><category term="macos"></category><category term="c++"></category><category term="octopress"></category><category term="prismbreak"></category><category term="bjj"></category></entry><entry><title>General Relativity flash-cards using Anki</title><link href="http://adamgetchell.org/general-relativity-flash-cards-using.html" rel="alternate"></link><published>2013-10-24T05:52:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2013-10-24:general-relativity-flash-cards-using.html</id><summary type="html">&lt;p&gt;&lt;a href="http://ankisrs.net/"&gt;Anki&lt;/a&gt; is a neat &lt;a href="http://www.supermemo.com/english/ol/background.htm"&gt;spaced repetition
+&lt;p&gt;Also, competing in &lt;span class="caps"&gt;BJJ&lt;/span&gt; is scary&amp;nbsp;fun!&lt;/p&gt;</summary><category term="macos"></category><category term="c++"></category><category term="octopress"></category><category term="prismbreak"></category><category term="bjj"></category></entry><entry><title>General Relativity flash-cards using Anki</title><link href="https://adamgetchell.org/general-relativity-flash-cards-using.html" rel="alternate"></link><published>2013-10-24T05:52:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2013-10-24:general-relativity-flash-cards-using.html</id><summary type="html">&lt;p&gt;&lt;a href="http://ankisrs.net/"&gt;Anki&lt;/a&gt; is a neat &lt;a href="http://www.supermemo.com/english/ol/background.htm"&gt;spaced repetition
 system&lt;/a&gt; that allows
 you to maximize memorization efficiency, or something like that.
 Interestingly, I came across it on the &lt;a href="http://groups.google.com/group/clojure"&gt;Clojure
@@ -256,7 +434,7 @@ synchronized and uploaded, I will post a link to&amp;nbsp;it.  &lt;/p&gt;
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</summary><category term="general relativity"></category></entry><entry><title>Feynman diagrams in LaTeX</title><link href="http://adamgetchell.org/feynman-diagrams-in-latex.html" rel="alternate"></link><published>2012-09-02T09:15:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2012-09-02:feynman-diagrams-in-latex.html</id><summary type="html">&lt;p&gt;Sometimes you need Feynman diagrams in papers. It turns out there are
+&lt;/script&gt;</summary><category term="general relativity"></category></entry><entry><title>Feynman diagrams in LaTeX</title><link href="https://adamgetchell.org/feynman-diagrams-in-latex.html" rel="alternate"></link><published>2012-09-02T09:15:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2012-09-02:feynman-diagrams-in-latex.html</id><summary type="html">&lt;p&gt;Sometimes you need Feynman diagrams in papers. It turns out there are
 quite a few ways to get there, but the handiest is FeynMP. I&amp;#8217;m using, in
 particular, MikTeX and TeXMaker, but something like this should work for
 other setups. Here are the&amp;nbsp;steps:  &lt;/p&gt;
@@ -265,36 +443,60 @@ other setups. Here are the&amp;nbsp;steps:  &lt;/p&gt;
 &lt;p&gt;Next, add the following to your &lt;span class="math"&gt;\(\LaTeX\)&lt;/span&gt; preamble: I know the package
 name says &lt;strong&gt;feynmp&lt;/strong&gt;; if you use that, you&amp;#8217;ll have a lot more errors.
 The feynmp package is nicer, and included when you install&amp;nbsp;feynmf.&lt;/p&gt;
-&lt;p&gt;[gist:id=3595449,file=feynmp-preamble.tex]  &lt;/p&gt;
+&lt;!-- [gist:id=3595449,file=feynmp-preamble-tex] --&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="na"&gt;[final]&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;feynmp&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\DeclareGraphicsRule&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;*&lt;span class="nb"&gt;}{&lt;/span&gt;mps&lt;span class="nb"&gt;}{&lt;/span&gt;*&lt;span class="nb"&gt;}{}&lt;/span&gt;
+&lt;span class="k"&gt;\makeatletter&lt;/span&gt;
+&lt;span class="k"&gt;\def\endfmffile&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="c"&gt;%&lt;/span&gt;
+    &lt;span class="k"&gt;\fmfcmd&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\p&lt;/span&gt;@rcent&lt;span class="k"&gt;\space&lt;/span&gt; the end.&lt;span class="nb"&gt;^^&lt;/span&gt;J&lt;span class="c"&gt;%&lt;/span&gt;
+            end.&lt;span class="nb"&gt;^^&lt;/span&gt;J&lt;span class="c"&gt;%&lt;/span&gt;
+            endinput;&lt;span class="nb"&gt;}&lt;/span&gt;&lt;span class="c"&gt;%&lt;/span&gt;
+    &lt;span class="k"&gt;\if&lt;/span&gt;@fmfio
+        &lt;span class="k"&gt;\immediate\closeout\@&lt;/span&gt;outfmf
+    &lt;span class="k"&gt;\fi&lt;/span&gt;
+    &lt;span class="k"&gt;\ifnum\pdfshellescape&lt;/span&gt;=&lt;span class="k"&gt;\@&lt;/span&gt;ne
+        &lt;span class="k"&gt;\immediate\write&lt;/span&gt;18&lt;span class="nb"&gt;{&lt;/span&gt;mpost &lt;span class="k"&gt;\thefmffile&lt;/span&gt;&lt;span class="nb"&gt;}&lt;/span&gt;&lt;span class="c"&gt;%&lt;/span&gt;
+    &lt;span class="k"&gt;\fi&lt;/span&gt;&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\makeatother&lt;/span&gt;
+&lt;span class="k"&gt;\title&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;Your title&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\author&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;You &lt;span class="k"&gt;\\&lt;/span&gt;
+    &lt;span class="k"&gt;\texttt&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;Your email&lt;span class="nb"&gt;}}&lt;/span&gt;
+&lt;span class="k"&gt;\date&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\today&lt;/span&gt;&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;document&lt;span class="nb"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;\unitlength&lt;/span&gt; = 1mm
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Now, let&amp;#8217;s say you want to add a diagram for Compton scattering (the
 point of the whole exercise). I suggest wrapping it in a &lt;span class="math"&gt;\(\LaTeX\)&lt;/span&gt;
 figure for convenience; doing so will lead to something like&amp;nbsp;this:&lt;/p&gt;
-&lt;div class="gist"&gt;
-    &lt;script src='https://gist.github.com/3595628.js?file=compton.tex'&gt;&lt;/script&gt;
-    &lt;noscript&gt;
-        &lt;pre&gt;&lt;code&gt;\begin{figure}
-	\centering
-	\begin{fmffile}{compton}
-		\begin{fmfgraph*}(80,50)
-			\fmfleft{i1,i2}
-			\fmfright{o1,o2}
+&lt;!-- [gist:id=3595628,file=compton-tex] --&gt;
 
-			\fmflabel{$\gamma$}{i2}
-			\fmflabel{$e^-$}{i1}
-			\fmflabel{$\gamma$}{o1}
-			\fmflabel{$e^-$}{o2}
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;figure&lt;span class="nb"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;\centering&lt;/span&gt;
+    &lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;fmffile&lt;span class="nb"&gt;}{&lt;/span&gt;compton&lt;span class="nb"&gt;}&lt;/span&gt;
+        &lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;fmfgraph*&lt;span class="nb"&gt;}&lt;/span&gt;(80,50)
+            &lt;span class="k"&gt;\fmfleft&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;i1,i2&lt;span class="nb"&gt;}&lt;/span&gt;
+            &lt;span class="k"&gt;\fmfright&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;o1,o2&lt;span class="nb"&gt;}&lt;/span&gt;
 
-			\fmf{photon}{i2,v2}
-			\fmf{fermion}{i1,v1,v2,o2}
-			\fmf{photon}{v1,o1}
-		\end{fmfgraph*}
-	\end{fmffile}
+            &lt;span class="k"&gt;\fmflabel&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="s"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;\gamma&lt;/span&gt;&lt;span class="s"&gt;$&lt;/span&gt;&lt;span class="nb"&gt;}{&lt;/span&gt;i2&lt;span class="nb"&gt;}&lt;/span&gt;
+            &lt;span class="k"&gt;\fmflabel&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="s"&gt;$&lt;/span&gt;&lt;span class="nb"&gt;e^&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="s"&gt;$&lt;/span&gt;&lt;span class="nb"&gt;}{&lt;/span&gt;i1&lt;span class="nb"&gt;}&lt;/span&gt;
+            &lt;span class="k"&gt;\fmflabel&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="s"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;\gamma&lt;/span&gt;&lt;span class="s"&gt;$&lt;/span&gt;&lt;span class="nb"&gt;}{&lt;/span&gt;o1&lt;span class="nb"&gt;}&lt;/span&gt;
+            &lt;span class="k"&gt;\fmflabel&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="s"&gt;$&lt;/span&gt;&lt;span class="nb"&gt;e^&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="s"&gt;$&lt;/span&gt;&lt;span class="nb"&gt;}{&lt;/span&gt;o2&lt;span class="nb"&gt;}&lt;/span&gt;
 
-	\caption[Compton Scattering]{Feynman diagram for Compton scattering}
-	\label{fig:compton-scattering}
-\end{figure}&lt;/code&gt;&lt;/pre&gt;
-    &lt;/noscript&gt;
-&lt;/div&gt;
+            &lt;span class="k"&gt;\fmf&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;photon&lt;span class="nb"&gt;}{&lt;/span&gt;i2,v2&lt;span class="nb"&gt;}&lt;/span&gt;
+            &lt;span class="k"&gt;\fmf&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;fermion&lt;span class="nb"&gt;}{&lt;/span&gt;i1,v1,v2,o2&lt;span class="nb"&gt;}&lt;/span&gt;
+            &lt;span class="k"&gt;\fmf&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;photon&lt;span class="nb"&gt;}{&lt;/span&gt;v1,o1&lt;span class="nb"&gt;}&lt;/span&gt;
+        &lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;fmfgraph*&lt;span class="nb"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;fmffile&lt;span class="nb"&gt;}&lt;/span&gt;
+
+    &lt;span class="k"&gt;\caption&lt;/span&gt;&lt;span class="na"&gt;[Compton Scattering]&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;Feynman diagram for Compton scattering&lt;span class="nb"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;\label&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;fig:compton-scattering&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;figure&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Note the name of the file is compton. In your &lt;span class="math"&gt;\(\LaTeX\)&lt;/span&gt; working directory,
 there will be a file called compton.mp. You need to run the mpost
 command on it, like&amp;nbsp;so:  &lt;/p&gt;
@@ -379,7 +581,7 @@ any feedback or corrections, send notes or pull requests to the&amp;nbsp;gists. 
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</summary><category term="latex"></category><category term="qft"></category></entry><entry><title>Can LIGO detect a graviton?</title><link href="http://adamgetchell.org/can-ligo-detect-graviton.html" rel="alternate"></link><published>2011-12-28T00:09:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2011-12-28:can-ligo-detect-graviton.html</id><summary type="html">&lt;p&gt;A lecture given 10/27/08 by Professor Freeman Dyson of the Institute of
+&lt;/script&gt;</summary><category term="latex"></category><category term="qft"></category></entry><entry><title>Can LIGO detect a graviton?</title><link href="https://adamgetchell.org/can-ligo-detect-graviton.html" rel="alternate"></link><published>2011-12-28T00:09:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2011-12-28:can-ligo-detect-graviton.html</id><summary type="html">&lt;p&gt;A lecture given 10/27/08 by Professor Freeman Dyson of the Institute of
 Advanced Studies at Princeton, in honor of the 100th anniversary of the
 founding of the University of California,&amp;nbsp;Davis.  &lt;/p&gt;
 &lt;div class="math"&gt;$$E=\left(\frac{c^{2}}{32\pi G}\right)\omega^{2}f^{2}$$&lt;/div&gt;
@@ -508,7 +710,7 @@ giving some good background&amp;nbsp;information.&lt;/em&gt;&lt;/p&gt;
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</summary><category term="general relativity"></category></entry><entry><title>Hapkido Practicum Fall 2009</title><link href="http://adamgetchell.org/hapkido-practicum-fall-2009_29.html" rel="alternate"></link><published>2011-12-20T07:58:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2011-12-20:hapkido-practicum-fall-2009_29.html</id><summary type="html">&lt;div style="text-align: center;"&gt;
+&lt;/script&gt;</summary><category term="general relativity"></category></entry><entry><title>Hapkido Practicum Fall 2009</title><link href="https://adamgetchell.org/hapkido-practicum-fall-2009_29.html" rel="alternate"></link><published>2011-12-20T07:58:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2011-12-20:hapkido-practicum-fall-2009_29.html</id><summary type="html">&lt;div style="text-align: center;"&gt;
 
 &lt;span style="font-size: 100%;"&gt;&lt;span id="hpy."&gt;[Physical Education
 Program, &lt;span class="caps"&gt;UC&lt;/span&gt;
@@ -566,7 +768,7 @@ id="f7lx"&gt;&lt;a href="http://www.youtube.com/watch?v=zu-tix0pdQY" title="MMA 
 &lt;span id="c0.s"&gt;&lt;a href="http://www.youtube.com/watch?v=LhezbNHHYno" title="Elbow strike tutorial"&gt;elbow&amp;nbsp;strikes&lt;/a&gt;&lt;/span&gt;  &lt;/p&gt;
 &lt;p&gt;Further updates can be found at:
 &lt;a href="http://docs.google.com/View?id=dckp3cwx_62csk8r4gk"&gt;http://docs.google.com/View?id=dckp3cwx_62csk8r4gk&lt;/a&gt;&lt;/p&gt;
-&lt;/p&gt;</summary><category term="hapkido"></category></entry><entry><title>Lisp Conversion</title><link href="http://adamgetchell.org/lisp-conversion.html" rel="alternate"></link><published>2011-12-01T23:32:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2011-12-01:lisp-conversion.html</id><summary type="html">&lt;p&gt;A few months and a lot of Lisp later, I find myself convinced/converted&amp;nbsp;&amp;#8230;  &lt;/p&gt;
+&lt;/p&gt;</summary><category term="hapkido"></category></entry><entry><title>Lisp Conversion</title><link href="https://adamgetchell.org/lisp-conversion.html" rel="alternate"></link><published>2011-12-01T23:32:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2011-12-01:lisp-conversion.html</id><summary type="html">&lt;p&gt;A few months and a lot of Lisp later, I find myself convinced/converted&amp;nbsp;&amp;#8230;  &lt;/p&gt;
 &lt;p&gt;&amp;#8230; To &lt;a href="http://clojure.org/"&gt;Clojure&lt;/a&gt;.  &lt;/p&gt;
 &lt;p&gt;Rajesh, you were&amp;nbsp;right!  &lt;/p&gt;
 &lt;p&gt;As far as language ~~snobbery~~ coolness, it has a bunch of features I
@@ -684,7 +886,7 @@ and start with the &lt;a href="https://github.com/ucdavis/CDT"&gt;&lt;span class
 &lt;p&gt;So, a modern Lisp with powerful IDEs, modern libraries from the &lt;span class="caps"&gt;JVM&lt;/span&gt;,
 interactive &lt;span class="caps"&gt;REPL&lt;/span&gt;/&lt;span class="caps"&gt;TDD&lt;/span&gt;, great documentation, learning resources, and
 books &amp;#8212; what&amp;#8217;s not to&amp;nbsp;like?  &lt;/p&gt;
-&lt;/p&gt;</summary><category term="lisp"></category><category term="tdd"></category><category term="clojure"></category></entry><entry><title>Reflection tools for F#</title><link href="http://adamgetchell.org/embedding-gists-in-blogger.html" rel="alternate"></link><published>2011-04-19T08:52:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2011-04-19:embedding-gists-in-blogger.html</id><summary type="html">&lt;p&gt;I went to the fabuluous &lt;a href="http://codeconf.com/"&gt;CodeConf 2011&lt;/a&gt; (view
+&lt;/p&gt;</summary><category term="lisp"></category><category term="tdd"></category><category term="clojure"></category></entry><entry><title>Reflection tools for F#</title><link href="https://adamgetchell.org/embedding-gists-in-blogger.html" rel="alternate"></link><published>2011-04-19T08:52:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2011-04-19:embedding-gists-in-blogger.html</id><summary type="html">&lt;p&gt;I went to the fabuluous &lt;a href="http://codeconf.com/"&gt;CodeConf 2011&lt;/a&gt; (view
 &lt;a href="http://lanyrd.com/2011/codeconf/slides/"&gt;slides&lt;/a&gt;,
 &lt;a href="https://github.com/blog/835-codeconf-2011-mission-accomplished"&gt;recaps&lt;/a&gt;
 &lt;a href="http://www.peebs.org/2011/04/codeconf-2011-day-one/"&gt;here&lt;/a&gt;,
@@ -705,14 +907,18 @@ informative example in his book &lt;a href="http://fsharpnews.blogspot.com/2010/
 Computing&lt;/a&gt;.  &lt;/p&gt;
 &lt;p&gt;First, we want a union type which represents (i.e. abstracts away) the
 F# type&amp;nbsp;system:  &lt;/p&gt;
+&lt;script src="https://gist.github.com/acgetchell/926997.js"&gt;&lt;/script&gt;
+
 &lt;p&gt;Next, we want a (recursive) function (called, straightforwardly enough,
-type_of) that reflects (using FSharpType) and translates a given
-System.Type object into one of the &amp;#8216;a ty union types defined&amp;nbsp;previously:  &lt;/p&gt;
+&lt;code&gt;type_of&lt;/code&gt;) that reflects (using FSharpType) and translates a given
+&lt;code&gt;System.Type&lt;/code&gt; object into one of the &lt;code&gt;'a ty&lt;/code&gt; union types defined&amp;nbsp;previously:  &lt;/p&gt;
+&lt;script src="https://gist.github.com/acgetchell/926994.js"&gt;&lt;/script&gt;
+
 &lt;p&gt;This then allows us to emit the following two liner which can parse
 objects such as the List.fold function! (Note: everything after the ;;
 is the F# Interactive&amp;nbsp;response.)  &lt;/p&gt;
 &lt;p&gt;Neat stuff! I&amp;#8217;ve a thousand or two lines of Lisp to look at, so this is
-not something I want to have to remember&amp;nbsp;later.&lt;/p&gt;</summary><category term="f#"></category></entry><entry><title>Software Archaeology</title><link href="http://adamgetchell.org/software-archaeology.html" rel="alternate"></link><published>2011-04-11T22:19:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2011-04-11:software-archaeology.html</id><summary type="html">&lt;p&gt;&lt;a href="http://en.wikipedia.org/wiki/Vernor_Vinge"&gt;Vernor Vinge&lt;/a&gt; prophetically
+not something I want to have to remember&amp;nbsp;later.&lt;/p&gt;</summary><category term="f#"></category></entry><entry><title>Software Archaeology</title><link href="https://adamgetchell.org/software-archaeology.html" rel="alternate"></link><published>2011-04-11T22:19:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2011-04-11:software-archaeology.html</id><summary type="html">&lt;p&gt;&lt;a href="http://en.wikipedia.org/wiki/Vernor_Vinge"&gt;Vernor Vinge&lt;/a&gt; prophetically
 &lt;a href="http://books.slashdot.org/story/03/09/18/0411259/Review-A-Fire-Upon-the-Deep-Special-Edition"&gt;wrote of a
 time&lt;/a&gt;
 when programmer-archaeologists maintained the fabric of civilization by
@@ -1098,7 +1304,7 @@ I hope this was informative, or at least, entertaining!
 
 &lt;/div&gt;
 
-&lt;/p&gt;</summary></entry><entry><title>Socialism, Capitalism, Spending, oh my!</title><link href="http://adamgetchell.org/socialism-capitalism-spending-oh-my.html" rel="alternate"></link><published>2010-12-04T01:50:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2010-12-04:socialism-capitalism-spending-oh-my.html</id><summary type="html">&lt;p&gt;For a change of pace, I&amp;#8217;m going to ruminate on the state of affairs as I
+&lt;/p&gt;</summary></entry><entry><title>Socialism, Capitalism, Spending, oh my!</title><link href="https://adamgetchell.org/socialism-capitalism-spending-oh-my.html" rel="alternate"></link><published>2010-12-04T01:50:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2010-12-04:socialism-capitalism-spending-oh-my.html</id><summary type="html">&lt;p&gt;For a change of pace, I&amp;#8217;m going to ruminate on the state of affairs as I
 see&amp;nbsp;them.&lt;/p&gt;
 &lt;div&gt;
 
@@ -1641,7 +1847,7 @@ Okay, back to considering things I have somewhat of a clue about.
 
 &lt;/div&gt;
 
-&lt;/p&gt;</summary><category term="politics"></category></entry><entry><title>CDT rewrite toolbox</title><link href="http://adamgetchell.org/cdt-rewrite-toolbox.html" rel="alternate"></link><published>2010-01-20T07:54:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2010-01-20:cdt-rewrite-toolbox.html</id><summary type="html">&lt;p&gt;So, my colleagues have developed a
+&lt;/p&gt;</summary><category term="politics"></category></entry><entry><title>CDT rewrite toolbox</title><link href="https://adamgetchell.org/cdt-rewrite-toolbox.html" rel="alternate"></link><published>2010-01-20T07:54:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2010-01-20:cdt-rewrite-toolbox.html</id><summary type="html">&lt;p&gt;So, my colleagues have developed a
 &lt;a href="http://adamgetchell.blogspot.com/2007_10_01_archive.html"&gt;&lt;span class="caps"&gt;CDT&lt;/span&gt;&lt;/a&gt; program
 that&amp;#8217;s usable. Fortunately for me, it&amp;#8217;s in &lt;span class="caps"&gt;LISP&lt;/span&gt;, which lacks parallel
 processing, modern libraries, a nice &lt;span class="caps"&gt;IDE&lt;/span&gt;, and the other goodies I&amp;#8217;ve
@@ -1660,7 +1866,7 @@ and &lt;a href="http://ironscheme.codeplex.com/"&gt;IronScheme&lt;/a&gt;.  &lt;/
 setup)&lt;/a&gt;:  &lt;/p&gt;
 &lt;p&gt;And voila, no more excuses to complain about&amp;nbsp;development.  &lt;/p&gt;
 &lt;p&gt;(Yes, the end goal is to make it Python and cross-platform, although I&amp;#8217;m
-really eying&amp;nbsp;F#)&lt;/p&gt;</summary><category term="lisp"></category><category term="cdt"></category><category term="python"></category></entry><entry><title>A Nobel Pursuit</title><link href="http://adamgetchell.org/nobel-pursuit.html" rel="alternate"></link><published>2008-11-12T06:58:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-11-12:nobel-pursuit.html</id><summary type="html">&lt;p&gt;Well, the Nobel Prizewinners are to be announced ~~tomorrow~~Tuesday. In
+really eying&amp;nbsp;F#)&lt;/p&gt;</summary><category term="lisp"></category><category term="cdt"></category><category term="python"></category></entry><entry><title>A Nobel Pursuit</title><link href="https://adamgetchell.org/nobel-pursuit.html" rel="alternate"></link><published>2008-11-12T06:58:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-11-12:nobel-pursuit.html</id><summary type="html">&lt;p&gt;Well, the Nobel Prizewinners are to be announced ~~tomorrow~~Tuesday. In
 the spirit of fun (and to demonstrate how much science really does
 advance), here are some predictions and other fun facts gleaned from
 around the&amp;nbsp;&amp;#8216;Net:  &lt;/p&gt;
@@ -1732,7 +1938,7 @@ Physics in
 2008&lt;/a&gt;, quite
 deservedly, for discovery of &lt;a href="http://hyperphysics.phy-astr.gsu.edu/hbase/forces/unify.html"&gt;spontaneous symmetry
 breaking&lt;/a&gt;.&lt;/p&gt;
-&lt;/p&gt;</summary></entry><entry><title>Causal Dynamical Triangulations</title><link href="http://adamgetchell.org/causal-dynamical-triangulations.html" rel="alternate"></link><published>2008-08-01T08:33:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-08-01:causal-dynamical-triangulations.html</id><summary type="html">&lt;p&gt;Rajesh Kommu and &lt;a href="http://www.physics.ucdavis.edu/Text/Carlip.html"&gt;Professor Steve
+&lt;/p&gt;</summary></entry><entry><title>Causal Dynamical Triangulations</title><link href="https://adamgetchell.org/causal-dynamical-triangulations.html" rel="alternate"></link><published>2008-08-01T08:33:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-08-01:causal-dynamical-triangulations.html</id><summary type="html">&lt;p&gt;Rajesh Kommu and &lt;a href="http://www.physics.ucdavis.edu/Text/Carlip.html"&gt;Professor Steve
 Carlip&lt;/a&gt; are working on
 interesting ways to model quantum gravity using computational methods.
 Rajesh has been kind enough to help show me where to get&amp;nbsp;started:  &lt;/p&gt;
@@ -1823,7 +2029,7 @@ besides the&amp;nbsp;point).  &lt;/p&gt;
 stdfx.h. Just missing one file &amp;#8230;&amp;nbsp;again!  &lt;/p&gt;
 &lt;p&gt;On the other hand, now I can read code in two OSes. Sure is interesting
 dereferencing all those&amp;nbsp;pointers!  &lt;/p&gt;
-&lt;p&gt;Quantizing spacetime is fun,&amp;nbsp;though!&lt;/p&gt;</summary><category term="quantum gravity"></category><category term="vmware"></category><category term="ubuntu"></category><category term="cdt"></category></entry><entry><title>Causal Dynamical Triangulations updates</title><link href="http://adamgetchell.org/causal-dynamical-triangulation.html" rel="alternate"></link><published>2008-08-01T08:27:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-08-01:causal-dynamical-triangulation.html</id><summary type="html">&lt;p&gt;The papers to read to get started:&lt;br /&gt;
+&lt;p&gt;Quantizing spacetime is fun,&amp;nbsp;though!&lt;/p&gt;</summary><category term="cdt"></category><category term="quantum gravity"></category><category term="vmware"></category><category term="ubuntu"></category></entry><entry><title>Causal Dynamical Triangulations updates</title><link href="https://adamgetchell.org/causal-dynamical-triangulation.html" rel="alternate"></link><published>2008-08-01T08:27:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-08-01:causal-dynamical-triangulation.html</id><summary type="html">&lt;p&gt;The papers to read to get started:&lt;br /&gt;
 &lt;a href="http://arxiv.org/abs/hep-th/0212340"&gt;&lt;br /&gt;
 A discrete history of the Lorentzian path
 integral&lt;/a&gt;&lt;br /&gt;
@@ -1844,7 +2050,7 @@ Spectral dimension of the&amp;nbsp;Universe&lt;/a&gt;  &lt;/p&gt;
 from&amp;nbsp;Marcus)  &lt;/p&gt;
 &lt;p&gt;And finally, the &lt;a href="http://arxiv.org/find/all/1/all:+AND+triangulations+AND+causal+dynamical/0/1/0/all/0/1"&gt;current
 literature&lt;/a&gt;
-on&amp;nbsp;ArXiv.&lt;/p&gt;</summary><category term="quantum gravity"></category><category term="cdt"></category></entry><entry><title>Are we living in a simulation?</title><link href="http://adamgetchell.org/are-we-living-in-simulation.html" rel="alternate"></link><published>2008-05-05T02:24:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-05-05:are-we-living-in-simulation.html</id><summary type="html">&lt;p&gt;Today I came across one of Dr. Nick Bostrom&amp;#8217;s &lt;a href="http://www.simulation-argument.com/simulation.html"&gt;existential philosophy
+on&amp;nbsp;ArXiv.&lt;/p&gt;</summary><category term="quantum gravity"></category><category term="cdt"></category></entry><entry><title>Are we living in a simulation?</title><link href="https://adamgetchell.org/are-we-living-in-simulation.html" rel="alternate"></link><published>2008-05-05T02:24:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-05-05:are-we-living-in-simulation.html</id><summary type="html">&lt;p&gt;Today I came across one of Dr. Nick Bostrom&amp;#8217;s &lt;a href="http://www.simulation-argument.com/simulation.html"&gt;existential philosophy
 papers&lt;/a&gt; regarding
 life vs. sim-life (aka are we living in the&amp;nbsp;Matrix?).  &lt;/p&gt;
 &lt;p&gt;To me, the really interesting question is the assumption of
@@ -1912,7 +2118,7 @@ don&amp;#8217;t believe we&amp;#8217;re living in a&amp;nbsp;simulation:  &lt;/p
 &lt;/ul&gt;
 &lt;p&gt;Anyways, this is a very interesting topic, but I should continue my
 sidetracking avoidance and get back to my&amp;nbsp;research.&lt;/p&gt;
-&lt;/p&gt;</summary><category term="information theory"></category><category term="qft"></category><category term="voting"></category></entry><entry><title>Cosmology and Quantitative Biology</title><link href="http://adamgetchell.org/cosmology-and-quantitative-biology.html" rel="alternate"></link><published>2008-01-23T08:02:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-01-23:cosmology-and-quantitative-biology.html</id><summary type="html">&lt;p&gt;Went to an interesting seminar today about detecting traces of the
+&lt;/p&gt;</summary><category term="information theory"></category><category term="qft"></category><category term="voting"></category></entry><entry><title>Cosmology and Quantitative Biology</title><link href="https://adamgetchell.org/cosmology-and-quantitative-biology.html" rel="alternate"></link><published>2008-01-23T08:02:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-01-23:cosmology-and-quantitative-biology.html</id><summary type="html">&lt;p&gt;Went to an interesting seminar today about detecting traces of the
 reheat portion of the Hot Big Bang (the part that occurs after
 inflation), papers not yet out on arxiv (links posted here when they
 come&amp;nbsp;out).  &lt;/p&gt;
@@ -1968,10 +2174,10 @@ other similar-sized particle in a colloidal suspension.&lt;br /&gt;
 &lt;a href="http://ptonline.aip.org/journals/doc/PHTOAD-ft/vol_61/iss_1/42_1.shtml"&gt;&lt;br /&gt;
 &lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;</summary><category term="string theory"></category><category term="cosmology"></category><category term="quantitative biology"></category></entry><entry><title>Undecidability, Regularity, and Decoherence</title><link href="http://adamgetchell.org/undecidability-regularity-and.html" rel="alternate"></link><published>2008-01-22T11:49:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-01-22:undecidability-regularity-and.html</id><summary type="html">&lt;p&gt;&lt;a href="http://arxiv.org/PS_cache/arxiv/pdf/0801/0801.2564v1.pdf"&gt;Modern space-time and undecidability&lt;br /&gt;
+&lt;/ol&gt;</summary><category term="string theory"></category><category term="cosmology"></category><category term="quantitative biology"></category></entry><entry><title>Undecidability, Regularity, and Decoherence</title><link href="https://adamgetchell.org/undecidability-regularity-and.html" rel="alternate"></link><published>2008-01-22T11:49:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-01-22:undecidability-regularity-and.html</id><summary type="html">&lt;p&gt;&lt;a href="http://arxiv.org/PS_cache/arxiv/pdf/0801/0801.2564v1.pdf"&gt;Modern space-time and undecidability&lt;br /&gt;
 &lt;/a&gt;&lt;br /&gt;
-&lt;a href="http://en.wikipedia.org/wiki/Quantum_decoherence"&gt;Quantum&amp;nbsp;Decoherence&lt;/a&gt;&lt;/p&gt;</summary><category term="qft"></category><category term="general relativity"></category></entry><entry><title>Ultra-strong electric and magnetic fields, monopoles</title><link href="http://adamgetchell.org/ultra-strong-electric-and-magnetic.html" rel="alternate"></link><published>2008-01-22T11:46:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-01-22:ultra-strong-electric-and-magnetic.html</id><summary type="html">&lt;p&gt;&lt;a href="http://www.amolf.nl/publications/pdf/4339.pdf"&gt;Response of Polyatomic Molecules to Ultrastrong Laser- and Ion-Induced&amp;nbsp;Fields&lt;/a&gt;  &lt;/p&gt;
-&lt;p&gt;&lt;a href="http://arxiv.org/PS_cache/astro-ph/pdf/0002/0002442v1.pdf"&gt;Physics in Ultra-strong Magnetic&amp;nbsp;Fields&lt;/a&gt;&lt;/p&gt;</summary><category term="qft"></category></entry><entry><title>Dynamical Triangulations, SAGE</title><link href="http://adamgetchell.org/dynamical-triangulations-sage.html" rel="alternate"></link><published>2007-12-10T19:09:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-12-10:dynamical-triangulations-sage.html</id><summary type="html">&lt;p&gt;The first paper I read for Causal Dynamical Triangulations is a fairly
+&lt;a href="http://en.wikipedia.org/wiki/Quantum_decoherence"&gt;Quantum&amp;nbsp;Decoherence&lt;/a&gt;&lt;/p&gt;</summary><category term="qft"></category><category term="general relativity"></category></entry><entry><title>Ultra-strong electric and magnetic fields, monopoles</title><link href="https://adamgetchell.org/ultra-strong-electric-and-magnetic.html" rel="alternate"></link><published>2008-01-22T11:46:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2008-01-22:ultra-strong-electric-and-magnetic.html</id><summary type="html">&lt;p&gt;&lt;a href="http://www.amolf.nl/publications/pdf/4339.pdf"&gt;Response of Polyatomic Molecules to Ultrastrong Laser- and Ion-Induced&amp;nbsp;Fields&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;a href="http://arxiv.org/PS_cache/astro-ph/pdf/0002/0002442v1.pdf"&gt;Physics in Ultra-strong Magnetic&amp;nbsp;Fields&lt;/a&gt;&lt;/p&gt;</summary><category term="qft"></category></entry><entry><title>Dynamical Triangulations, SAGE</title><link href="https://adamgetchell.org/dynamical-triangulations-sage.html" rel="alternate"></link><published>2007-12-10T19:09:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-12-10:dynamical-triangulations-sage.html</id><summary type="html">&lt;p&gt;The first paper I read for Causal Dynamical Triangulations is a fairly
 steep introduction (for me), so I went and looked over the
 &lt;a href="http://arxiv.org/abs/hep-th/9805108"&gt;2D&lt;/a&gt; case and
 &lt;a href="http://arxiv.org/abs/hep-th/9806241"&gt;lessons&lt;/a&gt;, as well as a general
@@ -2009,7 +2215,7 @@ available on Google&amp;nbsp;Groups.  &lt;/p&gt;
 &lt;p&gt;PostScript: &lt;span class="caps"&gt;SAGE&lt;/span&gt; can be upgraded to Gutsy, I used the Upgrade Manager
 available in Xubuntu (I wanted a &lt;span class="caps"&gt;GUI&lt;/span&gt; for some &lt;span class="caps"&gt;SAGE&lt;/span&gt; file management via
 apt-get install&amp;nbsp;xubuntu-desktop)  &lt;/p&gt;
-&lt;p&gt;Doesn&amp;#8217;t work yet on &lt;span class="caps"&gt;BSD&lt;/span&gt;, alas, and running a &lt;span class="caps"&gt;SAGE&lt;/span&gt; server has security&amp;nbsp;implications.&lt;/p&gt;</summary><category term="SAGE"></category><category term="cdt"></category><category term="python"></category><category term="vmware"></category><category term="ubuntu"></category></entry><entry><title>ProjectEuler on F#</title><link href="http://adamgetchell.org/projecteuler-on-f.html" rel="alternate"></link><published>2007-11-19T09:24:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-11-19:projecteuler-on-f.html</id><summary type="html">&lt;p&gt;So, whilst poring through Pickering&amp;#8217;s book and browsing through &lt;a href="http://tomasp.net/about/fsharp.aspx"&gt;Tomas
+&lt;p&gt;Doesn&amp;#8217;t work yet on &lt;span class="caps"&gt;BSD&lt;/span&gt;, alas, and running a &lt;span class="caps"&gt;SAGE&lt;/span&gt; server has security&amp;nbsp;implications.&lt;/p&gt;</summary><category term="SAGE"></category><category term="cdt"></category><category term="python"></category><category term="vmware"></category><category term="ubuntu"></category></entry><entry><title>ProjectEuler on F#</title><link href="https://adamgetchell.org/projecteuler-on-f.html" rel="alternate"></link><published>2007-11-19T09:24:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-11-19:projecteuler-on-f.html</id><summary type="html">&lt;p&gt;So, whilst poring through Pickering&amp;#8217;s book and browsing through &lt;a href="http://tomasp.net/about/fsharp.aspx"&gt;Tomas
 Petricek&amp;#8217;s blog&lt;/a&gt; (which has a
 promising &lt;a href="http://tomasp.net/articles/fswebtools-intro.aspx"&gt;F# &lt;span class="caps"&gt;AJAX&lt;/span&gt;
 toolkit&lt;/a&gt;, which alas,
@@ -2041,7 +2247,7 @@ fascinating&amp;nbsp;too.  &lt;/p&gt;
 no longer necessary, since &lt;span
 style="color: rgb(51, 51, 255);"&gt;using&lt;/span&gt; is integrated into&amp;nbsp;F#)  &lt;/p&gt;
 &lt;p&gt;Finally, here&amp;#8217;s &lt;a href="http://feeds.feedburner.com/planet_fsharp"&gt;Feedburner&amp;#8217;s Planet
-F#&lt;/a&gt;.&lt;/p&gt;</summary><category term=".net"></category><category term="f#"></category></entry><entry><title>F#, Regge Calculus, and other interludes</title><link href="http://adamgetchell.org/f-regge-calculus-and-other-interludes.html" rel="alternate"></link><published>2007-11-19T05:39:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-11-19:f-regge-calculus-and-other-interludes.html</id><summary type="html">&lt;p&gt;Still working on &lt;a href="http://adamgetchell.blogspot.com/2007_10_01_archive.html"&gt;Causal Dynamical
+F#&lt;/a&gt;.&lt;/p&gt;</summary><category term=".net"></category><category term="f#"></category></entry><entry><title>F#, Regge Calculus, and other interludes</title><link href="https://adamgetchell.org/f-regge-calculus-and-other-interludes.html" rel="alternate"></link><published>2007-11-19T05:39:00-08:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-11-19:f-regge-calculus-and-other-interludes.html</id><summary type="html">&lt;p&gt;Still working on &lt;a href="http://adamgetchell.blogspot.com/2007_10_01_archive.html"&gt;Causal Dynamical
 Triangulations&lt;/a&gt;,
 I&amp;#8217;ve also taken some time out to (start to) learn a delightful new
 functional programming language,
@@ -2185,7 +2391,7 @@ gravitational&amp;nbsp;waves?&lt;/a&gt;  &lt;/p&gt;
 &lt;p&gt;Taking a 2 solar mass black hole traveling at .38c and converting 90% of
 its rest mass into a lobe-shaped pulse with width deltaU \~ 40 for 10E40
 GeV\^2 sounds&amp;nbsp;exciting!&lt;/p&gt;
-&lt;/p&gt;</summary><category term="cdt"></category><category term=".net"></category><category term="information theory"></category><category term="thermodynamics"></category><category term="quantum mechanics"></category><category term="f#"></category></entry><entry><title>Holomorphy and friends</title><link href="http://adamgetchell.org/holomorphy-and-friends.html" rel="alternate"></link><published>2007-10-03T04:48:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-10-03:holomorphy-and-friends.html</id><summary type="html">&lt;p&gt;I&amp;#8217;m reading Chapter 8 of &lt;a href="http://particle.physics.ucdavis.edu/modernsusy/index.html"&gt;Modern
+&lt;/p&gt;</summary><category term="cdt"></category><category term=".net"></category><category term="information theory"></category><category term="thermodynamics"></category><category term="quantum mechanics"></category><category term="f#"></category></entry><entry><title>Holomorphy and friends</title><link href="https://adamgetchell.org/holomorphy-and-friends.html" rel="alternate"></link><published>2007-10-03T04:48:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-10-03:holomorphy-and-friends.html</id><summary type="html">&lt;p&gt;I&amp;#8217;m reading Chapter 8 of &lt;a href="http://particle.physics.ucdavis.edu/modernsusy/index.html"&gt;Modern
 Supersymmetry&lt;/a&gt;.  &lt;/p&gt;
 &lt;p&gt;To understand the first sentence, I had to review Maldacena&amp;#8217;s
 &lt;a href="http://arxiv.org/PS_cache/hep-th/pdf/9711/9711200v3.pdf"&gt;paper&lt;/a&gt;, which
@@ -2197,7 +2403,7 @@ numerous
 theorems&lt;/a&gt; and
 &lt;a href="http://arxiv.org/PS_cache/hep-th/pdf/9802/9802109v2.pdf"&gt;Wilsonian effective
 action&lt;/a&gt;.  &lt;/p&gt;
-&lt;p&gt;Wow, lots to&amp;nbsp;catchup!&lt;/p&gt;</summary><category term="string theory"></category><category term="SUSY"></category></entry><entry><title>Quantum Parallel Universes</title><link href="http://adamgetchell.org/quantum-parallel-universes.html" rel="alternate"></link><published>2007-09-28T06:35:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-28:quantum-parallel-universes.html</id><summary type="html">&lt;p&gt;Professor Andy Albrecht has kindly pointed me to one of a series of
+&lt;p&gt;Wow, lots to&amp;nbsp;catchup!&lt;/p&gt;</summary><category term="string theory"></category><category term="SUSY"></category></entry><entry><title>Quantum Parallel Universes</title><link href="https://adamgetchell.org/quantum-parallel-universes.html" rel="alternate"></link><published>2007-09-28T06:35:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-28:quantum-parallel-universes.html</id><summary type="html">&lt;p&gt;Professor Andy Albrecht has kindly pointed me to one of a series of
 papers by David Deutsch that begins the proof of Hugh Everett&amp;#8217;s
 &lt;a href="http://plato.stanford.edu/entries/qm-manyworlds/"&gt;Many-World&amp;#8217;s
 Hypothesis&lt;/a&gt;:  &lt;/p&gt;
@@ -2216,7 +2422,7 @@ probability in the &lt;span class="caps"&gt;MWI&lt;/span&gt;.  &lt;/p&gt;
 &lt;a href="http://particle.physics.ucdavis.edu/teaching/246B/index.php"&gt;class&lt;/a&gt;,
 taught by Prof. John Terning, which picks up where my last &lt;span class="caps"&gt;SUSY&lt;/span&gt; class
 left off. Wow, I need to
-&lt;a href="http://particle.physics.ucdavis.edu/teaching/246/index.php"&gt;review&lt;/a&gt;!&lt;/p&gt;</summary><category term="qft"></category><category term="SUSY"></category></entry><entry><title>A new direction</title><link href="http://adamgetchell.org/new-direction.html" rel="alternate"></link><published>2007-09-23T22:07:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-23:new-direction.html</id><summary type="html">&lt;p&gt;After a long hiatus, I&amp;#8217;m back&amp;nbsp;&amp;#8230;  &lt;/p&gt;
+&lt;a href="http://particle.physics.ucdavis.edu/teaching/246/index.php"&gt;review&lt;/a&gt;!&lt;/p&gt;</summary><category term="qft"></category><category term="SUSY"></category></entry><entry><title>A new direction</title><link href="https://adamgetchell.org/new-direction.html" rel="alternate"></link><published>2007-09-23T22:07:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-23:new-direction.html</id><summary type="html">&lt;p&gt;After a long hiatus, I&amp;#8217;m back&amp;nbsp;&amp;#8230;  &lt;/p&gt;
 &lt;p&gt;Back to what? Well, most of that hiatus was due to work, and I already
 keep a (boring) work journal. But the main thing is I&amp;#8217;m back to doing
 physics&amp;nbsp;&amp;#8230;  &lt;/p&gt;
@@ -2238,7 +2444,7 @@ together&lt;/a&gt;.  &lt;/p&gt;
 &lt;p&gt;With a reference to the&amp;nbsp;classics:  &lt;/p&gt;
 &lt;p&gt;&lt;a href="http://math.ucr.edu/home/baez/einstein/einstein.html"&gt;http://math.ucr.edu/home/baez/einstein/einstein.html&lt;/a&gt;  &lt;/p&gt;
 &lt;p&gt;&lt;a href="http://math.ucr.edu/home/baez/gr/gr.html"&gt;http://math.ucr.edu/home/baez/gr/gr.html&lt;/a&gt;  &lt;/p&gt;
-&lt;p&gt;Well, that should be enough to start with this&amp;nbsp;weekend!&lt;/p&gt;</summary><category term="quantum gravity"></category></entry><entry><title>Fun with Microsoft’s Enterprise Library</title><link href="http://adamgetchell.org/fun-with-microsofts-enterprise-library.html" rel="alternate"></link><published>2007-09-22T23:42:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:fun-with-microsofts-enterprise-library.html</id><summary type="html">&lt;p&gt;Oh yeah, back to my day-job: I&amp;#8217;m a&amp;nbsp;programmer.  &lt;/p&gt;
+&lt;p&gt;Well, that should be enough to start with this&amp;nbsp;weekend!&lt;/p&gt;</summary><category term="quantum gravity"></category></entry><entry><title>Fun with Microsoft’s Enterprise Library</title><link href="https://adamgetchell.org/fun-with-microsofts-enterprise-library.html" rel="alternate"></link><published>2007-09-22T23:42:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:fun-with-microsofts-enterprise-library.html</id><summary type="html">&lt;p&gt;Oh yeah, back to my day-job: I&amp;#8217;m a&amp;nbsp;programmer.  &lt;/p&gt;
 &lt;p&gt;So we&amp;#8217;ve got a new application to update the current stone-tablet
 process in the University that determines if students actually&amp;nbsp;graduate.  &lt;/p&gt;
 &lt;p&gt;Now, I like to write good code, and furthermore, if someone else writes
@@ -2447,7 +2653,7 @@ exercise will exceed the several thousand I could be writing if I just
 wrote everything&amp;nbsp;myself.  &lt;/p&gt;
 &lt;p&gt;What&amp;#8217;s that again about the virtues of programmers? Laziness,
 impatience, and hubris. Oh, alright&amp;nbsp;then.&lt;/p&gt;
-&lt;/p&gt;</summary><category term=".net"></category></entry><entry><title>Fun with Microsoft Enterprise Library, part 2</title><link href="http://adamgetchell.org/fun-with-microsoft-enterprise-library.html" rel="alternate"></link><published>2007-09-22T23:41:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:fun-with-microsoft-enterprise-library.html</id><summary type="html">&lt;p&gt;Okay, I can see that this is going to be a long series&amp;nbsp;&amp;#8230;.  &lt;/p&gt;
+&lt;/p&gt;</summary><category term=".net"></category></entry><entry><title>Fun with Microsoft Enterprise Library, part 2</title><link href="https://adamgetchell.org/fun-with-microsoft-enterprise-library.html" rel="alternate"></link><published>2007-09-22T23:41:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:fun-with-microsoft-enterprise-library.html</id><summary type="html">&lt;p&gt;Okay, I can see that this is going to be a long series&amp;nbsp;&amp;#8230;.  &lt;/p&gt;
 &lt;p&gt;Here&amp;#8217;s what I&amp;#8217;m talking about on how to get Visual Studio to see
 Enterprise Library assemblies without browsing (taken from the GotDotNet
 workspace patterns &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; practices: Enterprise Library: Message&amp;nbsp;Boards):  &lt;/p&gt;
@@ -2543,7 +2749,7 @@ like extending the Logging class to handle &lt;span class="caps"&gt;XML&lt;/span
 Tests there built to ensure its continued functionality. So I need that
 book on Test Driven Development real soon&amp;nbsp;now.  &lt;/p&gt;
 &lt;p&gt;Well, at least I&amp;#8217;m not bored.&lt;br /&gt;
-&lt;/span&gt;&lt;/p&gt;</summary><category term=".net"></category></entry><entry><title>Microsoft Security Awareness training</title><link href="http://adamgetchell.org/microsoft-security-awareness-training.html" rel="alternate"></link><published>2007-09-22T23:41:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:microsoft-security-awareness-training.html</id><summary type="html">&lt;p&gt;&lt;a href="http://www.atrevido.net/blog/PermaLink.aspx?guid=256b6bb4-f6f4-43a5-985b-7fe5796b809c"&gt;This&lt;/a&gt;
+&lt;/span&gt;&lt;/p&gt;</summary><category term=".net"></category></entry><entry><title>Microsoft Security Awareness training</title><link href="https://adamgetchell.org/microsoft-security-awareness-training.html" rel="alternate"></link><published>2007-09-22T23:41:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:microsoft-security-awareness-training.html</id><summary type="html">&lt;p&gt;&lt;a href="http://www.atrevido.net/blog/PermaLink.aspx?guid=256b6bb4-f6f4-43a5-985b-7fe5796b809c"&gt;This&lt;/a&gt;
 is just too funny to pass&amp;nbsp;up.  &lt;/p&gt;
 &lt;p&gt;So far, &lt;a href="http://windowssecrets.com/050127/#story1"&gt;malware&amp;#8217;s winning the war of
 attrition&lt;/a&gt;.  &lt;/p&gt;
@@ -2571,7 +2777,7 @@ filtering (not just ingress filtering, where most rulesets stop), and as
 always, keep your systems&amp;nbsp;patched.  &lt;/p&gt;
 &lt;p&gt;But then, there&amp;#8217;s no such thing as a&amp;nbsp;panacea.  &lt;/p&gt;
 &lt;p&gt;Did I also mention that pf rules are nearly&amp;nbsp;plain-language?  &lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.openbsd.org/faq/pf/index.html"&gt;pf&lt;/a&gt;&amp;nbsp;r0x0rs!&lt;/p&gt;</summary><category term="openbsd"></category></entry><entry><title>Enterprise Library authentication</title><link href="http://adamgetchell.org/enterprise-library-authentication.html" rel="alternate"></link><published>2007-09-22T23:40:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:enterprise-library-authentication.html</id><summary type="html">&lt;p&gt;&lt;a href="http://weblogs.asp.net/drohrer/"&gt;Doug Rohrer&lt;/a&gt;, one of
+&lt;p&gt;&lt;a href="http://www.openbsd.org/faq/pf/index.html"&gt;pf&lt;/a&gt;&amp;nbsp;r0x0rs!&lt;/p&gt;</summary><category term="openbsd"></category></entry><entry><title>Enterprise Library authentication</title><link href="https://adamgetchell.org/enterprise-library-authentication.html" rel="alternate"></link><published>2007-09-22T23:40:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:enterprise-library-authentication.html</id><summary type="html">&lt;p&gt;&lt;a href="http://weblogs.asp.net/drohrer/"&gt;Doug Rohrer&lt;/a&gt;, one of
 &lt;a href="http://www.avanade.com/"&gt;Avanade&lt;/a&gt; guys who worked on the Enterprise
 Library, has posted a fantastic End to End Enterprise Library project
 which incorporates the &lt;span class="caps"&gt;EL&lt;/span&gt; into &lt;span class="caps"&gt;ASP&lt;/span&gt;.&lt;span class="caps"&gt;NET&lt;/span&gt; and Winforms&amp;nbsp;applications.  &lt;/p&gt;
@@ -2965,7 +3171,7 @@ to Login&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Cool&amp;nbsp;stuff!&lt;/p&gt;
-&lt;/p&gt;</summary><category term=".net"></category></entry><entry><title>Fun with ASP.NET security and Windows 2003 SP1 breakage</title><link href="http://adamgetchell.org/fun-with-aspnet-security-and-windows.html" rel="alternate"></link><published>2007-09-22T23:40:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:fun-with-aspnet-security-and-windows.html</id><summary type="html">&lt;p&gt;Problem: you want secure database access, using a connection string like&amp;nbsp;this:&lt;/p&gt;
+&lt;/p&gt;</summary><category term=".net"></category></entry><entry><title>Fun with ASP.NET security and Windows 2003 SP1 breakage</title><link href="https://adamgetchell.org/fun-with-aspnet-security-and-windows.html" rel="alternate"></link><published>2007-09-22T23:40:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:fun-with-aspnet-security-and-windows.html</id><summary type="html">&lt;p&gt;Problem: you want secure database access, using a connection string like&amp;nbsp;this:&lt;/p&gt;
 &lt;div class="cf"&gt;
 
 &lt;span class="cb1"&gt;\&lt;&lt;/span&gt;&lt;span class="cb2"&gt;add&lt;/span&gt;&lt;span
@@ -3203,7 +3409,7 @@ synchronization&lt;/font&gt;&lt;/p&gt;
 &lt;p&gt;&lt;font face="Arial" size="2"&gt;Thank goodness Whidbey and Enterprise
 Library v2.0 aren’t coming out until September.&lt;/font&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;/p&gt;</summary><category term=".net"></category></entry><entry><title>Using Enterprise Library Logging</title><link href="http://adamgetchell.org/using-enterprise-library-logging.html" rel="alternate"></link><published>2007-09-22T23:40:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:using-enterprise-library-logging.html</id><summary type="html">&lt;p&gt;To get logging working without pesky &lt;span class="caps"&gt;WMI&lt;/span&gt;/Performance counter errors on
+&lt;/p&gt;</summary><category term=".net"></category></entry><entry><title>Using Enterprise Library Logging</title><link href="https://adamgetchell.org/using-enterprise-library-logging.html" rel="alternate"></link><published>2007-09-22T23:40:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:using-enterprise-library-logging.html</id><summary type="html">&lt;p&gt;To get logging working without pesky &lt;span class="caps"&gt;WMI&lt;/span&gt;/Performance counter errors on
 &lt;span style="font-style: italic;"&gt;every&lt;/span&gt; logged&amp;nbsp;event:  &lt;/p&gt;
 &lt;p&gt;Per &lt;a href="http://weblogs.asp.net/tomholl/archive/2005/02/18/376187.aspx#FeedBack"&gt;Tom Hollander&amp;#8217;s&amp;nbsp;weblog&lt;/a&gt;  &lt;/p&gt;
 &lt;p&gt;Go to the Logging project, Project Properties dialog for the Common
@@ -3372,7 +3578,7 @@ trial VisualPerl installation that won&amp;#8217;t&amp;nbsp;uninstall.  &lt;/p&g
 this&amp;nbsp;feature.  &lt;/p&gt;
 &lt;p&gt;&lt;span class="caps"&gt;P.S.&lt;/span&gt; Collin worked to fix &lt;span class="caps"&gt;CSAH&lt;/span&gt;, and I nuked and reinstalled my system,
 including Visual Studio 2003.&lt;span class="caps"&gt;NET&lt;/span&gt;. That seems to have done the&amp;nbsp;trick.&lt;/p&gt;
-&lt;/p&gt;</summary><category term=".net"></category></entry><entry><title>Beginning String Theory</title><link href="http://adamgetchell.org/beginning-string-theory.html" rel="alternate"></link><published>2007-09-22T23:39:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:beginning-string-theory.html</id><summary type="html">&lt;p&gt;Okay, I’ve been posting enough about my day&amp;nbsp;job.&lt;/p&gt;
+&lt;/p&gt;</summary><category term=".net"></category></entry><entry><title>Beginning String Theory</title><link href="https://adamgetchell.org/beginning-string-theory.html" rel="alternate"></link><published>2007-09-22T23:39:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:beginning-string-theory.html</id><summary type="html">&lt;p&gt;Okay, I’ve been posting enough about my day&amp;nbsp;job.&lt;/p&gt;
 &lt;p&gt;By night I’m a physics graduate student. Well, my work lets me go to
 class during the day, but (when I’m productive) night and
 weekend minutes are for physics (sounds like a mobile phone&amp;nbsp;commercial).&lt;/p&gt;
@@ -3398,5 +3604,5 @@ strings propagating along a&amp;nbsp;world-sheet.&lt;/p&gt;
 electronic journals aren’t responding, so I may have to track down
 Nucl.Phys.B241:333–380,1984 on actual&amp;nbsp;paper.&lt;/p&gt;
 &lt;p&gt;Well, this was fun but I should go back to reviewing my&amp;nbsp;notes.&lt;/p&gt;
-&lt;/p&gt;</summary><category term="string theory"></category></entry><entry><title>Signing and Installing the EnterpriseLibrary in the GAC</title><link href="http://adamgetchell.org/signing-and-installing.html" rel="alternate"></link><published>2007-09-22T23:39:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:signing-and-installing.html</id><summary type="html">&lt;p&gt;If you want to know how to do this, the gory details are
+&lt;/p&gt;</summary><category term="string theory"></category></entry><entry><title>Signing and Installing the EnterpriseLibrary in the GAC</title><link href="https://adamgetchell.org/signing-and-installing.html" rel="alternate"></link><published>2007-09-22T23:39:00-07:00</published><author><name>Adam Getchell</name></author><id>tag:adamgetchell.org,2007-09-22:signing-and-installing.html</id><summary type="html">&lt;p&gt;If you want to know how to do this, the gory details are
 &lt;a href="http://practices.gotdotnet.com/messageboard/thread.aspx?id=295a464a-6072-4e25-94e2-91be63527327&amp;amp;mbid=12e6b3c0-1261-461b-b86d-eff86af3939d&amp;amp;threadid=cd6a5007-bccd-4802-83a4-b4940d72088c"&gt;here&lt;/a&gt;.&lt;/p&gt;</summary><category term=".net"></category></entry></feed>
